@@ -1,0 +1,40 @@
+---
+import { getLangFromUrl, languages, getLocalizedPath, getRouteFromUrl } from "@/i18n";
+import { Icon } from 'astro-icon/components';
+
+const currentLang = getLangFromUrl(Astro.url);
+const currentRoute = getRouteFromUrl(Astro.url);
+---
+
+<div class="flex items-center gap-2 rounded-xl bg-skin-button-muted p-2 print:hidden" data-ccursor="lift">
+  <Icon name="mdi:translate" class="w-5 h-5 text-skin-hue" />
+  <select 
+    id="languageSwitch"
+    class="bg-transparent text-sm text-skin-base cursor-pointer outline-none"
+    data-current-route={currentRoute}
+  >
+    {Object.entries(languages).map(([lang, label]) => (
+      <option 
+        value={lang} 
+        selected={lang === currentLang}
+        data-path={getLocalizedPath(currentRoute || '/', lang as 'en' | 'es')}
+      >
+        {label}
+      </option>
+    ))}
+  </select>
+</div>
+
+<script>
+  const select = document.getElementById('languageSwitch') as HTMLSelectElement;
+  
+  select?.addEventListener('change', (event) => {
+    const target = event.target as HTMLSelectElement;
+    const selectedOption = target.options[target.selectedIndex];
+    const path = selectedOption.getAttribute('data-path');
+    
+    if (path) {
+      window.location.href = path;
+    }
+  });
+</script>

@@ -1,0 +1,18 @@
+---
+import Section from "../Section.astro";
+import { getLangFromUrl, useTranslations, getBasics } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { summary } = getBasics(lang);
+
+const words = summary.split(' ');
+---
+
+<Section className={Astro.props.className} title={t('section.about')}>
+  <p class="font-mono opacity-75 print:font-sans text-skin-hue font-semibold print:text-skin-base print:font-normal w-full select-none">
+    {words.map((word) => (
+      <span class="w-min sm:hover:bg-skin-button-muted transition-all duration-200 sm:hover:cursor-none">{word}</span> <span> </span>
+    ))}
+  </p>
+</Section>

@@ -1,0 +1,307 @@
+{
+  "analyticsCode": "",
+  "basics": {
+    "name": "Andrés Giraldo",
+    "label": "Software Developer",
+    "animated_main_label": "developer",
+    "animated_secondary_initial_label": "software",
+    "animated_secondary_final_label": "fullstack",
+    "image": "/pfp.jpg",
+    "email": "drawl9988@gmail.com",
+    "url": "",
+    "summary": "Full Stack Software Engineer with 4+ years of experience at Ideamosmas, leading the development of Controlo and Exploreti. I own the entire technical stack: MySQL/PostgreSQL databases, Java Spring Boot microservices, Node.js reporting services, Nuxt/Vue frontends with Tailwind and NuxtUI, and Azure DevOps CI/CD pipelines.",
+    "theme": "platinum",
+    "location": {
+      "address": "",
+      "city": "Cali",
+      "countryCode": "CO",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "icon": "mdi:github",
+        "color": "#929AAB",
+        "username": "drawl99",
+        "url": "https://github.com/drawl99"
+      },
+      {
+        "network": "LinkedIn",
+        "icon": "mdi:linkedin",
+        "color": "#0A66C2",
+        "username": "ing-andresgiraldo",
+        "url": "https://www.linkedin.com/in/ing-andresgiraldo/"
+      },
+      {
+        "network": "Email",
+        "icon": "ri:mail-fill",
+        "color": "#D44638",
+        "username": "drawl9988",
+        "url": "mailto:drawl9988@gmail.com"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Ideamosmas",
+      "position": "Full Stack Software Engineer",
+      "location_type": "On-site",
+      "location": "CO",
+      "url": "https://ideamosmas.com/",
+      "startDate": "2021-10-01",
+      "endDate": null,
+      "summary": "Leading the full development lifecycle of Controlo and Exploreti platforms. Responsible for database design, backend microservices, frontend applications, and DevOps infrastructure.",
+      "responsibilities": [
+        "Architecting and maintaining MySQL and PostgreSQL databases for high-traffic applications.",
+        "Developing and scaling Java Spring Boot microservices for core business logic.",
+        "Building Node.js services for reporting and data processing.",
+        "Creating responsive frontends with Nuxt, Vue, Tailwind, and NuxtUI.",
+        "Managing CI/CD pipelines and deployments on Azure DevOps.",
+        "Owning the entire technical stack from database to production deployment."
+      ],
+      "skills": {
+        "Java": "ri:java-line",
+        "Spring Boot": "simple-icons:springboot",
+        "Node.js": "ri:nodejs-line",
+        "Vue": "simple-icons:vuedotjs",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Tailwind": "mdi:tailwind",
+        "MySQL": "simple-icons:mysql",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Azure": "simple-icons:microsoftazure",
+        "Git": "mdi:git",
+        "GitHub": "mdi:github"
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de San Buenaventura Cali",
+      "url": "https://www.usbcali.edu.co/",
+      "area": "Systems Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2016-01-01",
+      "endDate": "2021-01-01"
+    }
+  ],
+  "certificates": [],
+  "skills": [
+    {
+      "name": "Java",
+      "icon": "ri:java-line",
+      "level": "Advanced",
+      "keywords": ["Backend", "Microservices", "Spring Boot"]
+    },
+    {
+      "name": "Spring Boot",
+      "icon": "simple-icons:springboot",
+      "level": "Advanced",
+      "keywords": ["Backend", "Microservices", "Java", "REST API"]
+    },
+    {
+      "name": "Node.js",
+      "icon": "ri:nodejs-line",
+      "level": "Advanced",
+      "keywords": ["Backend", "JavaScript", "Server", "REST API"]
+    },
+    {
+      "name": "MySQL",
+      "icon": "simple-icons:mysql",
+      "level": "Advanced",
+      "keywords": ["Backend", "Databases", "SQL", "Relational Database"]
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "simple-icons:postgresql",
+      "level": "Advanced",
+      "keywords": ["Backend", "Databases", "SQL", "Relational Database"]
+    },
+    {
+      "name": "Vue",
+      "icon": "simple-icons:vuedotjs",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "JavaScript Framework"]
+    },
+    {
+      "name": "Nuxt",
+      "icon": "simple-icons:nuxtdotjs",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "SSR", "Vue"]
+    },
+    {
+      "name": "Angular",
+      "icon": "simple-icons:angular",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "TypeScript Framework"]
+    },
+    {
+      "name": "Tailwind",
+      "icon": "mdi:tailwind",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "icon": "simple-icons:typescript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "icon": "simple-icons:javascript",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "HTML",
+      "icon": "simple-icons:html5",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "icon": "ri:css3-fill",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Responsive Design"]
+    },
+    {
+      "name": "Azure",
+      "icon": "simple-icons:microsoftazure",
+      "level": "Intermediate",
+      "keywords": ["Cloud Computing", "DevOps", "Infrastructure"]
+    },
+    {
+      "name": "CI/CD",
+      "icon": "simple-icons:azurepipelines",
+      "level": "Intermediate",
+      "keywords": ["DevOps", "Automation", "Deployment"]
+    },
+    {
+      "name": "Git",
+      "icon": "mdi:git",
+      "level": "Advanced",
+      "keywords": ["Version Control", "Collaboration", "Source Code"]
+    },
+    {
+      "name": "GitHub",
+      "icon": "mdi:github",
+      "level": "Advanced",
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
+    },
+    {
+      "name": "Astro",
+      "icon": "simple-icons:astro",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "SSR", "Static Generation"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Erica Viveros",
+      "isActive": true,
+      "description": "Professional website for a financial consultant and insurance agent in Madrid, Spain. Features service showcases, appointment scheduling, and a modern design focused on trust and clarity.",
+      "highlights": [
+        "Professional landing page for financial services",
+        "Service catalog: Home, Health, Liability insurance",
+        "Investment and savings advisory section",
+        "Appointment scheduling integration",
+        "WhatsApp contact integration",
+        "Mobile-responsive design"
+      ],
+      "stack": {
+        "Vue": "simple-icons:vuedotjs",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "Cloudflare Pages": "simple-icons:cloudflare"
+      },
+      "url": "https://erica-viveros.pages.dev/",
+      "github": "https://github.com/drawl99/erica-viveros"
+    },
+    {
+      "name": "Exploreti",
+      "isActive": true,
+      "description": "Tourism ecommerce platform for Colombia. A marketplace for purchasing tickets to parks, attractions, adventures, and entertainment venues across the country.",
+      "highlights": [
+        "Ecommerce platform for tourism experiences",
+        "Integration with international travel platforms",
+        "Real-time booking and payment processing",
+        "Multi-category: Adventure, Parks, Sports, Museums",
+        "Digital customer acquisition tools",
+        "Mobile-responsive design"
+      ],
+      "stack": {
+        "Vue": "simple-icons:vuedotjs",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Tailwind": "mdi:tailwind",
+        "Java": "ri:java-line",
+        "Spring Boot": "simple-icons:springboot",
+        "MySQL": "simple-icons:mysql"
+      },
+      "url": "https://exploreti.com/"
+    },
+    {
+      "name": "Controlo",
+      "isActive": true,
+      "description": "B2B reservation and ticketing system that connects multiple sales channels. Helps businesses increase revenue by 25% and reduce operational costs by 20%, processing over 200,000 tickets per month.",
+      "highlights": [
+        "Multi-channel sales integration (POS, web, kiosks)",
+        "Real-time sales monitoring and reporting",
+        "Custom pricing and user management",
+        "Payment gateway integration",
+        "Marketing automation tools",
+        "White-label web customization"
+      ],
+      "stack": {
+        "Vue": "simple-icons:vuedotjs",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Tailwind": "mdi:tailwind",
+        "Java": "ri:java-line",
+        "Spring Boot": "simple-icons:springboot",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Node.js": "ri:nodejs-line"
+      },
+      "url": "https://controlo-landing-astro.netlify.app/"
+    },
+    {
+      "name": "Parking Mobile",
+      "isActive": true,
+      "description": "Smart parking management software used by 100+ businesses in Colombia. Manages over 2 million parking bays monthly and 1 million online transactions yearly, reducing client operational costs by 20%.",
+      "highlights": [
+        "Full automation with LPR camera integration",
+        "Ticketless parking system",
+        "Real-time cloud-based reporting",
+        "Electronic invoicing (DIAN compliant)",
+        "Mobile payment integration",
+        "Multi-location centralized management"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "Tailwind": "mdi:tailwind",
+        "TypeScript": "simple-icons:typescript",
+        "Netlify": "simple-icons:netlify"
+      },
+      "url": "https://parkingmobile.co/"
+    }
+  ]
+}

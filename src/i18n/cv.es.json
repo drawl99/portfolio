@@ -1,0 +1,322 @@
+{
+  "analyticsCode": "",
+  "basics": {
+    "name": "Andrés Giraldo",
+    "label": "Desarrollador de Software",
+    "animated_main_label": "developer",
+    "animated_secondary_initial_label": "software",
+    "animated_secondary_final_label": "fullstack",
+    "image": "/pfp.jpg",
+    "email": "drawl9988@gmail.com",
+    "url": "",
+    "summary": "Ingeniero de Software Full Stack con más de 4 años de experiencia en Ideamosmas, liderando el desarrollo de Controlo y Exploreti. Responsable de todo el stack técnico: bases de datos MySQL/PostgreSQL, microservicios Java Spring Boot, servicios de reportes en Node.js, frontends con Nuxt/Vue, Tailwind y NuxtUI, y pipelines CI/CD en Azure DevOps.",
+    "theme": "platinum",
+    "location": {
+      "address": "",
+      "city": "Cali",
+      "countryCode": "CO",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "icon": "mdi:github",
+        "color": "#929AAB",
+        "username": "drawl99",
+        "url": "https://github.com/drawl99"
+      },
+      {
+        "network": "LinkedIn",
+        "icon": "mdi:linkedin",
+        "color": "#0A66C2",
+        "username": "ing-andresgiraldo",
+        "url": "https://www.linkedin.com/in/ing-andresgiraldo/"
+      },
+      {
+        "network": "Email",
+        "icon": "ri:mail-fill",
+        "color": "#D44638",
+        "username": "drawl9988",
+        "url": "mailto:drawl9988@gmail.com"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Ideamosmas",
+      "position": "Ingeniero de Software Full Stack",
+      "location_type": "Presencial",
+      "location": "CO",
+      "url": "https://ideamosmas.com/",
+      "startDate": "2021-10-01",
+      "endDate": null,
+      "summary": "Liderando el ciclo completo de desarrollo de las plataformas Controlo y Exploreti. Responsable del diseño de bases de datos, microservicios backend, aplicaciones frontend e infraestructura DevOps.",
+      "responsibilities": [
+        "Arquitectura y mantenimiento de bases de datos MySQL y PostgreSQL para aplicaciones de alto tráfico.",
+        "Desarrollo y escalado de microservicios Java Spring Boot para lógica de negocio.",
+        "Construcción de servicios Node.js para reportes y procesamiento de datos.",
+        "Creación de frontends responsivos con Nuxt, Vue, Tailwind y NuxtUI.",
+        "Gestión de pipelines CI/CD y despliegues en Azure DevOps.",
+        "Responsable de todo el stack técnico desde base de datos hasta producción."
+      ],
+      "skills": {
+        "Java": "ri:java-line",
+        "Spring Boot": "simple-icons:springboot",
+        "Node.js": "ri:nodejs-line",
+        "Vue": "simple-icons:vuedotjs",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Tailwind": "mdi:tailwind",
+        "MySQL": "simple-icons:mysql",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Azure": "simple-icons:microsoftazure",
+        "Git": "mdi:git",
+        "GitHub": "mdi:github"
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de San Buenaventura Cali",
+      "url": "https://www.usbcali.edu.co/",
+      "area": "Ingeniería de Sistemas",
+      "studyType": "Título Universitario",
+      "startDate": "2016-01-01",
+      "endDate": "2021-01-01"
+    }
+  ],
+  "certificates": [],
+  "skills": [
+    {
+      "name": "Java",
+      "icon": "ri:java-line",
+      "level": "Avanzado",
+      "keywords": ["Backend", "Microservicios", "Spring Boot"]
+    },
+    {
+      "name": "Spring Boot",
+      "icon": "simple-icons:springboot",
+      "level": "Avanzado",
+      "keywords": ["Backend", "Microservicios", "Java", "REST API"]
+    },
+    {
+      "name": "Node.js",
+      "icon": "ri:nodejs-line",
+      "level": "Avanzado",
+      "keywords": ["Backend", "JavaScript", "Servidor", "REST API"]
+    },
+    {
+      "name": "MySQL",
+      "icon": "simple-icons:mysql",
+      "level": "Avanzado",
+      "keywords": [
+        "Backend",
+        "Bases de Datos",
+        "SQL",
+        "Base de Datos Relacional"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "simple-icons:postgresql",
+      "level": "Avanzado",
+      "keywords": [
+        "Backend",
+        "Bases de Datos",
+        "SQL",
+        "Base de Datos Relacional"
+      ]
+    },
+    {
+      "name": "Vue",
+      "icon": "simple-icons:vuedotjs",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Framework JavaScript"]
+    },
+    {
+      "name": "Nuxt",
+      "icon": "simple-icons:nuxtdotjs",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "SSR", "Vue"]
+    },
+    {
+      "name": "Angular",
+      "icon": "simple-icons:angular",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Framework TypeScript"]
+    },
+    {
+      "name": "Tailwind",
+      "icon": "mdi:tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Framework CSS",
+        "Diseño Responsivo"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "icon": "simple-icons:typescript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Superset JavaScript"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "icon": "simple-icons:javascript",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "HTML",
+      "icon": "simple-icons:html5",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "icon": "ri:css3-fill",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsivo"]
+    },
+    {
+      "name": "Azure",
+      "icon": "simple-icons:microsoftazure",
+      "level": "Intermedio",
+      "keywords": ["Cloud Computing", "DevOps", "Infraestructura"]
+    },
+    {
+      "name": "CI/CD",
+      "icon": "simple-icons:azurepipelines",
+      "level": "Intermedio",
+      "keywords": ["DevOps", "Automatización", "Despliegue"]
+    },
+    {
+      "name": "Git",
+      "icon": "mdi:git",
+      "level": "Avanzado",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+    },
+    {
+      "name": "GitHub",
+      "icon": "mdi:github",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "Astro",
+      "icon": "simple-icons:astro",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend", "SSR", "Generación Estática"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermedio"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Erica Viveros",
+      "isActive": true,
+      "description": "Sitio web profesional para una consultora financiera y agente de seguros en Madrid, España. Incluye catálogo de servicios, agendamiento de citas y diseño moderno enfocado en confianza y claridad.",
+      "highlights": [
+        "Landing page profesional para servicios financieros",
+        "Catálogo de servicios: Hogar, Salud, Responsabilidad Civil",
+        "Sección de asesoría en ahorro e inversión",
+        "Integración de agendamiento de citas",
+        "Integración con WhatsApp",
+        "Diseño responsivo móvil"
+      ],
+      "stack": {
+        "Vue": "simple-icons:vuedotjs",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "Cloudflare Pages": "simple-icons:cloudflare"
+      },
+      "url": "https://erica-viveros.pages.dev/",
+      "github": "https://github.com/drawl99/erica-viveros"
+    },
+    {
+      "name": "Exploreti",
+      "isActive": true,
+      "description": "Plataforma de ecommerce turístico para Colombia. Marketplace para compra de entradas a parques, atracciones, aventuras y centros de entretenimiento en todo el país.",
+      "highlights": [
+        "Plataforma ecommerce para experiencias turísticas",
+        "Integración con plataformas de viajes internacionales",
+        "Reservas y pagos en tiempo real",
+        "Multi-categoría: Aventura, Parques, Deportes, Museos",
+        "Herramientas de captación digital de clientes",
+        "Diseño responsivo móvil"
+      ],
+      "stack": {
+        "Vue": "simple-icons:vuedotjs",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Tailwind": "mdi:tailwind",
+        "Java": "ri:java-line",
+        "Spring Boot": "simple-icons:springboot",
+        "MySQL": "simple-icons:mysql"
+      },
+      "url": "https://exploreti.com/"
+    },
+    {
+      "name": "Controlo",
+      "isActive": true,
+      "description": "Sistema B2B de reservas y venta de entradas que conecta múltiples canales de venta. Ayuda a empresas a incrementar ingresos en 25% y reducir costos operativos en 20%, procesando más de 200,000 tickets mensuales.",
+      "highlights": [
+        "Integración multi-canal de ventas (POS, web, kioscos)",
+        "Monitoreo y reportes de ventas en tiempo real",
+        "Gestión personalizada de tarifas y usuarios",
+        "Integración de pasarelas de pago",
+        "Herramientas de automatización de marketing",
+        "Personalización web marca blanca"
+      ],
+      "stack": {
+        "Vue": "simple-icons:vuedotjs",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Tailwind": "mdi:tailwind",
+        "Java": "ri:java-line",
+        "Spring Boot": "simple-icons:springboot",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Node.js": "ri:nodejs-line"
+      },
+      "url": "https://controlo-landing-astro.netlify.app/"
+    },
+    {
+      "name": "Parking Mobile",
+      "isActive": true,
+      "description": "Software de gestión inteligente de parqueaderos usado por más de 100 empresas en Colombia. Gestiona más de 2 millones de bahías mensuales y 1 millón de transacciones online anuales, reduciendo costos operativos de clientes en 20%.",
+      "highlights": [
+        "Automatización completa con integración de cámaras LPR",
+        "Sistema de parqueo sin ticket",
+        "Reportes en tiempo real basados en la nube",
+        "Facturación electrónica (compatible DIAN)",
+        "Integración de pagos móviles",
+        "Gestión centralizada multi-ubicación"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "Tailwind": "mdi:tailwind",
+        "TypeScript": "simple-icons:typescript",
+        "Netlify": "simple-icons:netlify"
+      },
+      "url": "https://parkingmobile.co/"
+    }
+  ]
+}
