@@ -217,6 +217,31 @@
   ],
   "projects": [
     {
+      "name": "Portfolio",
+      "isActive": true,
+      "description": "Personal portfolio website showcasing professional experience, projects, and technical skills. Built with modern web technologies for optimal performance and user experience.",
+      "highlights": [
+        "Server-Side Rendering with Astro",
+        "Interactive animations with GSAP",
+        "Particle effects and smooth transitions",
+        "Multi-language support (English/Spanish)",
+        "Responsive design with Tailwind CSS",
+        "React 19 integration for dynamic components",
+        "Optimized for performance and SEO",
+        "Deployed on Cloudflare Pages"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "React": "simple-icons:react",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "GSAP": "simple-icons:greensock",
+        "Cloudflare Pages": "simple-icons:cloudflare"
+      },
+      "url": "https://portfolio.andresgiraldo.dev/",
+      "github": "https://github.com/drawl99/portfolio"
+    },
+    {
       "name": "Erica Viveros",
       "isActive": true,
       "description": "Professional website for a financial consultant and insurance agent in Madrid, Spain. Features service showcases, appointment scheduling, and a modern design focused on trust and clarity.",

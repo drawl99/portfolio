@@ -232,6 +232,31 @@
   ],
   "projects": [
     {
+      "name": "Portfolio",
+      "isActive": true,
+      "description": "Sitio web de portafolio personal que muestra experiencia profesional, proyectos y habilidades técnicas. Construido con tecnologías web modernas para un rendimiento y experiencia de usuario óptimos.",
+      "highlights": [
+        "Renderizado del lado del servidor con Astro",
+        "Animaciones interactivas con GSAP",
+        "Efectos de partículas y transiciones suaves",
+        "Soporte multi-idioma (Inglés/Español)",
+        "Diseño responsivo con Tailwind CSS",
+        "Integración con React 19 para componentes dinámicos",
+        "Optimizado para rendimiento y SEO",
+        "Desplegado en Cloudflare Pages"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "React": "simple-icons:react",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "GSAP": "simple-icons:greensock",
+        "Cloudflare Pages": "simple-icons:cloudflare"
+      },
+      "url": "https://portfolio.andresgiraldo.dev/",
+      "github": "https://github.com/drawl99/portfolio"
+    },
+    {
       "name": "Erica Viveros",
       "isActive": true,
       "description": "Sitio web profesional para una consultora financiera y agente de seguros en Madrid, España. Incluye catálogo de servicios, agendamiento de citas y diseño moderno enfocado en confianza y claridad.",
