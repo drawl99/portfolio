@@ -218,6 +218,88 @@
       "icon": "simple-icons:astro",
       "level": "Intermedio",
       "keywords": ["Desarrollo Web", "Frontend", "SSR", "Generación Estática"]
+    },
+    {
+      "name": "React",
+      "icon": "simple-icons:react",
+      "level": "Intermedio",
+      "keywords": ["Frontend", "JavaScript", "Librería UI"]
+    },
+    {
+      "name": "React Native",
+      "icon": "simple-icons:react",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Móvil", "Multiplataforma", "iOS", "Android"]
+    },
+    {
+      "name": "Expo",
+      "icon": "simple-icons:expo",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Móvil", "React Native", "Multiplataforma"]
+    },
+    {
+      "name": "Zustand",
+      "icon": "simple-icons:react",
+      "level": "Intermedio",
+      "keywords": ["Gestión de Estado", "React"]
+    },
+    {
+      "name": "Convex",
+      "icon": "simple-icons:convex",
+      "level": "Intermedio",
+      "keywords": ["Backend", "Serverless", "Base de Datos"]
+    },
+    {
+      "name": "Jest",
+      "icon": "simple-icons:jest",
+      "level": "Intermedio",
+      "keywords": ["Testing", "Pruebas Unitarias", "JavaScript"]
+    },
+    {
+      "name": "AI Agents",
+      "icon": "simple-icons:openai",
+      "level": "Intermedio",
+      "keywords": ["IA", "Agentes", "Automatización", "LLM"]
+    },
+    {
+      "name": "Agent Orchestration",
+      "icon": "simple-icons:microsoftazure",
+      "level": "Intermedio",
+      "keywords": [
+        "Sistemas Multi-agente",
+        "Coordinación",
+        "Automatización de Flujos"
+      ]
+    },
+    {
+      "name": "OpenCode",
+      "icon": "simple-icons:openai",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo con IA",
+        "Flujos de Agentes",
+        "Generación de Código"
+      ]
+    },
+    {
+      "name": "Skills.sh",
+      "icon": "simple-icons:gnubash",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo de Skills",
+        "Automatización con IA",
+        "Herramientas CLI"
+      ]
+    },
+    {
+      "name": "Agents.md",
+      "icon": "simple-icons:markdown",
+      "level": "Intermedio",
+      "keywords": [
+        "Documentación de Agentes",
+        "Colaboración con IA",
+        "Ingeniería de Prompts"
+      ]
     }
   ],
   "languages": [
@@ -253,7 +335,7 @@
         "GSAP": "simple-icons:greensock",
         "Cloudflare Pages": "simple-icons:cloudflare"
       },
-      "url": "https://portfolio.andresgiraldo.dev/",
+      "url": "https://portfolio-5rl.pages.dev/",
       "github": "https://github.com/drawl99/portfolio"
     },
     {
@@ -321,7 +403,7 @@
         "PostgreSQL": "simple-icons:postgresql",
         "Node.js": "ri:nodejs-line"
       },
-      "url": "https://controlo-landing-astro.netlify.app/"
+      "url": "https://controlo.co/"
     },
     {
       "name": "Parking Mobile",
@@ -342,6 +424,43 @@
         "Netlify": "simple-icons:netlify"
       },
       "url": "https://parkingmobile.co/"
+    },
+    {
+      "name": "RewardsApp Landing",
+      "isActive": true,
+      "description": "Landing page moderna para una aplicación móvil de recompensas diseñada para gamers competitivos, con estética dark theme y diseño mobile-first.",
+      "highlights": [
+        "Diseño responsive con tema oscuro",
+        "Enfoque mobile-first",
+        "Animaciones suaves con soporte para prefers-reduced-motion"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "Tailwind": "mdi:tailwind"
+      },
+      "url": "https://landing-rewards.pages.dev/",
+      "github": "https://github.com/drawl99/landing-rewards"
+    },
+    {
+      "name": "RewardsApp",
+      "isActive": false,
+      "description": "Plataforma de recompensas basada en misiones para jugadores de Valorant. Totalmente construida con IA usando orquestación de agentes OpenCode. Full Stack Contributor en una app móvil multiplataforma que sincroniza con cuentas de Riot Games para rastrear rendimiento y recompensar misiones completadas.",
+      "highlights": [
+        "Totalmente construida con agentes de IA y orquestación",
+        "App móvil multiplataforma (iOS, Android, Web)",
+        "Integración con cuentas de Riot Games y sincronización en tiempo real",
+        "Sistema de misiones con más de 90 misiones diarias",
+        "Leaderboard global y sistema de recompensas"
+      ],
+      "stack": {
+        "React Native": "simple-icons:react",
+        "Expo": "simple-icons:expo",
+        "TypeScript": "simple-icons:typescript",
+        "Convex": "simple-icons:convex",
+        "Zustand": "simple-icons:react",
+        "Jest": "simple-icons:jest",
+        "AI Agents": "simple-icons:openai"
+      }
     }
   ]
 }

@@ -203,6 +203,76 @@
       "icon": "simple-icons:astro",
       "level": "Intermediate",
       "keywords": ["Web Development", "Frontend", "SSR", "Static Generation"]
+    },
+    {
+      "name": "React",
+      "icon": "simple-icons:react",
+      "level": "Intermediate",
+      "keywords": ["Frontend", "JavaScript", "UI Library"]
+    },
+    {
+      "name": "React Native",
+      "icon": "simple-icons:react",
+      "level": "Intermediate",
+      "keywords": ["Mobile Development", "Cross-platform", "iOS", "Android"]
+    },
+    {
+      "name": "Expo",
+      "icon": "simple-icons:expo",
+      "level": "Intermediate",
+      "keywords": ["Mobile Development", "React Native", "Cross-platform"]
+    },
+    {
+      "name": "Zustand",
+      "icon": "simple-icons:react",
+      "level": "Intermediate",
+      "keywords": ["State Management", "React"]
+    },
+    {
+      "name": "Convex",
+      "icon": "simple-icons:convex",
+      "level": "Intermediate",
+      "keywords": ["Backend", "Serverless", "Database"]
+    },
+    {
+      "name": "Jest",
+      "icon": "simple-icons:jest",
+      "level": "Intermediate",
+      "keywords": ["Testing", "Unit Tests", "JavaScript"]
+    },
+    {
+      "name": "AI Agents",
+      "icon": "simple-icons:openai",
+      "level": "Intermediate",
+      "keywords": ["AI", "Agents", "Automation", "LLM"]
+    },
+    {
+      "name": "Agent Orchestration",
+      "icon": "simple-icons:microsoftazure",
+      "level": "Intermediate",
+      "keywords": ["Multi-agent Systems", "Coordination", "Workflow Automation"]
+    },
+    {
+      "name": "OpenCode",
+      "icon": "simple-icons:openai",
+      "level": "Intermediate",
+      "keywords": ["AI Development", "Agent Workflows", "Code Generation"]
+    },
+    {
+      "name": "Skills.sh",
+      "icon": "simple-icons:gnubash",
+      "level": "Intermediate",
+      "keywords": ["Skill Development", "AI Automation", "CLI Tools"]
+    },
+    {
+      "name": "Agents.md",
+      "icon": "simple-icons:markdown",
+      "level": "Intermediate",
+      "keywords": [
+        "Agent Documentation",
+        "AI Collaboration",
+        "Prompt Engineering"
+      ]
     }
   ],
   "languages": [
@@ -238,7 +308,7 @@
         "GSAP": "simple-icons:greensock",
         "Cloudflare Pages": "simple-icons:cloudflare"
       },
-      "url": "https://portfolio.andresgiraldo.dev/",
+      "url": "https://portfolio-5rl.pages.dev/",
       "github": "https://github.com/drawl99/portfolio"
     },
     {
@@ -306,7 +376,7 @@
         "PostgreSQL": "simple-icons:postgresql",
         "Node.js": "ri:nodejs-line"
       },
-      "url": "https://controlo-landing-astro.netlify.app/"
+      "url": "https://controlo.co/"
     },
     {
       "name": "Parking Mobile",
@@ -327,6 +397,43 @@
         "Netlify": "simple-icons:netlify"
       },
       "url": "https://parkingmobile.co/"
+    },
+    {
+      "name": "RewardsApp Landing",
+      "isActive": true,
+      "description": "Modern landing page for a mobile rewards app designed for competitive gamers, featuring dark theme aesthetics and mobile-first design.",
+      "highlights": [
+        "Responsive dark theme design",
+        "Mobile-first approach",
+        "Smooth animations with prefers-reduced-motion support"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "Tailwind": "mdi:tailwind"
+      },
+      "url": "https://landing-rewards.pages.dev/",
+      "github": "https://github.com/drawl99/landing-rewards"
+    },
+    {
+      "name": "RewardsApp",
+      "isActive": false,
+      "description": "Mission-based gaming rewards platform for Valorant players. Fully AI-built cross-platform mobile app using OpenCode agent orchestration. Full Stack Contributor on a project that syncs with Riot Games accounts to track player performance and reward mission completion.",
+      "highlights": [
+        "Fully built with AI agents and orchestration",
+        "Cross-platform mobile app (iOS, Android, Web)",
+        "Riot Games account integration with real-time match sync",
+        "Mission system with 90+ daily missions",
+        "Global leaderboard and rewards system"
+      ],
+      "stack": {
+        "React Native": "simple-icons:react",
+        "Expo": "simple-icons:expo",
+        "TypeScript": "simple-icons:typescript",
+        "Convex": "simple-icons:convex",
+        "Zustand": "simple-icons:react",
+        "Jest": "simple-icons:jest",
+        "AI Agents": "simple-icons:openai"
+      }
     }
   ]
 }
