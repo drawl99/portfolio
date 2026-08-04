@@ -256,6 +256,30 @@
       "keywords": ["Testing", "Pruebas Unitarias", "JavaScript"]
     },
     {
+      "name": "Drizzle ORM",
+      "icon": "simple-icons:drizzle",
+      "level": "Avanzado",
+      "keywords": ["Backend", "Bases de Datos", "ORM", "TypeScript"]
+    },
+    {
+      "name": "Stripe",
+      "icon": "simple-icons:stripe",
+      "level": "Intermedio",
+      "keywords": ["Pagos", "Backend", "Integraciones", "Facturación"]
+    },
+    {
+      "name": "Medusa",
+      "icon": "simple-icons:medusa",
+      "level": "Intermedio",
+      "keywords": ["Ecommerce", "Comercio Headless", "Backend", "Node.js"]
+    },
+    {
+      "name": "Pinia",
+      "icon": "simple-icons:pinia",
+      "level": "Avanzado",
+      "keywords": ["Manejo de Estado", "Vue", "Frontend"]
+    },
+    {
       "name": "AI Agents",
       "icon": "simple-icons:openai",
       "level": "Intermedio",
@@ -339,6 +363,81 @@
       "github": "https://github.com/drawl99/portfolio"
     },
     {
+      "name": "Viveros Chess",
+      "isActive": true,
+      "description": "Plataforma web para un ecosistema de ajedrez: una escuela de ajedrez con reserva de clases en línea, torneos y área de miembros. App full-stack en Nuxt 4 con panel de administración autenticado, pagos con Stripe, correos transaccionales y almacenamiento de imágenes en Cloudflare R2.",
+      "highlights": [
+        "Academia de ajedrez con reserva y agendamiento de clases en línea",
+        "Integración de pagos con Stripe para inscripciones",
+        "Panel de administración autenticado con sesiones selladas",
+        "Correos transaccionales con Resend (reservas y alertas)",
+        "Carga de imágenes a Cloudflare R2",
+        "PostgreSQL con Drizzle ORM y migraciones tipadas",
+        "Desplegado en Railway con migraciones automatizadas en CI"
+      ],
+      "stack": {
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Drizzle": "simple-icons:drizzle",
+        "Stripe": "simple-icons:stripe",
+        "Railway": "simple-icons:railway"
+      },
+      "url": "https://viveros-chess-production.up.railway.app/",
+      "github": "https://github.com/drawl99/viveros-chess"
+    },
+    {
+      "name": "PrestaFy",
+      "isActive": true,
+      "description": "Gestor de préstamos personales que se siente más amigable que un banco pero toma el dinero en serio. Lleva el control del dinero prestado y recibido, cronogramas de pago y saldos mediante paneles claros y gráficos interactivos.",
+      "highlights": [
+        "Control de préstamos de dinero prestado y recibido",
+        "Cronogramas de pago y cálculo de saldos",
+        "Paneles y gráficos interactivos con Unovis",
+        "Sesiones multi-usuario autenticadas",
+        "PostgreSQL con Drizzle ORM",
+        "Manejo de estado con Pinia",
+        "Pruebas end-to-end con Playwright"
+      ],
+      "stack": {
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Drizzle": "simple-icons:drizzle",
+        "Pinia": "simple-icons:pinia"
+      },
+      "url": "https://prestafy-six.vercel.app/",
+      "github": "https://github.com/drawl99/prestafy"
+    },
+    {
+      "name": "Plataforma de Ecommerce",
+      "isActive": true,
+      "description": "Una plataforma de ecommerce modular que estoy construyendo con la visión de un producto tipo Shopify: pasarelas de pago y proveedores de envío conectables sobre un backend headless de Medusa y un storefront en Nuxt. Hoy funciona para un caso concreto (una marca independiente de cosméticos) mientras toma forma la visión más amplia basada en integraciones.",
+      "highlights": [
+        "Backend de comercio headless con Medusa",
+        "Storefront en Nuxt 4 (Vue + Pinia) mediante el SDK JS de Medusa",
+        "Diseñado para integraciones de pasarelas de pago conectables",
+        "Diseñado para integraciones de proveedores de envío",
+        "Soporte multi-región con detección automática de país",
+        "Monorepo con Turborepo y workspaces de pnpm",
+        "Primer caso real: una marca independiente de cosméticos"
+      ],
+      "stack": {
+        "Medusa": "simple-icons:medusa",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "Vue": "simple-icons:vuedotjs",
+        "Pinia": "simple-icons:pinia",
+        "TypeScript": "simple-icons:typescript",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Turborepo": "simple-icons:turborepo"
+      },
+      "github": "https://github.com/drawl99/ecommerce"
+    },
+    {
       "name": "Erica Viveros",
       "isActive": true,
       "description": "Sitio web profesional para una consultora financiera y agente de seguros en Madrid, España. Incluye catálogo de servicios, agendamiento de citas y diseño moderno enfocado en confianza y claridad.",
@@ -363,45 +462,52 @@
     {
       "name": "Exploreti",
       "isActive": true,
-      "description": "Plataforma de ecommerce turístico para Colombia. Marketplace para compra de entradas a parques, atracciones, aventuras y centros de entretenimiento en todo el país.",
+      "description": "Marketplace turístico full-stack para Colombia (Ideamosmas) donde los viajeros descubren, reservan y pagan experiencias — tours, parques y atracciones — ofrecidas por proveedores locales. Trabajo de punta a punta en una app Nuxt 4 con backend Drizzle/PostgreSQL, motor de disponibilidad en tiempo real, pagos seguros y un portal de proveedores para gestionar publicaciones y reservas.",
       "highlights": [
-        "Plataforma ecommerce para experiencias turísticas",
-        "Integración con plataformas de viajes internacionales",
-        "Reservas y pagos en tiempo real",
-        "Multi-categoría: Aventura, Parques, Deportes, Museos",
-        "Herramientas de captación digital de clientes",
-        "Diseño responsivo móvil"
+        "App full-stack Nuxt 4 (SSR + Nitro) con Drizzle ORM sobre PostgreSQL 16",
+        "Motor de reservas por franjas con disponibilidad en tiempo real y bloqueos atómicos de inventario",
+        "Múltiples métodos de pago (ePayco, PSE, Google Pay) con trabajos de conciliación",
+        "Autenticación dual cliente/proveedor con OAuth (Google, Apple, Facebook)",
+        "Portal de proveedores: publicaciones, disponibilidad, reservas, pagos y escaneo de tickets QR",
+        "Motor de marketing: cupones, ofertas flash, gift cards, referidos y colecciones",
+        "Vouchers QR firmados con HMAC y una Sync API para partners (HMAC-SHA256)",
+        "Multi-idioma (ES/EN/FR) con SEO: JSON-LD, sitemaps y caché ISR"
       ],
       "stack": {
-        "Vue": "simple-icons:vuedotjs",
         "Nuxt": "simple-icons:nuxtdotjs",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
         "Tailwind": "mdi:tailwind",
-        "Java": "ri:java-line",
-        "Spring Boot": "simple-icons:springboot",
-        "MySQL": "simple-icons:mysql"
+        "Drizzle": "simple-icons:drizzle",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Redis": "simple-icons:redis",
+        "Azure": "simple-icons:microsoftazure"
       },
       "url": "https://exploreti.com/"
     },
     {
       "name": "Controlo",
       "isActive": true,
-      "description": "Sistema B2B de reservas y venta de entradas que conecta múltiples canales de venta. Ayuda a empresas a incrementar ingresos en 25% y reducir costos operativos en 20%, procesando más de 200,000 tickets mensuales.",
+      "description": "Plataforma B2B de venta de entradas, control de acceso y punto de venta para eventos y recintos (Ideamosmas), en proceso de reconstrucción como sistema de microservicios cloud-native. Trabajo en todo el stack — servicios event-driven en Java 21 / Spring Boot 4 sobre Azure más un back-office en Nuxt 4 — que habilita ventas multi-canal (POS, web, kiosco, móvil) con validación de tickets QR en tiempo real.",
       "highlights": [
-        "Integración multi-canal de ventas (POS, web, kioscos)",
-        "Monitoreo y reportes de ventas en tiempo real",
-        "Gestión personalizada de tarifas y usuarios",
-        "Integración de pasarelas de pago",
-        "Herramientas de automatización de marketing",
-        "Personalización web marca blanca"
+        "Microservicios event-driven (Java 21, Spring Boot 4) en Azure Container Apps",
+        "Base de datos por servicio sobre PostgreSQL 16 con multi-tenancy estricto",
+        "Autenticación JWT RS256 propia con control de acceso por roles y permisos",
+        "Mensajería asíncrona vía Azure Service Bus con patrón outbox transaccional",
+        "Validación de tickets QR en tiempo real con caché en memoria (Caffeine)",
+        "Ventas multi-canal unificadas: POS, web, kiosco y móvil (PDA)",
+        "Facturación electrónica compatible con DIAN para Colombia",
+        "Back-office Nuxt 4 + Nuxt UI con patrón BFF (JWT del lado servidor)"
       ],
       "stack": {
-        "Vue": "simple-icons:vuedotjs",
-        "Nuxt": "simple-icons:nuxtdotjs",
-        "Tailwind": "mdi:tailwind",
         "Java": "ri:java-line",
         "Spring Boot": "simple-icons:springboot",
         "PostgreSQL": "simple-icons:postgresql",
-        "Node.js": "ri:nodejs-line"
+        "Azure": "simple-icons:microsoftazure",
+        "Redis": "simple-icons:redis",
+        "Docker": "simple-icons:docker",
+        "Nuxt": "simple-icons:nuxtdotjs",
+        "TypeScript": "simple-icons:typescript"
       },
       "url": "https://controlo.co/"
     },
