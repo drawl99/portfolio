@@ -90,19 +90,33 @@
       "name": "Java",
       "icon": "ri:java-line",
       "level": "Avanzado",
-      "keywords": ["Backend", "Microservicios", "Spring Boot"]
+      "keywords": [
+        "Backend",
+        "Microservicios",
+        "Spring Boot"
+      ]
     },
     {
       "name": "Spring Boot",
       "icon": "simple-icons:springboot",
       "level": "Avanzado",
-      "keywords": ["Backend", "Microservicios", "Java", "REST API"]
+      "keywords": [
+        "Backend",
+        "Microservicios",
+        "Java",
+        "REST API"
+      ]
     },
     {
       "name": "Node.js",
       "icon": "ri:nodejs-line",
       "level": "Avanzado",
-      "keywords": ["Backend", "JavaScript", "Servidor", "REST API"]
+      "keywords": [
+        "Backend",
+        "JavaScript",
+        "Servidor",
+        "REST API"
+      ]
     },
     {
       "name": "MySQL",
@@ -130,19 +144,32 @@
       "name": "Vue",
       "icon": "simple-icons:vuedotjs",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "Framework JavaScript"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Framework JavaScript"
+      ]
     },
     {
       "name": "Nuxt",
       "icon": "simple-icons:nuxt",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "SSR", "Vue"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "SSR",
+        "Vue"
+      ]
     },
     {
       "name": "Angular",
       "icon": "simple-icons:angular",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "Framework TypeScript"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Framework TypeScript"
+      ]
     },
     {
       "name": "Tailwind",
@@ -170,37 +197,61 @@
       "name": "JavaScript",
       "icon": "simple-icons:javascript",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
     },
     {
       "name": "HTML",
       "icon": "simple-icons:html5",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
     },
     {
       "name": "CSS",
       "icon": "ri:css3-fill",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsivo"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsivo"
+      ]
     },
     {
       "name": "Azure",
       "icon": "simple-icons:microsoftazure",
       "level": "Intermedio",
-      "keywords": ["Cloud Computing", "DevOps", "Infraestructura"]
+      "keywords": [
+        "Cloud Computing",
+        "DevOps",
+        "Infraestructura"
+      ]
     },
     {
       "name": "CI/CD",
       "icon": "simple-icons:azurepipelines",
       "level": "Intermedio",
-      "keywords": ["DevOps", "Automatización", "Despliegue"]
+      "keywords": [
+        "DevOps",
+        "Automatización",
+        "Despliegue"
+      ]
     },
     {
       "name": "Git",
       "icon": "mdi:git",
       "level": "Avanzado",
-      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
     },
     {
       "name": "GitHub",
@@ -217,73 +268,126 @@
       "name": "Astro",
       "icon": "simple-icons:astro",
       "level": "Intermedio",
-      "keywords": ["Desarrollo Web", "Frontend", "SSR", "Generación Estática"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "SSR",
+        "Generación Estática"
+      ]
     },
     {
       "name": "React",
       "icon": "simple-icons:react",
       "level": "Intermedio",
-      "keywords": ["Frontend", "JavaScript", "Librería UI"]
+      "keywords": [
+        "Frontend",
+        "JavaScript",
+        "Librería UI"
+      ]
     },
     {
       "name": "React Native",
       "icon": "simple-icons:react",
       "level": "Intermedio",
-      "keywords": ["Desarrollo Móvil", "Multiplataforma", "iOS", "Android"]
+      "keywords": [
+        "Desarrollo Móvil",
+        "Multiplataforma",
+        "iOS",
+        "Android"
+      ]
     },
     {
       "name": "Expo",
       "icon": "simple-icons:expo",
       "level": "Intermedio",
-      "keywords": ["Desarrollo Móvil", "React Native", "Multiplataforma"]
+      "keywords": [
+        "Desarrollo Móvil",
+        "React Native",
+        "Multiplataforma"
+      ]
     },
     {
       "name": "Zustand",
       "icon": "simple-icons:react",
       "level": "Intermedio",
-      "keywords": ["Gestión de Estado", "React"]
+      "keywords": [
+        "Gestión de Estado",
+        "React"
+      ]
     },
     {
       "name": "Convex",
       "icon": "simple-icons:convex",
       "level": "Intermedio",
-      "keywords": ["Backend", "Serverless", "Base de Datos"]
+      "keywords": [
+        "Backend",
+        "Serverless",
+        "Base de Datos"
+      ]
     },
     {
       "name": "Jest",
       "icon": "simple-icons:jest",
       "level": "Intermedio",
-      "keywords": ["Testing", "Pruebas Unitarias", "JavaScript"]
+      "keywords": [
+        "Testing",
+        "Pruebas Unitarias",
+        "JavaScript"
+      ]
     },
     {
       "name": "Drizzle ORM",
       "icon": "simple-icons:drizzle",
       "level": "Avanzado",
-      "keywords": ["Backend", "Bases de Datos", "ORM", "TypeScript"]
+      "keywords": [
+        "Backend",
+        "Bases de Datos",
+        "ORM",
+        "TypeScript"
+      ]
     },
     {
       "name": "Stripe",
       "icon": "simple-icons:stripe",
       "level": "Intermedio",
-      "keywords": ["Pagos", "Backend", "Integraciones", "Facturación"]
+      "keywords": [
+        "Pagos",
+        "Backend",
+        "Integraciones",
+        "Facturación"
+      ]
     },
     {
       "name": "Medusa",
       "icon": "simple-icons:medusa",
       "level": "Intermedio",
-      "keywords": ["Ecommerce", "Comercio Headless", "Backend", "Node.js"]
+      "keywords": [
+        "Ecommerce",
+        "Comercio Headless",
+        "Backend",
+        "Node.js"
+      ]
     },
     {
       "name": "Pinia",
       "icon": "simple-icons:pinia",
       "level": "Avanzado",
-      "keywords": ["Manejo de Estado", "Vue", "Frontend"]
+      "keywords": [
+        "Manejo de Estado",
+        "Vue",
+        "Frontend"
+      ]
     },
     {
       "name": "AI Agents",
       "icon": "simple-icons:openai",
       "level": "Intermedio",
-      "keywords": ["IA", "Agentes", "Automatización", "LLM"]
+      "keywords": [
+        "IA",
+        "Agentes",
+        "Automatización",
+        "LLM"
+      ]
     },
     {
       "name": "Agent Orchestration",
@@ -338,29 +442,76 @@
   ],
   "projects": [
     {
-      "name": "Portfolio",
+      "name": "Controlo",
       "isActive": true,
-      "description": "Sitio web de portafolio personal que muestra experiencia profesional, proyectos y habilidades técnicas. Construido con tecnologías web modernas para un rendimiento y experiencia de usuario óptimos.",
+      "description": "Plataforma B2B de venta de entradas, control de acceso y punto de venta para eventos y recintos (Ideamosmas), en proceso de reconstrucción como sistema de microservicios cloud-native. Trabajo en todo el stack — servicios event-driven en Java 21 / Spring Boot 4 sobre Azure más un back-office en Nuxt 4 — que habilita ventas multi-canal (POS, web, kiosco, móvil) con validación de tickets QR en tiempo real.",
       "highlights": [
-        "Renderizado del lado del servidor con Astro",
-        "Animaciones interactivas con GSAP",
-        "Efectos de partículas y transiciones suaves",
-        "Soporte multi-idioma (Inglés/Español)",
-        "Diseño responsivo con Tailwind CSS",
-        "Integración con React 19 para componentes dinámicos",
-        "Optimizado para rendimiento y SEO",
-        "Desplegado en Cloudflare Pages"
+        "Microservicios event-driven (Java 21, Spring Boot 4) en Azure Container Apps",
+        "Base de datos por servicio sobre PostgreSQL 16 con multi-tenancy estricto",
+        "Autenticación JWT RS256 propia con control de acceso por roles y permisos",
+        "Mensajería asíncrona vía Azure Service Bus con patrón outbox transaccional",
+        "Validación de tickets QR en tiempo real con caché en memoria (Caffeine)",
+        "Ventas multi-canal unificadas: POS, web, kiosco y móvil (PDA)",
+        "Facturación electrónica compatible con DIAN para Colombia",
+        "Back-office Nuxt 4 + Nuxt UI con patrón BFF (JWT del lado servidor)"
+      ],
+      "stack": {
+        "Java": "ri:java-line",
+        "Spring Boot": "simple-icons:springboot",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Azure": "simple-icons:microsoftazure",
+        "Redis": "simple-icons:redis",
+        "Docker": "simple-icons:docker",
+        "Nuxt": "simple-icons:nuxt",
+        "TypeScript": "simple-icons:typescript"
+      },
+      "url": "https://controlo.co/"
+    },
+    {
+      "name": "Exploreti",
+      "isActive": true,
+      "description": "Marketplace turístico full-stack para Colombia (Ideamosmas) donde los viajeros descubren, reservan y pagan experiencias — tours, parques y atracciones — ofrecidas por proveedores locales. Trabajo de punta a punta en una app Nuxt 4 con backend Drizzle/PostgreSQL, motor de disponibilidad en tiempo real, pagos seguros y un portal de proveedores para gestionar publicaciones y reservas.",
+      "highlights": [
+        "App full-stack Nuxt 4 (SSR + Nitro) con Drizzle ORM sobre PostgreSQL 16",
+        "Motor de reservas por franjas con disponibilidad en tiempo real y bloqueos atómicos de inventario",
+        "Múltiples métodos de pago (ePayco, PSE, Google Pay) con trabajos de conciliación",
+        "Autenticación dual cliente/proveedor con OAuth (Google, Apple, Facebook)",
+        "Portal de proveedores: publicaciones, disponibilidad, reservas, pagos y escaneo de tickets QR",
+        "Motor de marketing: cupones, ofertas flash, gift cards, referidos y colecciones",
+        "Vouchers QR firmados con HMAC y una Sync API para partners (HMAC-SHA256)",
+        "Multi-idioma (ES/EN/FR) con SEO: JSON-LD, sitemaps y caché ISR"
+      ],
+      "stack": {
+        "Nuxt": "simple-icons:nuxt",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "Drizzle": "simple-icons:drizzle",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Redis": "simple-icons:redis",
+        "Azure": "simple-icons:microsoftazure"
+      },
+      "url": "https://exploreti.com/"
+    },
+    {
+      "name": "Parking Mobile",
+      "isActive": true,
+      "description": "Software de gestión inteligente de parqueaderos usado por más de 100 empresas en Colombia. Gestiona más de 2 millones de bahías mensuales y 1 millón de transacciones online anuales, reduciendo costos operativos de clientes en 20%.",
+      "highlights": [
+        "Automatización completa con integración de cámaras LPR",
+        "Sistema de parqueo sin ticket",
+        "Reportes en tiempo real basados en la nube",
+        "Facturación electrónica (compatible DIAN)",
+        "Integración de pagos móviles",
+        "Gestión centralizada multi-ubicación"
       ],
       "stack": {
         "Astro": "simple-icons:astro",
-        "React": "simple-icons:react",
-        "TypeScript": "simple-icons:typescript",
         "Tailwind": "mdi:tailwind",
-        "GSAP": "simple-icons:greensock",
-        "Cloudflare Pages": "simple-icons:cloudflare"
+        "TypeScript": "simple-icons:typescript",
+        "Netlify": "simple-icons:netlify"
       },
-      "url": "https://portfolio-5rl.pages.dev/",
-      "github": "https://github.com/drawl99/portfolio"
+      "url": "https://parkingmobile.co/"
     },
     {
       "name": "Viveros Chess",
@@ -460,76 +611,29 @@
       "github": "https://github.com/drawl99/erica-viveros"
     },
     {
-      "name": "Exploreti",
+      "name": "Portfolio",
       "isActive": true,
-      "description": "Marketplace turístico full-stack para Colombia (Ideamosmas) donde los viajeros descubren, reservan y pagan experiencias — tours, parques y atracciones — ofrecidas por proveedores locales. Trabajo de punta a punta en una app Nuxt 4 con backend Drizzle/PostgreSQL, motor de disponibilidad en tiempo real, pagos seguros y un portal de proveedores para gestionar publicaciones y reservas.",
+      "description": "Sitio web de portafolio personal que muestra experiencia profesional, proyectos y habilidades técnicas. Construido con tecnologías web modernas para un rendimiento y experiencia de usuario óptimos.",
       "highlights": [
-        "App full-stack Nuxt 4 (SSR + Nitro) con Drizzle ORM sobre PostgreSQL 16",
-        "Motor de reservas por franjas con disponibilidad en tiempo real y bloqueos atómicos de inventario",
-        "Múltiples métodos de pago (ePayco, PSE, Google Pay) con trabajos de conciliación",
-        "Autenticación dual cliente/proveedor con OAuth (Google, Apple, Facebook)",
-        "Portal de proveedores: publicaciones, disponibilidad, reservas, pagos y escaneo de tickets QR",
-        "Motor de marketing: cupones, ofertas flash, gift cards, referidos y colecciones",
-        "Vouchers QR firmados con HMAC y una Sync API para partners (HMAC-SHA256)",
-        "Multi-idioma (ES/EN/FR) con SEO: JSON-LD, sitemaps y caché ISR"
-      ],
-      "stack": {
-        "Nuxt": "simple-icons:nuxt",
-        "Vue": "simple-icons:vuedotjs",
-        "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "Drizzle": "simple-icons:drizzle",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Redis": "simple-icons:redis",
-        "Azure": "simple-icons:microsoftazure"
-      },
-      "url": "https://exploreti.com/"
-    },
-    {
-      "name": "Controlo",
-      "isActive": true,
-      "description": "Plataforma B2B de venta de entradas, control de acceso y punto de venta para eventos y recintos (Ideamosmas), en proceso de reconstrucción como sistema de microservicios cloud-native. Trabajo en todo el stack — servicios event-driven en Java 21 / Spring Boot 4 sobre Azure más un back-office en Nuxt 4 — que habilita ventas multi-canal (POS, web, kiosco, móvil) con validación de tickets QR en tiempo real.",
-      "highlights": [
-        "Microservicios event-driven (Java 21, Spring Boot 4) en Azure Container Apps",
-        "Base de datos por servicio sobre PostgreSQL 16 con multi-tenancy estricto",
-        "Autenticación JWT RS256 propia con control de acceso por roles y permisos",
-        "Mensajería asíncrona vía Azure Service Bus con patrón outbox transaccional",
-        "Validación de tickets QR en tiempo real con caché en memoria (Caffeine)",
-        "Ventas multi-canal unificadas: POS, web, kiosco y móvil (PDA)",
-        "Facturación electrónica compatible con DIAN para Colombia",
-        "Back-office Nuxt 4 + Nuxt UI con patrón BFF (JWT del lado servidor)"
-      ],
-      "stack": {
-        "Java": "ri:java-line",
-        "Spring Boot": "simple-icons:springboot",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Azure": "simple-icons:microsoftazure",
-        "Redis": "simple-icons:redis",
-        "Docker": "simple-icons:docker",
-        "Nuxt": "simple-icons:nuxt",
-        "TypeScript": "simple-icons:typescript"
-      },
-      "url": "https://controlo.co/"
-    },
-    {
-      "name": "Parking Mobile",
-      "isActive": true,
-      "description": "Software de gestión inteligente de parqueaderos usado por más de 100 empresas en Colombia. Gestiona más de 2 millones de bahías mensuales y 1 millón de transacciones online anuales, reduciendo costos operativos de clientes en 20%.",
-      "highlights": [
-        "Automatización completa con integración de cámaras LPR",
-        "Sistema de parqueo sin ticket",
-        "Reportes en tiempo real basados en la nube",
-        "Facturación electrónica (compatible DIAN)",
-        "Integración de pagos móviles",
-        "Gestión centralizada multi-ubicación"
+        "Renderizado del lado del servidor con Astro",
+        "Animaciones interactivas con GSAP",
+        "Efectos de partículas y transiciones suaves",
+        "Soporte multi-idioma (Inglés/Español)",
+        "Diseño responsivo con Tailwind CSS",
+        "Integración con React 19 para componentes dinámicos",
+        "Optimizado para rendimiento y SEO",
+        "Desplegado en Cloudflare Pages"
       ],
       "stack": {
         "Astro": "simple-icons:astro",
-        "Tailwind": "mdi:tailwind",
+        "React": "simple-icons:react",
         "TypeScript": "simple-icons:typescript",
-        "Netlify": "simple-icons:netlify"
+        "Tailwind": "mdi:tailwind",
+        "GSAP": "simple-icons:greensock",
+        "Cloudflare Pages": "simple-icons:cloudflare"
       },
-      "url": "https://parkingmobile.co/"
+      "url": "https://portfolio-5rl.pages.dev/",
+      "github": "https://github.com/drawl99/portfolio"
     },
     {
       "name": "RewardsApp Landing",

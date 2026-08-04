@@ -52,6 +52,15 @@ const { city, region, address } = location
               </div>
             </div>
           </div>
+          <span
+            class="mt-2 inline-flex items-center gap-1.5 rounded-full bg-skin-muted px-2.5 py-0.5 text-xs font-medium text-skin-base ring-1 ring-skin-muted print:hidden"
+          >
+            <span class="relative flex size-2">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
+              <span class="relative inline-flex size-2 rounded-full bg-green-500"></span>
+            </span>
+            {t('hero.available')}
+          </span>
         </div>
       </div>
       <div data-ccursor="noPadding" class='flex w-max gap-2 py-1 px-2 text-sm text-skin-muted'>

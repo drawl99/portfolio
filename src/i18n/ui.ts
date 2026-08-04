@@ -26,6 +26,7 @@ export const ui = {
     // Hero section
     "hero.openOptions": "Open options",
     "hero.contact": "Contact:",
+    "hero.available": "Available for work",
 
     // Projects section
     "projects.viewOn": "View {name} in GitHub",
@@ -53,6 +54,7 @@ export const ui = {
     // Hero section
     "hero.openOptions": "Abrir opciones",
     "hero.contact": "Contacto:",
+    "hero.available": "Disponible para trabajar",
 
     // Projects section
     "projects.viewOn": "Ver {name} en GitHub",

@@ -16,7 +16,7 @@ const projects = getProjects(lang);
           return (
             <div
               role="contentinfo"
-              class="grid-span-1 group relative flex min-h-80 flex-col overflow-hidden rounded-md bg-skin-button-muted/50 p-5 shadow-sm ring-1 ring-skin-muted sm:hover:ring-2 sm:hover:ring-skin-hue sm:hover:bg-skin-muted transition-all duration-250 ease-in-out"
+              class="grid-span-1 group relative flex min-h-80 flex-col overflow-hidden rounded-md bg-skin-button-muted/50 p-5 shadow-sm ring-1 ring-skin-muted sm:hover:ring-2 sm:hover:ring-skin-hue sm:hover:bg-skin-muted sm:hover:-translate-y-1 sm:hover:shadow-md transition-all duration-250 ease-in-out"
             >
               <div
                 class='relative z-10 flex items-center justify-between space-x-[10px]'
@@ -66,8 +66,8 @@ const projects = getProjects(lang);
                 })}
               </ul>
               
-              <ul class="flex print:hidden flex-wrap gap-2 mt-4" aria-label={t('projects.technologies')}>
-                {stack && Object.entries(stack).map(([label, icon]) => (
+              <ul class="flex print:hidden flex-wrap gap-2 mt-auto pt-4" aria-label={t('projects.technologies')}>
+                {stack && Object.entries(stack).slice(0, 5).map(([label, icon]) => (
                   <li data-ccursor="lift" class="border-skin-hue/60 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs backdrop-blur-sm group/stack">
                     {icon &&
                       <span class="flex gap-1">
@@ -76,6 +76,14 @@ const projects = getProjects(lang);
                     }
                   </li>
                 ))}
+                {stack && Object.entries(stack).length > 5 && (
+                  <li
+                    class="border-skin-hue/40 text-skin-muted flex items-center rounded-md border px-2 py-0.5 text-xs"
+                    title={Object.keys(stack).slice(5).join(', ')}
+                  >
+                    +{Object.entries(stack).length - 5}
+                  </li>
+                )}
               </ul>
             </div>
           );

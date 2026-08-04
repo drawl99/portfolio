@@ -90,49 +90,86 @@
       "name": "Java",
       "icon": "ri:java-line",
       "level": "Advanced",
-      "keywords": ["Backend", "Microservices", "Spring Boot"]
+      "keywords": [
+        "Backend",
+        "Microservices",
+        "Spring Boot"
+      ]
     },
     {
       "name": "Spring Boot",
       "icon": "simple-icons:springboot",
       "level": "Advanced",
-      "keywords": ["Backend", "Microservices", "Java", "REST API"]
+      "keywords": [
+        "Backend",
+        "Microservices",
+        "Java",
+        "REST API"
+      ]
     },
     {
       "name": "Node.js",
       "icon": "ri:nodejs-line",
       "level": "Advanced",
-      "keywords": ["Backend", "JavaScript", "Server", "REST API"]
+      "keywords": [
+        "Backend",
+        "JavaScript",
+        "Server",
+        "REST API"
+      ]
     },
     {
       "name": "MySQL",
       "icon": "simple-icons:mysql",
       "level": "Advanced",
-      "keywords": ["Backend", "Databases", "SQL", "Relational Database"]
+      "keywords": [
+        "Backend",
+        "Databases",
+        "SQL",
+        "Relational Database"
+      ]
     },
     {
       "name": "PostgreSQL",
       "icon": "simple-icons:postgresql",
       "level": "Advanced",
-      "keywords": ["Backend", "Databases", "SQL", "Relational Database"]
+      "keywords": [
+        "Backend",
+        "Databases",
+        "SQL",
+        "Relational Database"
+      ]
     },
     {
       "name": "Vue",
       "icon": "simple-icons:vuedotjs",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend", "JavaScript Framework"]
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Framework"
+      ]
     },
     {
       "name": "Nuxt",
       "icon": "simple-icons:nuxt",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend", "SSR", "Vue"]
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "SSR",
+        "Vue"
+      ]
     },
     {
       "name": "Angular",
       "icon": "simple-icons:angular",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend", "TypeScript Framework"]
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "TypeScript Framework"
+      ]
     },
     {
       "name": "Tailwind",
@@ -160,133 +197,227 @@
       "name": "JavaScript",
       "icon": "simple-icons:javascript",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
     },
     {
       "name": "HTML",
       "icon": "simple-icons:html5",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend"]
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
     },
     {
       "name": "CSS",
       "icon": "ri:css3-fill",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend", "Responsive Design"]
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
     },
     {
       "name": "Azure",
       "icon": "simple-icons:microsoftazure",
       "level": "Intermediate",
-      "keywords": ["Cloud Computing", "DevOps", "Infrastructure"]
+      "keywords": [
+        "Cloud Computing",
+        "DevOps",
+        "Infrastructure"
+      ]
     },
     {
       "name": "CI/CD",
       "icon": "simple-icons:azurepipelines",
       "level": "Intermediate",
-      "keywords": ["DevOps", "Automation", "Deployment"]
+      "keywords": [
+        "DevOps",
+        "Automation",
+        "Deployment"
+      ]
     },
     {
       "name": "Git",
       "icon": "mdi:git",
       "level": "Advanced",
-      "keywords": ["Version Control", "Collaboration", "Source Code"]
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
     },
     {
       "name": "GitHub",
       "icon": "mdi:github",
       "level": "Advanced",
-      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
     },
     {
       "name": "Astro",
       "icon": "simple-icons:astro",
       "level": "Intermediate",
-      "keywords": ["Web Development", "Frontend", "SSR", "Static Generation"]
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "SSR",
+        "Static Generation"
+      ]
     },
     {
       "name": "React",
       "icon": "simple-icons:react",
       "level": "Intermediate",
-      "keywords": ["Frontend", "JavaScript", "UI Library"]
+      "keywords": [
+        "Frontend",
+        "JavaScript",
+        "UI Library"
+      ]
     },
     {
       "name": "React Native",
       "icon": "simple-icons:react",
       "level": "Intermediate",
-      "keywords": ["Mobile Development", "Cross-platform", "iOS", "Android"]
+      "keywords": [
+        "Mobile Development",
+        "Cross-platform",
+        "iOS",
+        "Android"
+      ]
     },
     {
       "name": "Expo",
       "icon": "simple-icons:expo",
       "level": "Intermediate",
-      "keywords": ["Mobile Development", "React Native", "Cross-platform"]
+      "keywords": [
+        "Mobile Development",
+        "React Native",
+        "Cross-platform"
+      ]
     },
     {
       "name": "Zustand",
       "icon": "simple-icons:react",
       "level": "Intermediate",
-      "keywords": ["State Management", "React"]
+      "keywords": [
+        "State Management",
+        "React"
+      ]
     },
     {
       "name": "Convex",
       "icon": "simple-icons:convex",
       "level": "Intermediate",
-      "keywords": ["Backend", "Serverless", "Database"]
+      "keywords": [
+        "Backend",
+        "Serverless",
+        "Database"
+      ]
     },
     {
       "name": "Jest",
       "icon": "simple-icons:jest",
       "level": "Intermediate",
-      "keywords": ["Testing", "Unit Tests", "JavaScript"]
+      "keywords": [
+        "Testing",
+        "Unit Tests",
+        "JavaScript"
+      ]
     },
     {
       "name": "Drizzle ORM",
       "icon": "simple-icons:drizzle",
       "level": "Advanced",
-      "keywords": ["Backend", "Databases", "ORM", "TypeScript"]
+      "keywords": [
+        "Backend",
+        "Databases",
+        "ORM",
+        "TypeScript"
+      ]
     },
     {
       "name": "Stripe",
       "icon": "simple-icons:stripe",
       "level": "Intermediate",
-      "keywords": ["Payments", "Backend", "Integrations", "Billing"]
+      "keywords": [
+        "Payments",
+        "Backend",
+        "Integrations",
+        "Billing"
+      ]
     },
     {
       "name": "Medusa",
       "icon": "simple-icons:medusa",
       "level": "Intermediate",
-      "keywords": ["Ecommerce", "Headless Commerce", "Backend", "Node.js"]
+      "keywords": [
+        "Ecommerce",
+        "Headless Commerce",
+        "Backend",
+        "Node.js"
+      ]
     },
     {
       "name": "Pinia",
       "icon": "simple-icons:pinia",
       "level": "Advanced",
-      "keywords": ["State Management", "Vue", "Frontend"]
+      "keywords": [
+        "State Management",
+        "Vue",
+        "Frontend"
+      ]
     },
     {
       "name": "AI Agents",
       "icon": "simple-icons:openai",
       "level": "Intermediate",
-      "keywords": ["AI", "Agents", "Automation", "LLM"]
+      "keywords": [
+        "AI",
+        "Agents",
+        "Automation",
+        "LLM"
+      ]
     },
     {
       "name": "Agent Orchestration",
       "icon": "simple-icons:microsoftazure",
       "level": "Intermediate",
-      "keywords": ["Multi-agent Systems", "Coordination", "Workflow Automation"]
+      "keywords": [
+        "Multi-agent Systems",
+        "Coordination",
+        "Workflow Automation"
+      ]
     },
     {
       "name": "OpenCode",
       "icon": "simple-icons:openai",
       "level": "Intermediate",
-      "keywords": ["AI Development", "Agent Workflows", "Code Generation"]
+      "keywords": [
+        "AI Development",
+        "Agent Workflows",
+        "Code Generation"
+      ]
     },
     {
       "name": "Skills.sh",
       "icon": "simple-icons:gnubash",
       "level": "Intermediate",
-      "keywords": ["Skill Development", "AI Automation", "CLI Tools"]
+      "keywords": [
+        "Skill Development",
+        "AI Automation",
+        "CLI Tools"
+      ]
     },
     {
       "name": "Agents.md",
@@ -311,29 +442,76 @@
   ],
   "projects": [
     {
-      "name": "Portfolio",
+      "name": "Controlo",
       "isActive": true,
-      "description": "Personal portfolio website showcasing professional experience, projects, and technical skills. Built with modern web technologies for optimal performance and user experience.",
+      "description": "B2B ticketing, access-control, and point-of-sale platform for events and venues (Ideamosmas), being rebuilt as a cloud-native microservices system. I work across the stack — Java 21 / Spring Boot 4 event-driven services on Azure plus a Nuxt 4 back-office — powering multi-channel sales (POS, web, kiosk, mobile) with real-time QR ticket validation.",
       "highlights": [
-        "Server-Side Rendering with Astro",
-        "Interactive animations with GSAP",
-        "Particle effects and smooth transitions",
-        "Multi-language support (English/Spanish)",
-        "Responsive design with Tailwind CSS",
-        "React 19 integration for dynamic components",
-        "Optimized for performance and SEO",
-        "Deployed on Cloudflare Pages"
+        "Event-driven microservices (Java 21, Spring Boot 4) on Azure Container Apps",
+        "Database-per-service on PostgreSQL 16 with strict multi-tenancy",
+        "Custom RS256 JWT auth with role- and permission-based access control",
+        "Async messaging via Azure Service Bus with the transactional outbox pattern",
+        "Real-time QR ticket validation with in-memory (Caffeine) caching",
+        "Unified multi-channel sales: POS, web, kiosk, and mobile (PDA)",
+        "DIAN-compliant electronic invoicing for Colombia",
+        "Nuxt 4 + Nuxt UI back-office with a BFF (server-side JWT) pattern"
+      ],
+      "stack": {
+        "Java": "ri:java-line",
+        "Spring Boot": "simple-icons:springboot",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Azure": "simple-icons:microsoftazure",
+        "Redis": "simple-icons:redis",
+        "Docker": "simple-icons:docker",
+        "Nuxt": "simple-icons:nuxt",
+        "TypeScript": "simple-icons:typescript"
+      },
+      "url": "https://controlo.co/"
+    },
+    {
+      "name": "Exploreti",
+      "isActive": true,
+      "description": "Full-stack tourism marketplace for Colombia (Ideamosmas) where travelers discover, book, and pay for experiences — tours, parks, and attractions — offered by local suppliers. I work end-to-end on a Nuxt 4 app with a Drizzle/PostgreSQL backend, a real-time availability engine, secure payments, and a supplier portal for managing listings and reservations.",
+      "highlights": [
+        "Full-stack Nuxt 4 (SSR + Nitro) with Drizzle ORM on PostgreSQL 16",
+        "Slot-based booking engine with real-time availability and atomic inventory locks",
+        "Multiple payment methods (ePayco, PSE, Google Pay) with reconciliation jobs",
+        "Dual customer/supplier auth with OAuth (Google, Apple, Facebook)",
+        "Supplier portal: listings, availability, bookings, payouts, and QR ticket scanning",
+        "Marketing engine: coupons, flash sales, gift cards, referrals, and collections",
+        "HMAC-signed QR vouchers and a partner Sync API (HMAC-SHA256)",
+        "Multi-language (ES/EN/FR) with SEO: JSON-LD, sitemaps, and ISR caching"
+      ],
+      "stack": {
+        "Nuxt": "simple-icons:nuxt",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "Drizzle": "simple-icons:drizzle",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Redis": "simple-icons:redis",
+        "Azure": "simple-icons:microsoftazure"
+      },
+      "url": "https://exploreti.com/"
+    },
+    {
+      "name": "Parking Mobile",
+      "isActive": true,
+      "description": "Smart parking management software used by 100+ businesses in Colombia. Manages over 2 million parking bays monthly and 1 million online transactions yearly, reducing client operational costs by 20%.",
+      "highlights": [
+        "Full automation with LPR camera integration",
+        "Ticketless parking system",
+        "Real-time cloud-based reporting",
+        "Electronic invoicing (DIAN compliant)",
+        "Mobile payment integration",
+        "Multi-location centralized management"
       ],
       "stack": {
         "Astro": "simple-icons:astro",
-        "React": "simple-icons:react",
-        "TypeScript": "simple-icons:typescript",
         "Tailwind": "mdi:tailwind",
-        "GSAP": "simple-icons:greensock",
-        "Cloudflare Pages": "simple-icons:cloudflare"
+        "TypeScript": "simple-icons:typescript",
+        "Netlify": "simple-icons:netlify"
       },
-      "url": "https://portfolio-5rl.pages.dev/",
-      "github": "https://github.com/drawl99/portfolio"
+      "url": "https://parkingmobile.co/"
     },
     {
       "name": "Viveros Chess",
@@ -433,76 +611,29 @@
       "github": "https://github.com/drawl99/erica-viveros"
     },
     {
-      "name": "Exploreti",
+      "name": "Portfolio",
       "isActive": true,
-      "description": "Full-stack tourism marketplace for Colombia (Ideamosmas) where travelers discover, book, and pay for experiences — tours, parks, and attractions — offered by local suppliers. I work end-to-end on a Nuxt 4 app with a Drizzle/PostgreSQL backend, a real-time availability engine, secure payments, and a supplier portal for managing listings and reservations.",
+      "description": "Personal portfolio website showcasing professional experience, projects, and technical skills. Built with modern web technologies for optimal performance and user experience.",
       "highlights": [
-        "Full-stack Nuxt 4 (SSR + Nitro) with Drizzle ORM on PostgreSQL 16",
-        "Slot-based booking engine with real-time availability and atomic inventory locks",
-        "Multiple payment methods (ePayco, PSE, Google Pay) with reconciliation jobs",
-        "Dual customer/supplier auth with OAuth (Google, Apple, Facebook)",
-        "Supplier portal: listings, availability, bookings, payouts, and QR ticket scanning",
-        "Marketing engine: coupons, flash sales, gift cards, referrals, and collections",
-        "HMAC-signed QR vouchers and a partner Sync API (HMAC-SHA256)",
-        "Multi-language (ES/EN/FR) with SEO: JSON-LD, sitemaps, and ISR caching"
-      ],
-      "stack": {
-        "Nuxt": "simple-icons:nuxt",
-        "Vue": "simple-icons:vuedotjs",
-        "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "Drizzle": "simple-icons:drizzle",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Redis": "simple-icons:redis",
-        "Azure": "simple-icons:microsoftazure"
-      },
-      "url": "https://exploreti.com/"
-    },
-    {
-      "name": "Controlo",
-      "isActive": true,
-      "description": "B2B ticketing, access-control, and point-of-sale platform for events and venues (Ideamosmas), being rebuilt as a cloud-native microservices system. I work across the stack — Java 21 / Spring Boot 4 event-driven services on Azure plus a Nuxt 4 back-office — powering multi-channel sales (POS, web, kiosk, mobile) with real-time QR ticket validation.",
-      "highlights": [
-        "Event-driven microservices (Java 21, Spring Boot 4) on Azure Container Apps",
-        "Database-per-service on PostgreSQL 16 with strict multi-tenancy",
-        "Custom RS256 JWT auth with role- and permission-based access control",
-        "Async messaging via Azure Service Bus with the transactional outbox pattern",
-        "Real-time QR ticket validation with in-memory (Caffeine) caching",
-        "Unified multi-channel sales: POS, web, kiosk, and mobile (PDA)",
-        "DIAN-compliant electronic invoicing for Colombia",
-        "Nuxt 4 + Nuxt UI back-office with a BFF (server-side JWT) pattern"
-      ],
-      "stack": {
-        "Java": "ri:java-line",
-        "Spring Boot": "simple-icons:springboot",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Azure": "simple-icons:microsoftazure",
-        "Redis": "simple-icons:redis",
-        "Docker": "simple-icons:docker",
-        "Nuxt": "simple-icons:nuxt",
-        "TypeScript": "simple-icons:typescript"
-      },
-      "url": "https://controlo.co/"
-    },
-    {
-      "name": "Parking Mobile",
-      "isActive": true,
-      "description": "Smart parking management software used by 100+ businesses in Colombia. Manages over 2 million parking bays monthly and 1 million online transactions yearly, reducing client operational costs by 20%.",
-      "highlights": [
-        "Full automation with LPR camera integration",
-        "Ticketless parking system",
-        "Real-time cloud-based reporting",
-        "Electronic invoicing (DIAN compliant)",
-        "Mobile payment integration",
-        "Multi-location centralized management"
+        "Server-Side Rendering with Astro",
+        "Interactive animations with GSAP",
+        "Particle effects and smooth transitions",
+        "Multi-language support (English/Spanish)",
+        "Responsive design with Tailwind CSS",
+        "React 19 integration for dynamic components",
+        "Optimized for performance and SEO",
+        "Deployed on Cloudflare Pages"
       ],
       "stack": {
         "Astro": "simple-icons:astro",
-        "Tailwind": "mdi:tailwind",
+        "React": "simple-icons:react",
         "TypeScript": "simple-icons:typescript",
-        "Netlify": "simple-icons:netlify"
+        "Tailwind": "mdi:tailwind",
+        "GSAP": "simple-icons:greensock",
+        "Cloudflare Pages": "simple-icons:cloudflare"
       },
-      "url": "https://parkingmobile.co/"
+      "url": "https://portfolio-5rl.pages.dev/",
+      "github": "https://github.com/drawl99/portfolio"
     },
     {
       "name": "RewardsApp Landing",
