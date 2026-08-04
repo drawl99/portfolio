@@ -64,7 +64,7 @@
         "Spring Boot": "simple-icons:springboot",
         "Node.js": "ri:nodejs-line",
         "Vue": "simple-icons:vuedotjs",
-        "Nuxt": "simple-icons:nuxtdotjs",
+        "Nuxt": "simple-icons:nuxt",
         "Tailwind": "mdi:tailwind",
         "MySQL": "simple-icons:mysql",
         "PostgreSQL": "simple-icons:postgresql",
@@ -134,7 +134,7 @@
     },
     {
       "name": "Nuxt",
-      "icon": "simple-icons:nuxtdotjs",
+      "icon": "simple-icons:nuxt",
       "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Frontend", "SSR", "Vue"]
     },
@@ -376,7 +376,7 @@
         "Desplegado en Railway con migraciones automatizadas en CI"
       ],
       "stack": {
-        "Nuxt": "simple-icons:nuxtdotjs",
+        "Nuxt": "simple-icons:nuxt",
         "Vue": "simple-icons:vuedotjs",
         "TypeScript": "simple-icons:typescript",
         "Tailwind": "mdi:tailwind",
@@ -402,7 +402,7 @@
         "Pruebas end-to-end con Playwright"
       ],
       "stack": {
-        "Nuxt": "simple-icons:nuxtdotjs",
+        "Nuxt": "simple-icons:nuxt",
         "Vue": "simple-icons:vuedotjs",
         "TypeScript": "simple-icons:typescript",
         "Tailwind": "mdi:tailwind",
@@ -428,7 +428,7 @@
       ],
       "stack": {
         "Medusa": "simple-icons:medusa",
-        "Nuxt": "simple-icons:nuxtdotjs",
+        "Nuxt": "simple-icons:nuxt",
         "Vue": "simple-icons:vuedotjs",
         "Pinia": "simple-icons:pinia",
         "TypeScript": "simple-icons:typescript",
@@ -451,7 +451,7 @@
       ],
       "stack": {
         "Vue": "simple-icons:vuedotjs",
-        "Nuxt": "simple-icons:nuxtdotjs",
+        "Nuxt": "simple-icons:nuxt",
         "TypeScript": "simple-icons:typescript",
         "Tailwind": "mdi:tailwind",
         "Cloudflare Pages": "simple-icons:cloudflare"
@@ -474,7 +474,7 @@
         "Multi-idioma (ES/EN/FR) con SEO: JSON-LD, sitemaps y caché ISR"
       ],
       "stack": {
-        "Nuxt": "simple-icons:nuxtdotjs",
+        "Nuxt": "simple-icons:nuxt",
         "Vue": "simple-icons:vuedotjs",
         "TypeScript": "simple-icons:typescript",
         "Tailwind": "mdi:tailwind",
@@ -506,7 +506,7 @@
         "Azure": "simple-icons:microsoftazure",
         "Redis": "simple-icons:redis",
         "Docker": "simple-icons:docker",
-        "Nuxt": "simple-icons:nuxtdotjs",
+        "Nuxt": "simple-icons:nuxt",
         "TypeScript": "simple-icons:typescript"
       },
       "url": "https://controlo.co/"
