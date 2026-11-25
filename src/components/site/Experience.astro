@@ -1,0 +1,227 @@
+---
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations, getWork, getEducation } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const work = getWork(lang);
+const education = getEducation(lang);
+
+const year = (d: string | null) => (d ? new Date(d).getUTCFullYear() : t("experience.present"));
+
+const entries = [
+  ...work.map((w) => ({
+    kind: "work" as const,
+    org: w.name,
+    url: w.url,
+    title: w.position,
+    from: year(w.startDate),
+    to: year(w.endDate),
+    place: `${w.location_type} · ${w.location}`,
+    summary: w.summary,
+    details: w.responsibilities,
+    skills: Object.entries(w.skills ?? {}),
+  })),
+  ...education.map((e) => ({
+    kind: "education" as const,
+    org: e.institution,
+    url: e.url,
+    title: `${e.studyType}, ${e.area}`,
+    from: year(e.startDate),
+    to: year(e.endDate),
+    place: t("experience.education"),
+    summary: "",
+    details: [] as string[],
+    skills: [] as [string, string][],
+  })),
+];
+const total = entries.length;
+---
+
+<ol class="timeline">
+  {
+    entries.map((e, i) => (
+      <li class="entry">
+        <span class="n mono" aria-hidden="true">[{String(total - i).padStart(2, "0")}]</span>
+        <div class="when mono">
+          {e.from} — {e.to}
+          <span>{e.place}</span>
+        </div>
+        <div class="what">
+          <h3>
+            {e.title}
+            <a href={e.url} target="_blank" rel="noopener">
+              {e.org}
+            </a>
+          </h3>
+          {e.summary && <p class="summary">{e.summary}</p>}
+          {e.details.length > 0 && (
+            <details>
+              <summary class="mono">
+                <span class="plus" aria-hidden="true" />
+                {t("experience.details")} <span class="count">({e.details.length})</span>
+              </summary>
+              <ul>
+                {e.details.map((d) => (
+                  <li>{d}</li>
+                ))}
+              </ul>
+            </details>
+          )}
+          {e.skills.length > 0 && (
+            <ul class="chips" aria-label={t("nav.stack")}>
+              {e.skills.map(([name, icon]) => (
+                <li class="chip">
+                  <Icon name={icon} aria-hidden="true" />
+                  {name}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule-strong);
+  }
+
+  .entry {
+    display: grid;
+    grid-template-columns: 4rem minmax(10rem, 1fr) minmax(0, 3fr);
+    gap: clamp(1rem, 3vw, 3rem);
+    padding: clamp(2rem, 4vw, 3.5rem) 0;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+
+  .n {
+    color: var(--cobalt);
+    filter: brightness(1.5);
+  }
+
+  .when {
+    display: grid;
+    gap: 0.4rem;
+    align-content: start;
+    color: var(--bone);
+  }
+  .when span {
+    color: var(--bone-dim);
+  }
+
+  h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-variation-settings: "opsz" 48;
+    font-size: clamp(1.5rem, 3vw, 2.625rem);
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+  h3 a {
+    display: block;
+    color: var(--bone-dim);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  h3 a::before {
+    content: "@ ";
+    color: var(--cobalt);
+    filter: brightness(1.5);
+  }
+  h3 a:hover {
+    color: var(--bone);
+  }
+
+  .summary {
+    margin: 1.25rem 0 0;
+    max-width: 68ch;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--bone);
+  }
+
+  details {
+    margin-top: 1.5rem;
+    max-width: 72ch;
+    border-top: 1px solid var(--rule);
+  }
+  summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    color: var(--bone);
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  .count {
+    color: var(--bone-dim);
+  }
+  .plus {
+    position: relative;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  .plus::before,
+  .plus::after {
+    content: "";
+    position: absolute;
+    inset: 50% 0 auto 0;
+    height: 1px;
+    background: currentColor;
+    transition: transform 0.35s var(--ease-out);
+  }
+  .plus::after {
+    transform: rotate(90deg);
+  }
+  details[open] .plus::after {
+    transform: rotate(0deg);
+  }
+
+  details ul {
+    margin: 0;
+    padding: 0 0 1rem;
+    list-style: none;
+    counter-reset: r;
+    display: grid;
+    gap: 0.85rem;
+  }
+  details li {
+    counter-increment: r;
+    display: grid;
+    grid-template-columns: 2.25rem 1fr;
+    color: var(--bone);
+    line-height: 1.55;
+    font-size: 0.975rem;
+  }
+  details li::before {
+    content: counter(r, decimal-leading-zero);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--bone-dim);
+    padding-top: 0.2rem;
+  }
+
+  .what > .chips {
+    margin-top: 1.5rem;
+    color: var(--bone-dim);
+  }
+
+  @media (max-width: 760px) {
+    .entry {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+  }
+</style>

@@ -1,0 +1,63 @@
+---
+import { getLangFromUrl, getBasics } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const { summary } = getBasics(lang);
+const words = summary.split(/\s+/);
+---
+
+<p class="statement" data-reveal>
+  {words.map((w, i) => <span style={`--i:${i}`}>{w} </span>)}
+</p>
+
+<style>
+  .statement {
+    margin: 0;
+    max-width: 30ch;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-variation-settings: "opsz" 48;
+    font-size: clamp(1.625rem, 3.6vw, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    text-wrap: pretty;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .statement span {
+      color: var(--bone);
+      opacity: calc(0.18 + 0.82 * var(--lit, 1));
+      filter: blur(calc((1 - var(--lit, 1)) * 3px));
+      transition:
+        opacity 0.5s var(--ease-out),
+        filter 0.5s var(--ease-out);
+    }
+  }
+</style>
+
+<script>
+  // Words go from dim and blurred to sharp as the statement scrolls through the viewport.
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const el = document.querySelector<HTMLElement>("[data-reveal]");
+  if (el && !reduce) {
+    const spans = [...el.querySelectorAll<HTMLElement>("span")];
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const progress = Math.min(Math.max((vh * 0.85 - rect.top) / (rect.height + vh * 0.35), 0), 1);
+      const lit = progress * spans.length;
+      spans.forEach((s, i) => s.style.setProperty("--lit", String(Math.min(Math.max(lit - i, 0), 1))));
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    update();
+  }
+</script>

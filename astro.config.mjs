@@ -15,28 +15,8 @@ export default defineConfig({
       // Using ["*"] here pulled the entire mdi/ri/simple-icons packs
       // (~8.5MB) into the build; this keeps it to a few KB.
       include: {
-        mdi: [
-          "folder-outline",
-          "git",
-          "github",
-          "linkedin",
-          "minus",
-          "tailwind",
-          "translate",
-          "world",
-        ],
-        ri: [
-          "arrow-right-s-line",
-          "arrow-up-line",
-          "arrow-up-s-line",
-          "command-fill",
-          "css3-fill",
-          "java-line",
-          "mail-fill",
-          "moon-fill",
-          "nodejs-line",
-          "sun-fill",
-        ],
+        mdi: ["github", "linkedin", "tailwind", "git"],
+        ri: ["arrow-up-line", "java-line", "nodejs-line", "css3-fill", "mail-fill"],
         "simple-icons": [
           "angular",
           "astro",

@@ -9,59 +9,111 @@ export type Lang = keyof typeof languages;
 
 export const ui = {
   en: {
-    // Section titles
-    "section.about": "About",
-    "section.experience": "Experience",
-    "section.projects": "Projects",
-    "section.skills": "Skills",
-    "section.education": "Education",
+    "meta.description":
+      "Full Stack Software Engineer in Cali, Colombia. Shipped work, experience, stack and contact.",
 
-    // Experience section
+    "nav.label": "Sections",
+    "nav.about": "About",
+    "nav.experience": "Experience",
+    "nav.work": "Work",
+    "nav.index": "Index",
+    "nav.stack": "Stack",
+    "nav.contact": "Contact",
+    "nav.language": "Language",
+    "nav.skip": "Skip to content",
+
+    "hero.role": "Full Stack Software Engineer",
+    "hero.based": "Based in Cali, Colombia",
+    "hero.available": "Available for work and freelance projects",
+    "hero.email": "Write me an email",
+    "hero.linkedin": "LinkedIn",
+    "hero.github": "GitHub",
+    "hero.scroll": "Scroll",
+    "hero.photoAlt": "Portrait of Andrés Giraldo",
+
+    "about.title": "About",
+
+    "experience.title": "Experience",
     "experience.present": "Present",
-    "experience.summary": "Summary:",
-    "experience.responsibilities": "Responsibilities:",
-    "experience.showMore": "Show more",
-    "experience.showLess": "Show less",
+    "experience.details": "What I do there",
+    "experience.education": "Education",
 
-    // Hero section
-    "hero.openOptions": "Open options",
-    "hero.contact": "Contact:",
-    "hero.available": "Available for work",
+    "work.title": "Selected work",
+    "work.visit": "Visit site",
+    "work.code": "Source code",
+    "work.start": "Start",
+    "work.end": "End",
+    "work.shotAlt": "Screenshot of the live {name} site",
+    "work.private": "Private build, no public site yet",
 
-    // Projects section
-    "projects.viewOn": "View {name} in GitHub",
-    "projects.technologies": "Technologies used",
+    "index.title": "Index",
+    "index.more": "More projects",
+    "index.details": "Highlights",
+    "index.live": "Live site",
+    "index.code": "Open source",
 
-    // General
-    "general.seeMore": "See more",
-    "general.language": "Language",
+    "stack.title": "Stack",
+    "stack.languages": "Spoken languages",
+
+    "contact.title": "Contact",
+    "contact.lead": "Have a product to build or a team to join?",
+    "contact.email": "Email",
+    "contact.copy": "Copy email",
+    "contact.copied": "Copied",
+    "contact.footer": "Designed and built by Andrés Giraldo with Astro.",
   },
   es: {
-    // Section titles
-    "section.about": "Sobre mí",
-    "section.experience": "Experiencia",
-    "section.projects": "Proyectos",
-    "section.skills": "Habilidades",
-    "section.education": "Educación",
+    "meta.description":
+      "Ingeniero de Software Full Stack en Cali, Colombia. Trabajo publicado, experiencia, stack y contacto.",
 
-    // Experience section
+    "nav.label": "Secciones",
+    "nav.about": "Perfil",
+    "nav.experience": "Experiencia",
+    "nav.work": "Trabajo",
+    "nav.index": "Índice",
+    "nav.stack": "Stack",
+    "nav.contact": "Contacto",
+    "nav.language": "Idioma",
+    "nav.skip": "Ir al contenido",
+
+    "hero.role": "Ingeniero de Software Full Stack",
+    "hero.based": "Desde Cali, Colombia",
+    "hero.available": "Disponible para empleo y proyectos freelance",
+    "hero.email": "Escríbeme un correo",
+    "hero.linkedin": "LinkedIn",
+    "hero.github": "GitHub",
+    "hero.scroll": "Desliza",
+    "hero.photoAlt": "Retrato de Andrés Giraldo",
+
+    "about.title": "Perfil",
+
+    "experience.title": "Experiencia",
     "experience.present": "Presente",
-    "experience.summary": "Resumen:",
-    "experience.responsibilities": "Responsabilidades:",
-    "experience.showMore": "Ver más",
-    "experience.showLess": "Ver menos",
+    "experience.details": "Qué hago allí",
+    "experience.education": "Educación",
 
-    // Hero section
-    "hero.openOptions": "Abrir opciones",
-    "hero.contact": "Contacto:",
-    "hero.available": "Disponible para trabajar",
+    "work.title": "Trabajo destacado",
+    "work.visit": "Ver sitio",
+    "work.code": "Código fuente",
+    "work.start": "Inicio",
+    "work.end": "Fin",
+    "work.shotAlt": "Captura del sitio en vivo de {name}",
+    "work.private": "Desarrollo privado, aún sin sitio público",
 
-    // Projects section
-    "projects.viewOn": "Ver {name} en GitHub",
-    "projects.technologies": "Tecnologías utilizadas",
+    "index.title": "Índice",
+    "index.more": "Más proyectos",
+    "index.details": "Destacados",
+    "index.live": "Sitio en vivo",
+    "index.code": "Código abierto",
 
-    // General
-    "general.seeMore": "Ver más",
-    "general.language": "Idioma",
+    "stack.title": "Stack",
+    "stack.languages": "Idiomas",
+
+    "contact.title": "Contacto",
+    "contact.lead": "¿Tienes un producto por construir o un equipo al que sumarme?",
+    "contact.email": "Correo",
+    "contact.copy": "Copiar correo",
+    "contact.copied": "Copiado",
+    "contact.footer": "Diseñado y construido por Andrés Giraldo con Astro.",
   },
 } as const;

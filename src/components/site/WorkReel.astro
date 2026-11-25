@@ -1,0 +1,377 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations, getProjects } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const projects = getProjects(lang).filter((p) => p.featured);
+const n = projects.length;
+const pad = (i: number) => String(i).padStart(2, "0");
+
+const shots = import.meta.glob<{ default: ImageMetadata }>("/src/assets/work/*.webp", { eager: true });
+const shotFor = (cover: string | null) => (cover ? shots[`/src/assets/work/${cover}.webp`]?.default : undefined);
+const host = (url: string | null) => (url ? new URL(url).host.replace(/^www\./, "") : "");
+---
+
+<div class="reel" data-reel style={`--n:${n}`}>
+  <div class="stage">
+    <ol class="track" data-track>
+      {
+        projects.map((p, i) => {
+          const shot = shotFor(p.cover);
+          return (
+            <li class="slide" aria-label={`${pad(i + 1)} / ${pad(n)} · ${p.name}`}>
+              <figure class="frame">
+                <div class="chrome mono" aria-hidden="true">
+                  <span class="dots">
+                    <i />
+                    <i />
+                    <i />
+                  </span>
+                  <span class="addr">{host(p.url) || p.name}</span>
+                </div>
+                {shot ? (
+                  <Image
+                    src={shot}
+                    alt={t("work.shotAlt").replace("{name}", p.name)}
+                    widths={[640, 960, 1280, 1600]}
+                    sizes="(max-width: 900px) 92vw, 56vw"
+                    loading={i === 0 ? "eager" : "lazy"}
+                  />
+                ) : (
+                  <div class="cover">{p.name}</div>
+                )}
+              </figure>
+
+              <div class="copy">
+                <p class="count mono" aria-hidden="true">
+                  <b>{pad(i + 1)}</b> / {pad(n)}
+                </p>
+                <h3>{p.name}</h3>
+                <p class="desc">{p.description}</p>
+                <ul class="points">
+                  {p.highlights.slice(0, 3).map((h) => (
+                    <li>{h}</li>
+                  ))}
+                </ul>
+                <ul class="chips">
+                  {Object.entries(p.stack)
+                    .slice(0, 5)
+                    .map(([name, icon]) => (
+                      <li class="chip">
+                        <Icon name={icon as string} aria-hidden="true" />
+                        {name}
+                      </li>
+                    ))}
+                </ul>
+                <div class="links">
+                  {p.url && (
+                    <a class="arrow-link" href={p.url} target="_blank" rel="noopener">
+                      {t("work.visit")}
+                      <Icon name="ri:arrow-up-line" style="transform:rotate(45deg)" aria-hidden="true" />
+                    </a>
+                  )}
+                  {p.github && (
+                    <a class="arrow-link" href={p.github} target="_blank" rel="noopener">
+                      {t("work.code")}
+                      <Icon name="mdi:github" aria-hidden="true" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </li>
+          );
+        })
+      }
+    </ol>
+
+    <div class="hud mono" aria-hidden="true">
+      <span class="counter"><b data-counter>01</b> / {pad(n)}</span>
+      <span class="rail">
+        <span class="lbl">{t("work.start")}</span>
+        <span class="bar"><span class="fill" data-fill></span></span>
+        <span class="lbl">{t("work.end")}</span>
+      </span>
+      <span class="pct" data-pct>0%</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .reel {
+    position: relative;
+    --stage-top: calc(var(--bar-h) + var(--band-h));
+    --stage-h: calc(100svh - var(--stage-top));
+  }
+
+  .stage {
+    position: relative;
+  }
+
+  .track {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slide {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    gap: clamp(1.5rem, 3.5vw, 4rem);
+    align-items: center;
+    padding: clamp(2rem, 4vh, 3.5rem) var(--gutter);
+  }
+
+  .frame {
+    margin: 0;
+    border: 1px solid var(--rule-strong);
+    background: var(--graphite-2);
+    overflow: hidden;
+  }
+  .chrome {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.55rem 0.85rem;
+    border-bottom: 1px solid var(--rule-strong);
+    color: var(--bone-dim);
+    text-transform: none;
+    font-size: 0.6875rem;
+  }
+  .dots {
+    display: flex;
+    gap: 0.35rem;
+  }
+  .dots i {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1px solid var(--rule-strong);
+    border-radius: 50%;
+  }
+  .frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1600 / 840;
+    object-fit: cover;
+    object-position: top;
+  }
+  .cover {
+    aspect-ratio: 1600 / 840;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--lime);
+  }
+
+  .count {
+    margin: 0 0 1rem;
+    color: var(--bone-dim);
+  }
+  .count b {
+    color: var(--lime);
+    font-weight: 500;
+  }
+
+  h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-variation-settings: "opsz" 96;
+    font-size: clamp(2.25rem, 4.6vw, 4.75rem);
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+    text-wrap: balance;
+  }
+
+  .desc {
+    margin: 1.25rem 0 0;
+    max-width: 52ch;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--bone);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .points {
+    list-style: none;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+  .points li {
+    position: relative;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--bone-dim);
+  }
+  .points li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 0.6rem;
+    height: 1px;
+    background: var(--lime);
+  }
+
+  .copy > .chips {
+    margin-top: 1.5rem;
+    color: var(--bone-dim);
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.75rem;
+  }
+  .links a:hover {
+    color: var(--lime);
+  }
+
+  .hud {
+    display: none;
+  }
+
+  /* Pinned horizontal reel: wide screens with motion allowed */
+  @media (min-width: 901px) and (prefers-reduced-motion: no-preference) {
+    .reel {
+      height: calc(var(--n) * 100svh);
+    }
+    .stage {
+      position: sticky;
+      top: var(--stage-top);
+      height: var(--stage-h);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .track {
+      display: flex;
+      height: 100%;
+      width: calc(var(--n) * 100vw);
+      will-change: transform;
+    }
+    .slide {
+      width: 100vw;
+      height: 100%;
+      flex: none;
+    }
+    .hud {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 2rem;
+      padding: 0.9rem var(--gutter);
+      border-top: 1px solid var(--rule-strong);
+      color: var(--bone-dim);
+    }
+    .counter b {
+      color: var(--lime);
+      font-weight: 500;
+    }
+    .rail {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 1rem;
+      max-width: 36rem;
+      width: 100%;
+      justify-self: center;
+    }
+    .bar {
+      height: 2px;
+      background: var(--rule-strong);
+      position: relative;
+      overflow: hidden;
+    }
+    .fill {
+      position: absolute;
+      inset: 0;
+      background: var(--lime);
+      transform-origin: left;
+      transform: scaleX(0);
+    }
+  }
+
+  @media (max-width: 900px), (prefers-reduced-motion: reduce) {
+    .slide {
+      grid-template-columns: 1fr;
+      border-bottom: 1px solid var(--rule);
+    }
+  }
+</style>
+
+<script>
+  const reel = document.querySelector<HTMLElement>("[data-reel]");
+  const track = reel?.querySelector<HTMLElement>("[data-track]");
+  const counter = reel?.querySelector<HTMLElement>("[data-counter]");
+  const fill = reel?.querySelector<HTMLElement>("[data-fill]");
+  const pct = reel?.querySelector<HTMLElement>("[data-pct]");
+  const pinned = window.matchMedia("(min-width: 901px) and (prefers-reduced-motion: no-preference)");
+
+  if (reel && track && counter && fill && pct) {
+    const slides = track.children.length;
+    let ticking = false;
+
+    const update = () => {
+      ticking = false;
+      if (!pinned.matches) {
+        track.style.transform = "";
+        return;
+      }
+      const stage = track.parentElement as HTMLElement;
+      const rect = reel.getBoundingClientRect();
+      const travel = reel.offsetHeight - stage.offsetHeight;
+      const top = stage.getBoundingClientRect().top - rect.top;
+      const progress = travel > 0 ? Math.min(Math.max(top / travel, 0), 1) : 0;
+      const distance = track.scrollWidth - stage.clientWidth;
+      track.style.transform = `translate3d(${-progress * distance}px, 0, 0)`;
+      const current = Math.min(slides, Math.round(progress * (slides - 1)) + 1);
+      counter.textContent = String(current).padStart(2, "0");
+      fill.style.transform = `scaleX(${progress})`;
+      pct.textContent = `${Math.round(progress * 100)}%`;
+    };
+
+    const request = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    };
+
+    window.addEventListener("scroll", request, { passive: true });
+    window.addEventListener("resize", request);
+    pinned.addEventListener("change", request);
+    update();
+
+    /* Keyboard users tabbing into an off-screen slide: scroll the page so that slide is shown. */
+    track.addEventListener("focusin", (event) => {
+      if (!pinned.matches) return;
+      const slide = (event.target as HTMLElement).closest(".slide");
+      if (!slide) return;
+      const index = [...track.children].indexOf(slide);
+      const stage = track.parentElement as HTMLElement;
+      const travel = reel.offsetHeight - stage.offsetHeight;
+      const y = window.scrollY + reel.getBoundingClientRect().top + (travel * index) / Math.max(slides - 1, 1);
+      const lenis = (window as unknown as { lenis?: { scrollTo: (y: number, o?: object) => void } }).lenis;
+      track.parentElement!.scrollLeft = 0;
+      if (lenis) lenis.scrollTo(y, { immediate: true });
+      else window.scrollTo(0, y);
+    });
+  }
+</script>

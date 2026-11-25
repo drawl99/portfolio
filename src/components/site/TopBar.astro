@@ -1,0 +1,157 @@
+---
+import { getLangFromUrl, useTranslations, getProjects, languages, getLocalizedPath, type Lang } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const indexCount = getProjects(lang).filter((p) => !p.featured).length;
+const workCount = getProjects(lang).filter((p) => p.featured).length;
+
+const items = [
+  { id: "about", label: t("nav.about") },
+  { id: "experience", label: t("nav.experience") },
+  { id: "work", label: t("nav.work"), count: workCount },
+  { id: "index", label: t("nav.index"), count: indexCount },
+  { id: "stack", label: t("nav.stack") },
+  { id: "contact", label: t("nav.contact") },
+];
+
+const langs = Object.keys(languages) as Lang[];
+---
+
+<header class="bar">
+  <a class="monogram" href={getLocalizedPath("/", lang)} aria-label="Andrés Giraldo">
+    AG<span aria-hidden="true">/</span>
+  </a>
+
+  <nav aria-label={t("nav.label")}>
+    <ol>
+      {
+        items.map((item, i) => (
+          <li>
+            <a href={`#${item.id}`} data-nav-link>
+              <span class="idx" aria-hidden="true">[{String(i + 1).padStart(2, "0")}]</span>
+              <span class="label">{item.label}</span>
+              {item.count !== undefined && <sup aria-hidden="true">{item.count}</sup>}
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </nav>
+
+  <div class="langs" role="group" aria-label={t("nav.language")}>
+    {
+      langs.map((code) => (
+        <a
+          href={getLocalizedPath("/", code)}
+          hreflang={code}
+          lang={code}
+          aria-current={code === lang ? "true" : undefined}
+          title={languages[code]}
+        >
+          {code.toUpperCase()}
+        </a>
+      ))
+    }
+  </div>
+</header>
+
+<style>
+  .bar {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 50;
+    height: var(--bar-h);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 var(--gutter);
+    background: color-mix(in srgb, var(--graphite) 92%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .monogram {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.125rem;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+  }
+  .monogram span {
+    color: var(--orange);
+  }
+
+  nav ol {
+    display: flex;
+    justify-content: center;
+    gap: clamp(0.75rem, 2vw, 2rem);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--bone-dim);
+    padding: 0.4rem 0;
+    transition: color 0.25s var(--ease-out);
+  }
+  nav a:hover,
+  nav a[aria-current="true"] {
+    color: var(--bone);
+  }
+  nav a[aria-current="true"] .idx {
+    color: var(--orange);
+  }
+  nav sup {
+    font-size: 0.625rem;
+    color: var(--orange);
+    top: -0.5em;
+  }
+
+  .langs {
+    display: flex;
+    border: 1px solid var(--rule-strong);
+  }
+  .langs a {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    padding: 0.35rem 0.6rem;
+    color: var(--bone-dim);
+  }
+  .langs a[aria-current="true"] {
+    background: var(--bone);
+    color: var(--ink);
+  }
+  .langs a:not([aria-current="true"]):hover {
+    color: var(--bone);
+  }
+
+  @media (max-width: 960px) {
+    nav .label {
+      display: none;
+    }
+    nav ol {
+      gap: 0.6rem;
+    }
+  }
+  @media (max-width: 560px) {
+    nav {
+      display: none;
+    }
+    .bar {
+      grid-template-columns: 1fr auto;
+    }
+  }
+</style>

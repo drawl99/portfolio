@@ -8,7 +8,7 @@
     "animated_secondary_final_label": "fullstack",
     "image": "/pfp.jpg",
     "email": "drawl9988@gmail.com",
-    "url": "",
+    "url": "https://portfolio-5rl.pages.dev/",
     "summary": "Ingeniero de Software Full Stack con más de 5 años en Ideamosmas, construyendo Controlo y Exploreti de punta a punta: microservicios orientados a eventos en Java 21 / Spring Boot 4, frontends en Nuxt 4, PostgreSQL y CI/CD en Azure. Trabajo con Organic Driven Development (ODD) de gentle-ai y con pruebas primero, y construyo flujos de desarrollo asistido por IA con Claude Code que llevan issues de Linear hasta PRs fusionados.",
     "theme": "platinum",
     "location": {
@@ -470,7 +470,10 @@
         "Nuxt": "simple-icons:nuxt",
         "TypeScript": "simple-icons:typescript"
       },
-      "url": "https://controlo.co/"
+      "url": "https://controlo.co/",
+      "cover": "controlo",
+      "featured": true,
+      "github": null
     },
     {
       "name": "Exploreti",
@@ -496,78 +499,10 @@
         "Redis": "simple-icons:redis",
         "Azure": "simple-icons:microsoftazure"
       },
-      "url": "https://exploreti.com/"
-    },
-    {
-      "name": "Parking Mobile",
-      "isActive": true,
-      "description": "Landing de marketing que construí para Parking Mobile, un software de gestión inteligente de parqueaderos usado por más de 100 negocios en Colombia. Hice solo el sitio web, no el sistema de parqueaderos: un sitio estático rápido y enfocado en SEO para convertir visitas en oportunidades de venta.",
-      "highlights": [
-        "Sitio estático en Astro con Tailwind, optimizado para velocidad y SEO",
-        "Formulario de captura de leads conectado a funciones serverless",
-        "CTAs de contacto por WhatsApp para conversaciones de venta rápidas",
-        "Datos estructurados de Schema.org y analítica con Google Tag Manager",
-        "Secciones de producto: automatización LPR, parqueo sin tiquete, reportes en la nube y facturación DIAN",
-        "Desplegado en Netlify"
-      ],
-      "stack": {
-        "Astro": "simple-icons:astro",
-        "Tailwind": "mdi:tailwind",
-        "TypeScript": "simple-icons:typescript",
-        "Netlify": "simple-icons:netlify"
-      },
-      "url": "https://parkingmobile.co/"
-    },
-    {
-      "name": "Viveros Chess",
-      "isActive": true,
-      "description": "Plataforma web para un ecosistema de ajedrez: una escuela de ajedrez con reserva de clases en línea, torneos y área de miembros. App full-stack en Nuxt 4 con panel de administración autenticado, pagos con Stripe, correos transaccionales y almacenamiento de imágenes en Cloudflare R2.",
-      "highlights": [
-        "Academia de ajedrez con reserva y agendamiento de clases en línea",
-        "Integración de pagos con Stripe para inscripciones",
-        "Panel de administración autenticado con sesiones selladas",
-        "Correos transaccionales con Resend (reservas y alertas)",
-        "Carga de imágenes a Cloudflare R2",
-        "PostgreSQL con Drizzle ORM y migraciones tipadas",
-        "Desplegado en Railway con migraciones automatizadas en CI"
-      ],
-      "stack": {
-        "Nuxt": "simple-icons:nuxt",
-        "Vue": "simple-icons:vuedotjs",
-        "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Drizzle": "simple-icons:drizzle",
-        "Stripe": "simple-icons:stripe",
-        "Railway": "simple-icons:railway"
-      },
-      "url": "https://viveros-chess-production.up.railway.app/",
-      "github": "https://github.com/drawl99/viveros-chess"
-    },
-    {
-      "name": "PrestaFy",
-      "isActive": true,
-      "description": "Gestor de préstamos personales que se siente más amigable que un banco pero toma el dinero en serio. Lleva el control del dinero prestado y recibido, cronogramas de pago y saldos mediante paneles claros y gráficos interactivos.",
-      "highlights": [
-        "Control de préstamos de dinero prestado y recibido",
-        "Cronogramas de pago y cálculo de saldos",
-        "Paneles y gráficos interactivos con Unovis",
-        "Sesiones multi-usuario autenticadas",
-        "PostgreSQL con Drizzle ORM",
-        "Manejo de estado con Pinia",
-        "Pruebas end-to-end con Playwright"
-      ],
-      "stack": {
-        "Nuxt": "simple-icons:nuxt",
-        "Vue": "simple-icons:vuedotjs",
-        "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Drizzle": "simple-icons:drizzle",
-        "Pinia": "simple-icons:pinia"
-      },
-      "url": "https://prestafy-six.vercel.app/",
-      "github": "https://github.com/drawl99/prestafy"
+      "url": "https://exploreti.com/",
+      "cover": "exploreti",
+      "featured": true,
+      "github": null
     },
     {
       "name": "NITOR — Plataforma de Ecommerce",
@@ -594,7 +529,134 @@
         "Turborepo": "simple-icons:turborepo"
       },
       "url": "https://nitor.com.co/",
-      "github": "https://github.com/drawl99/ecommerce"
+      "github": "https://github.com/drawl99/ecommerce",
+      "cover": "nitor",
+      "featured": true
+    },
+    {
+      "name": "PokéBonk Hub",
+      "isActive": true,
+      "description": "Web app complementaria, gratuita y no oficial, bilingüe (EN/ES) para el fan game PokéBonk: wiki, planificador de builds, guía de jefes y seguimiento de entrenadores, alimentada con datos extraídos del cliente del juego y actualizada automáticamente con cada nueva versión.",
+      "highlights": [
+        "Wiki de Pokémon, objetos, reliquias, pactos, mutaciones y mapas",
+        "Planificador de builds con estimación de daño y enfriamiento, e importación/exportación del código de build del juego",
+        "Calculadora de probabilidad de shinies y seguimiento de desbloqueos de la Liga",
+        "Perfil de cuenta guardado solo en el navegador, sin login ni tokens",
+        "Extractor de datos que analiza el cliente como texto inerte y compara versiones nuevas",
+        "Poller con caché y límite de peticiones para el estado del juego y perfiles públicos",
+        "Localización completa EN/ES con SEO: sitemap, datos estructurados y llms.txt"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "React": "simple-icons:react",
+        "TypeScript": "simple-icons:typescript",
+        "Vitest": "simple-icons:vitest",
+        "Cloudflare Workers": "simple-icons:cloudflareworkers"
+      },
+      "url": "https://pokebonkhub.com/",
+      "cover": "pokebonk",
+      "featured": true,
+      "github": null
+    },
+    {
+      "name": "Landing DIEFER S.A.S",
+      "isActive": true,
+      "description": "Landing enfocada en conversión para una empresa de poda de árboles y paisajismo en Cali, Colombia. Sitio estático en Astro cuyo único objetivo es abrir una conversación de WhatsApp con contexto, construido a partir de un canvas de diseño y optimizado para SEO local.",
+      "highlights": [
+        "Implementación fiel del canvas de diseño del cliente",
+        "CTAs de WhatsApp con contexto y tarjetas para compartir por página",
+        "Entidades Service de Schema.org para cada línea de servicio",
+        "Optimización de imágenes en build y muro de logos de clientes",
+        "Despliegue estático en Cloudflare Workers Static Assets"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "Tailwind": "mdi:tailwind",
+        "TypeScript": "simple-icons:typescript",
+        "Cloudflare Workers": "simple-icons:cloudflareworkers"
+      },
+      "url": "https://diefersas.com.co/",
+      "cover": "diefer",
+      "featured": true,
+      "github": null
+    },
+    {
+      "name": "Parking Mobile",
+      "isActive": true,
+      "description": "Landing de marketing que construí para Parking Mobile, un software de gestión inteligente de parqueaderos usado por más de 100 negocios en Colombia. Hice solo el sitio web, no el sistema de parqueaderos: un sitio estático rápido y enfocado en SEO para convertir visitas en oportunidades de venta.",
+      "highlights": [
+        "Sitio estático en Astro con Tailwind, optimizado para velocidad y SEO",
+        "Formulario de captura de leads conectado a funciones serverless",
+        "CTAs de contacto por WhatsApp para conversaciones de venta rápidas",
+        "Datos estructurados de Schema.org y analítica con Google Tag Manager",
+        "Secciones de producto: automatización LPR, parqueo sin tiquete, reportes en la nube y facturación DIAN",
+        "Desplegado en Netlify"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "Tailwind": "mdi:tailwind",
+        "TypeScript": "simple-icons:typescript",
+        "Netlify": "simple-icons:netlify"
+      },
+      "url": "https://parkingmobile.co/",
+      "cover": "parkingmobile",
+      "featured": true,
+      "github": null
+    },
+    {
+      "name": "Viveros Chess",
+      "isActive": true,
+      "description": "Plataforma web para un ecosistema de ajedrez: una escuela de ajedrez con reserva de clases en línea, torneos y área de miembros. App full-stack en Nuxt 4 con panel de administración autenticado, pagos con Stripe, correos transaccionales y almacenamiento de imágenes en Cloudflare R2.",
+      "highlights": [
+        "Academia de ajedrez con reserva y agendamiento de clases en línea",
+        "Integración de pagos con Stripe para inscripciones",
+        "Panel de administración autenticado con sesiones selladas",
+        "Correos transaccionales con Resend (reservas y alertas)",
+        "Carga de imágenes a Cloudflare R2",
+        "PostgreSQL con Drizzle ORM y migraciones tipadas",
+        "Desplegado en Railway con migraciones automatizadas en CI"
+      ],
+      "stack": {
+        "Nuxt": "simple-icons:nuxt",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Drizzle": "simple-icons:drizzle",
+        "Stripe": "simple-icons:stripe",
+        "Railway": "simple-icons:railway"
+      },
+      "url": "https://viveros-chess-production.up.railway.app/",
+      "github": "https://github.com/drawl99/viveros-chess",
+      "cover": "viveros-chess",
+      "featured": false
+    },
+    {
+      "name": "PrestaFy",
+      "isActive": true,
+      "description": "Gestor de préstamos personales que se siente más amigable que un banco pero toma el dinero en serio. Lleva el control del dinero prestado y recibido, cronogramas de pago y saldos mediante paneles claros y gráficos interactivos.",
+      "highlights": [
+        "Control de préstamos de dinero prestado y recibido",
+        "Cronogramas de pago y cálculo de saldos",
+        "Paneles y gráficos interactivos con Unovis",
+        "Sesiones multi-usuario autenticadas",
+        "PostgreSQL con Drizzle ORM",
+        "Manejo de estado con Pinia",
+        "Pruebas end-to-end con Playwright"
+      ],
+      "stack": {
+        "Nuxt": "simple-icons:nuxt",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Drizzle": "simple-icons:drizzle",
+        "Pinia": "simple-icons:pinia"
+      },
+      "url": "https://prestafy-six.vercel.app/",
+      "github": "https://github.com/drawl99/prestafy",
+      "cover": null,
+      "featured": false
     },
     {
       "name": "Escáner de Cuotas Deportivas",
@@ -619,48 +681,11 @@
         "TimescaleDB": "simple-icons:timescale",
         "Redis": "simple-icons:redis",
         "Docker": "simple-icons:docker"
-      }
-    },
-    {
-      "name": "PokéBonk Hub",
-      "isActive": true,
-      "description": "Web app complementaria, gratuita y no oficial, bilingüe (EN/ES) para el fan game PokéBonk: wiki, planificador de builds, guía de jefes y seguimiento de entrenadores, alimentada con datos extraídos del cliente del juego y actualizada automáticamente con cada nueva versión.",
-      "highlights": [
-        "Wiki de Pokémon, objetos, reliquias, pactos, mutaciones y mapas",
-        "Planificador de builds con estimación de daño y enfriamiento, e importación/exportación del código de build del juego",
-        "Calculadora de probabilidad de shinies y seguimiento de desbloqueos de la Liga",
-        "Perfil de cuenta guardado solo en el navegador, sin login ni tokens",
-        "Extractor de datos que analiza el cliente como texto inerte y compara versiones nuevas",
-        "Poller con caché y límite de peticiones para el estado del juego y perfiles públicos",
-        "Localización completa EN/ES con SEO: sitemap, datos estructurados y llms.txt"
-      ],
-      "stack": {
-        "Astro": "simple-icons:astro",
-        "React": "simple-icons:react",
-        "TypeScript": "simple-icons:typescript",
-        "Vitest": "simple-icons:vitest",
-        "Cloudflare Workers": "simple-icons:cloudflareworkers"
       },
-      "url": "https://pokebonkhub.com/"
-    },
-    {
-      "name": "Landing DIEFER S.A.S",
-      "isActive": true,
-      "description": "Landing enfocada en conversión para una empresa de poda de árboles y paisajismo en Cali, Colombia. Sitio estático en Astro cuyo único objetivo es abrir una conversación de WhatsApp con contexto, construido a partir de un canvas de diseño y optimizado para SEO local.",
-      "highlights": [
-        "Implementación fiel del canvas de diseño del cliente",
-        "CTAs de WhatsApp con contexto y tarjetas para compartir por página",
-        "Entidades Service de Schema.org para cada línea de servicio",
-        "Optimización de imágenes en build y muro de logos de clientes",
-        "Despliegue estático en Cloudflare Workers Static Assets"
-      ],
-      "stack": {
-        "Astro": "simple-icons:astro",
-        "Tailwind": "mdi:tailwind",
-        "TypeScript": "simple-icons:typescript",
-        "Cloudflare Workers": "simple-icons:cloudflareworkers"
-      },
-      "url": "https://diefersas.com.co/"
+      "cover": null,
+      "featured": false,
+      "url": null,
+      "github": null
     },
     {
       "name": "Claude Plugins",
@@ -678,7 +703,10 @@
         "Bash": "simple-icons:gnubash",
         "GitHub": "mdi:github"
       },
-      "github": "https://github.com/drawl99/claude-plugins"
+      "github": "https://github.com/drawl99/claude-plugins",
+      "cover": null,
+      "featured": false,
+      "url": null
     },
     {
       "name": "Erica Viveros",
@@ -700,7 +728,9 @@
         "Cloudflare Pages": "simple-icons:cloudflare"
       },
       "url": "https://erica-viveros.pages.dev/",
-      "github": "https://github.com/drawl99/erica-viveros"
+      "github": "https://github.com/drawl99/erica-viveros",
+      "cover": "erica-viveros",
+      "featured": false
     },
     {
       "name": "Portfolio",
@@ -725,7 +755,9 @@
         "Cloudflare Pages": "simple-icons:cloudflare"
       },
       "url": "https://portfolio-5rl.pages.dev/",
-      "github": "https://github.com/drawl99/portfolio"
+      "github": "https://github.com/drawl99/portfolio",
+      "cover": null,
+      "featured": false
     },
     {
       "name": "RewardsApp Landing",
@@ -741,7 +773,9 @@
         "Tailwind": "mdi:tailwind"
       },
       "url": "https://landing-rewards.pages.dev/",
-      "github": "https://github.com/drawl99/landing-rewards"
+      "github": "https://github.com/drawl99/landing-rewards",
+      "cover": null,
+      "featured": false
     },
     {
       "name": "RewardsApp",
@@ -762,7 +796,11 @@
         "Zustand": "simple-icons:react",
         "Jest": "simple-icons:jest",
         "AI Agents": "simple-icons:openai"
-      }
+      },
+      "cover": null,
+      "featured": false,
+      "url": null,
+      "github": null
     }
   ]
 }

@@ -1,0 +1,47 @@
+---
+import Chapter from "./Chapter.astro";
+import Hero from "./Hero.astro";
+import About from "./About.astro";
+import Experience from "./Experience.astro";
+import WorkReel from "./WorkReel.astro";
+import ProjectIndex from "./ProjectIndex.astro";
+import Stack from "./Stack.astro";
+import Contact from "./Contact.astro";
+import { getLangFromUrl, useTranslations, getProjects } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const projects = getProjects(lang);
+const featured = projects.filter((p) => p.featured).length;
+---
+
+<main id="main">
+  <Hero />
+  <Chapter id="about" index={1} title={t("about.title")} tone="orange">
+    <About />
+  </Chapter>
+  <Chapter id="experience" index={2} title={t("experience.title")} tone="cobalt">
+    <Experience />
+  </Chapter>
+  <Chapter id="work" index={3} title={t("work.title")} tone="lime" count={featured} flush>
+    <WorkReel />
+  </Chapter>
+  <Chapter id="index" index={4} title={t("index.more")} tone="sodium" count={projects.length - featured}>
+    <ProjectIndex />
+  </Chapter>
+  <Chapter id="stack" index={5} title={t("stack.title")} tone="bone">
+    <Stack />
+  </Chapter>
+  <Chapter id="contact" index={6} title={t("contact.title")} tone="orange" class="drench">
+    <Contact />
+  </Chapter>
+</main>
+
+<style>
+  :global(.drench) {
+    background: var(--orange);
+  }
+  :global(.drench .band) {
+    border-bottom-color: rgba(18, 18, 18, 0.35);
+  }
+</style>

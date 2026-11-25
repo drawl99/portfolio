@@ -1,0 +1,90 @@
+---
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations, getSkills, getLanguages } from "@/i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const skills = getSkills(lang);
+const spoken = getLanguages(lang);
+---
+
+<ul class="words">
+  {
+    skills.map((s) => (
+      <li>
+        <Icon name={s.icon} aria-hidden="true" />
+        <span>{s.name}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<dl class="spoken">
+  <dt class="mono">{t("stack.languages")}</dt>
+  {
+    spoken.map((l) => (
+      <dd>
+        {l.language} <span class="mono">{l.fluency}</span>
+      </dd>
+    ))
+  }
+</dl>
+
+<style>
+  .words {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-variation-settings: "opsz" 48;
+    font-size: clamp(1.5rem, 3.4vw, 3.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+  }
+  .words li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    color: var(--bone-dim);
+    transition: color 0.25s var(--ease-out);
+  }
+  .words li:hover {
+    color: var(--bone);
+  }
+  .words li:not(:last-child)::after {
+    content: "/";
+    margin: 0 0.45em 0 0.3em;
+    color: var(--rule-strong);
+    font-weight: 300;
+  }
+  .words svg {
+    width: 0.6em;
+    height: 0.6em;
+    flex: none;
+  }
+
+  .spoken {
+    margin: clamp(2.5rem, 5vw, 4rem) 0 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule-strong);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
+    align-items: baseline;
+  }
+  .spoken dt {
+    color: var(--bone-dim);
+  }
+  .spoken dd {
+    margin: 0;
+    font-size: 1.125rem;
+  }
+  .spoken dd .mono {
+    margin-left: 0.5rem;
+    color: var(--bone-dim);
+  }
+</style>
