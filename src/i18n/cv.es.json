@@ -9,7 +9,7 @@
     "image": "/pfp.jpg",
     "email": "drawl9988@gmail.com",
     "url": "",
-    "summary": "Ingeniero de Software Full Stack con más de 4 años de experiencia en Ideamosmas, liderando el desarrollo de Controlo y Exploreti. Responsable de todo el stack técnico: bases de datos MySQL/PostgreSQL, microservicios Java Spring Boot, servicios de reportes en Node.js, frontends con Nuxt/Vue, Tailwind y NuxtUI, y pipelines CI/CD en Azure DevOps.",
+    "summary": "Ingeniero de Software Full Stack con más de 5 años en Ideamosmas, construyendo Controlo y Exploreti de punta a punta: microservicios orientados a eventos en Java 21 / Spring Boot 4, frontends en Nuxt 4, PostgreSQL y CI/CD en Azure. Trabajo con Organic Driven Development (ODD) de gentle-ai y con pruebas primero, y construyo flujos de desarrollo asistido por IA con Claude Code que llevan issues de Linear hasta PRs fusionados.",
     "theme": "platinum",
     "location": {
       "address": "",
@@ -50,27 +50,32 @@
       "url": "https://ideamosmas.com/",
       "startDate": "2021-10-01",
       "endDate": null,
-      "summary": "Liderando el ciclo completo de desarrollo de las plataformas Controlo y Exploreti. Responsable del diseño de bases de datos, microservicios backend, aplicaciones frontend e infraestructura DevOps.",
+      "summary": "Ingeniero de Software Full Stack en los dos productos principales de Ideamosmas: Controlo, una plataforma multi-tenant de boletería, control de acceso y punto de venta para eventos que se está reconstruyendo como microservicios orientados a eventos, y Exploreti, un marketplace de experiencias turísticas en Colombia. Trabajo de punta a punta, desde la base de datos y los servicios hasta el frontend, CI/CD y producción, dentro de un flujo de ingeniería asistido por IA con ODD de gentle-ai.",
       "responsibilities": [
-        "Arquitectura y mantenimiento de bases de datos MySQL y PostgreSQL para aplicaciones de alto tráfico.",
-        "Desarrollo y escalado de microservicios Java Spring Boot para lógica de negocio.",
-        "Construcción de servicios Node.js para reportes y procesamiento de datos.",
-        "Creación de frontends responsivos con Nuxt, Vue, Tailwind y NuxtUI.",
-        "Gestión de pipelines CI/CD y despliegues en Azure DevOps.",
-        "Responsable de todo el stack técnico desde base de datos hasta producción."
+        "Construyo y evoluciono 8 microservicios en Java 21 / Spring Boot 4 para Controlo (identity, catalog, commerce, validator, operations, fiscal, customers, storefront), con un esquema de PostgreSQL por servicio y migraciones con Flyway.",
+        "Diseño la integración orientada a eventos con Azure Service Bus y el patrón transactional outbox, además de llamadas resilientes entre servicios (OpenFeign, Resilience4j) y rate limiting con Redis.",
+        "Implemento autenticación con JWT, OAuth2 resource servers y client-credentials entre servicios, con aislamiento multi-tenant verificado por pruebas de ArchUnit.",
+        "Construyo el back-office y el POS de Controlo en Nuxt 4 + Nuxt UI con patrón BFF (tokens del lado del servidor en cookies httpOnly), además de pagos con Wompi y facturación electrónica DIAN.",
+        "Desarrollo Exploreti de punta a punta como app SSR en Nuxt 4 con Drizzle y PostgreSQL: motor de reservas con bloqueos transaccionales de inventario, pagos con ePayco, portal de proveedores, i18n y SEO.",
+        "Me encargo de CI/CD y la nube: GitHub Actions y Bitbucket Pipelines que construyen imágenes en Azure Container Registry y despliegan en Azure Container Apps, con secretos en Key Vault y observabilidad con Prometheus, Log Analytics y Sentry.",
+        "Pruebo con pruebas primero (TDD): JUnit 5, AssertJ y Mockito, pruebas de integración con Testcontainers, un mínimo de 80% de cobertura JaCoCo en el código de dominio, Vitest y pruebas end-to-end con Playwright.",
+        "Trabajo en Linear con ciclos de una semana, Definition of Ready y de Done, Conventional Commits y PRs de unas 400 líneas, divididos en PRs encadenados cuando son más grandes.",
+        "Trabajo con Organic Driven Development (ODD) de gentle-ai: los cambios pequeños van directo al código, y las funcionalidades grandes llevan un documento con specs numeradas y una bitácora de tareas, implementación con pruebas primero, commits por unidad de trabajo revisables y revisión según el riesgo.",
+        "Impulso el flujo de desarrollo asistido por IA del equipo: construí el plugin de Claude Code de la empresa (linear-goal, workflow-decision), que lleva issues de Linear listas para agentes por implementación, revisión y PR, junto con memoria en Engram y CodeGraph."
       ],
       "skills": {
         "Java": "ri:java-line",
         "Spring Boot": "simple-icons:springboot",
-        "Node.js": "ri:nodejs-line",
-        "Vue": "simple-icons:vuedotjs",
         "Nuxt": "simple-icons:nuxt",
-        "Tailwind": "mdi:tailwind",
-        "MySQL": "simple-icons:mysql",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
         "PostgreSQL": "simple-icons:postgresql",
+        "Redis": "simple-icons:redis",
         "Azure": "simple-icons:microsoftazure",
-        "Git": "mdi:git",
-        "GitHub": "mdi:github"
+        "Docker": "simple-icons:docker",
+        "GitHub Actions": "simple-icons:githubactions",
+        "Linear": "simple-icons:linear",
+        "Claude": "simple-icons:claude"
       }
     }
   ],
@@ -496,14 +501,14 @@
     {
       "name": "Parking Mobile",
       "isActive": true,
-      "description": "Software de gestión inteligente de parqueaderos usado por más de 100 empresas en Colombia. Gestiona más de 2 millones de bahías mensuales y 1 millón de transacciones online anuales, reduciendo costos operativos de clientes en 20%.",
+      "description": "Landing de marketing que construí para Parking Mobile, un software de gestión inteligente de parqueaderos usado por más de 100 negocios en Colombia. Hice solo el sitio web, no el sistema de parqueaderos: un sitio estático rápido y enfocado en SEO para convertir visitas en oportunidades de venta.",
       "highlights": [
-        "Automatización completa con integración de cámaras LPR",
-        "Sistema de parqueo sin ticket",
-        "Reportes en tiempo real basados en la nube",
-        "Facturación electrónica (compatible DIAN)",
-        "Integración de pagos móviles",
-        "Gestión centralizada multi-ubicación"
+        "Sitio estático en Astro con Tailwind, optimizado para velocidad y SEO",
+        "Formulario de captura de leads conectado a funciones serverless",
+        "CTAs de contacto por WhatsApp para conversaciones de venta rápidas",
+        "Datos estructurados de Schema.org y analítica con Google Tag Manager",
+        "Secciones de producto: automatización LPR, parqueo sin tiquete, reportes en la nube y facturación DIAN",
+        "Desplegado en Netlify"
       ],
       "stack": {
         "Astro": "simple-icons:astro",
@@ -565,28 +570,115 @@
       "github": "https://github.com/drawl99/prestafy"
     },
     {
-      "name": "Plataforma de Ecommerce",
+      "name": "NITOR — Plataforma de Ecommerce",
       "isActive": true,
-      "description": "Una plataforma de ecommerce modular que estoy construyendo con la visión de un producto tipo Shopify: pasarelas de pago y proveedores de envío conectables sobre un backend headless de Medusa y un storefront en Nuxt. Hoy funciona para un caso concreto (una marca independiente de cosméticos) mientras toma forma la visión más amplia basada en integraciones.",
+      "description": "Plataforma de ecommerce headless que diseñé y construí de punta a punta, hoy en producción como NITOR, una tienda de insumos profesionales de belleza en Colombia. Backend en Medusa v2 con más de 30 módulos propios y un storefront en Next.js, pensada para crecer hacia un producto reutilizable tipo Shopify con pagos y envíos conectables.",
       "highlights": [
-        "Backend de comercio headless con Medusa",
-        "Storefront en Nuxt 4 (Vue + Pinia) mediante el SDK JS de Medusa",
-        "Diseñado para integraciones de pasarelas de pago conectables",
-        "Diseñado para integraciones de proveedores de envío",
-        "Soporte multi-región con detección automática de país",
-        "Monorepo con Turborepo y workspaces de pnpm",
-        "Primer caso real: una marca independiente de cosméticos"
+        "Backend en Medusa v2 con más de 30 módulos, workflows y subscribers propios",
+        "Storefront en Next.js 16 + React 19 sobre el SDK JS de Medusa",
+        "Pagos con Wompi, pago contra entrega y medios de pago manuales con flujo de aprobación",
+        "Precio sugerido desde el costo, escalas de precio al por mayor y reportes de ventas y ganancias en el admin",
+        "Búsqueda de productos con Meilisearch y sinónimos, y un diagnóstico de belleza",
+        "Correos transaccionales con la marca, reseñas, avisos de reposición y cumplimiento de habeas data",
+        "Trabajo de rendimiento y SEO: optimización de LCP, datos estructurados y redirecciones",
+        "Monorepo con Turborepo desplegado con Docker Compose detrás de Nginx"
       ],
       "stack": {
         "Medusa": "simple-icons:medusa",
-        "Nuxt": "simple-icons:nuxt",
-        "Vue": "simple-icons:vuedotjs",
-        "Pinia": "simple-icons:pinia",
+        "Next.js": "simple-icons:nextdotjs",
+        "React": "simple-icons:react",
         "TypeScript": "simple-icons:typescript",
         "PostgreSQL": "simple-icons:postgresql",
+        "Meilisearch": "simple-icons:meilisearch",
+        "Docker": "simple-icons:docker",
         "Turborepo": "simple-icons:turborepo"
       },
+      "url": "https://nitor.com.co/",
       "github": "https://github.com/drawl99/ecommerce"
+    },
+    {
+      "name": "Escáner de Cuotas Deportivas",
+      "isActive": false,
+      "description": "Escáner de cuotas de apuestas deportivas en tiempo real para el mercado colombiano, pensado como producto por suscripción. Encuentra apuestas +EV, arbitrajes, middles y caídas de cuota entre casas de apuestas, y publica un registro público y auditable de cada alerta liquidada contra el cierre sharp.",
+      "highlights": [
+        "Escaneo en tiempo real de +EV, arbitraje, middles y caídas de cuota",
+        "Cobertura propia de las casas de apuestas colombianas",
+        "Registro público y auditable de alertas con liquidación automática, ROI y CLV",
+        "Cifras netas que descuentan la retención del 20% en Colombia",
+        "Ruta caliente de baja latencia con Redis Streams y un motor en Rust",
+        "TimescaleDB para el histórico de cuotas y envío en tiempo real al panel",
+        "Registro de apuestas, calculadoras, filtros guardados y alertas por Discord"
+      ],
+      "stack": {
+        "Python": "simple-icons:python",
+        "FastAPI": "simple-icons:fastapi",
+        "Rust": "simple-icons:rust",
+        "Next.js": "simple-icons:nextdotjs",
+        "React": "simple-icons:react",
+        "TypeScript": "simple-icons:typescript",
+        "TimescaleDB": "simple-icons:timescale",
+        "Redis": "simple-icons:redis",
+        "Docker": "simple-icons:docker"
+      }
+    },
+    {
+      "name": "PokéBonk Hub",
+      "isActive": true,
+      "description": "Web app complementaria, gratuita y no oficial, bilingüe (EN/ES) para el fan game PokéBonk: wiki, planificador de builds, guía de jefes y seguimiento de entrenadores, alimentada con datos extraídos del cliente del juego y actualizada automáticamente con cada nueva versión.",
+      "highlights": [
+        "Wiki de Pokémon, objetos, reliquias, pactos, mutaciones y mapas",
+        "Planificador de builds con estimación de daño y enfriamiento, e importación/exportación del código de build del juego",
+        "Calculadora de probabilidad de shinies y seguimiento de desbloqueos de la Liga",
+        "Perfil de cuenta guardado solo en el navegador, sin login ni tokens",
+        "Extractor de datos que analiza el cliente como texto inerte y compara versiones nuevas",
+        "Poller con caché y límite de peticiones para el estado del juego y perfiles públicos",
+        "Localización completa EN/ES con SEO: sitemap, datos estructurados y llms.txt"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "React": "simple-icons:react",
+        "TypeScript": "simple-icons:typescript",
+        "Vitest": "simple-icons:vitest",
+        "Cloudflare Workers": "simple-icons:cloudflareworkers"
+      },
+      "url": "https://pokebonkhub.com/"
+    },
+    {
+      "name": "Landing DIEFER S.A.S",
+      "isActive": true,
+      "description": "Landing enfocada en conversión para una empresa de poda de árboles y paisajismo en Cali, Colombia. Sitio estático en Astro cuyo único objetivo es abrir una conversación de WhatsApp con contexto, construido a partir de un canvas de diseño y optimizado para SEO local.",
+      "highlights": [
+        "Implementación fiel del canvas de diseño del cliente",
+        "CTAs de WhatsApp con contexto y tarjetas para compartir por página",
+        "Entidades Service de Schema.org para cada línea de servicio",
+        "Optimización de imágenes en build y muro de logos de clientes",
+        "Despliegue estático en Cloudflare Workers Static Assets"
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "Tailwind": "mdi:tailwind",
+        "TypeScript": "simple-icons:typescript",
+        "Cloudflare Workers": "simple-icons:cloudflareworkers"
+      },
+      "url": "https://diefersas.com.co/"
+    },
+    {
+      "name": "Claude Plugins",
+      "isActive": false,
+      "description": "Mis plugins personales de agentes para Claude Code, OpenCode y Pi. El principal, github-goal, maneja un flujo de issue a merge donde las GitHub Issues son la fuente de verdad: toma una issue, decide la ruta, la implementa con subagentes y espera a que el PR se fusione.",
+      "highlights": [
+        "Las mismas skills instalables en Claude Code, OpenCode y Pi",
+        "Flujo guiado por issues con GitHub Issues como fuente de verdad vía gh",
+        "Seguro para sesiones concurrentes con adopción de claims abandonados",
+        "Ejecuciones por milestone y modelos de subagente por etapa",
+        "Skill workflow-decision que recomienda flujo con specs o directo"
+      ],
+      "stack": {
+        "Claude": "simple-icons:claude",
+        "Bash": "simple-icons:gnubash",
+        "GitHub": "mdi:github"
+      },
+      "github": "https://github.com/drawl99/claude-plugins"
     },
     {
       "name": "Erica Viveros",
