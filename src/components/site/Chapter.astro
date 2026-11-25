@@ -20,8 +20,9 @@ const num = String(index).padStart(2, "0");
       {title}
       {count !== undefined && <sup class="mono">{count}</sup>}
     </h2>
-    <span class="num" aria-hidden="true">{num}</span>
+    <span class="num mono" aria-hidden="true">{num} / 06</span>
   </header>
+  <p class:list={["giant", { flush }]} aria-hidden="true">{title}</p>
   <div class:list={["body", { flush }]}>
     <slot />
   </div>
@@ -68,8 +69,8 @@ const num = String(index).padStart(2, "0");
     line-height: 1;
   }
   h2 .idx {
-    font-size: 0.75rem;
-    font-weight: 500;
+    font-size: 0.8125rem;
+    font-weight: 600;
     letter-spacing: 0.04em;
     transform: translateY(-0.4em);
   }
@@ -80,15 +81,35 @@ const num = String(index).padStart(2, "0");
   }
 
   .num {
+    font-size: 0.75rem;
+  }
+
+  .giant {
+    margin: 0;
+    padding: clamp(2.5rem, 6vw, 5rem) var(--gutter) 0;
     font-family: var(--font-display);
     font-weight: 800;
     font-variation-settings: "opsz" 96;
-    font-size: calc(var(--band-h) * 1.05);
-    line-height: 0.8;
-    letter-spacing: -0.06em;
-    opacity: 0.22;
-    align-self: flex-end;
-    transform: translateY(0.06em);
+    font-size: clamp(3.25rem, 11vw, 12rem);
+    line-height: 0.85;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: var(--giant, var(--bone));
+    overflow-wrap: anywhere;
+  }
+  .giant + .body {
+    padding-top: clamp(2rem, 4vw, 3.5rem);
+  }
+  .giant.flush + .body {
+    padding-top: 0;
+  }
+  [data-tone="orange"] .giant { --giant: var(--orange); }
+  [data-tone="cobalt"] .giant { --giant: var(--cobalt-text); }
+  [data-tone="lime"] .giant { --giant: var(--lime); }
+  [data-tone="sodium"] .giant { --giant: var(--sodium); }
+
+  .band :global(:focus-visible) {
+    outline-color: var(--ink);
   }
 
   .body {
@@ -102,7 +123,7 @@ const num = String(index).padStart(2, "0");
       gap: 0.5rem;
     }
     .num {
-      font-size: calc(var(--band-h) * 0.9);
+      display: none;
     }
   }
   .body.flush {

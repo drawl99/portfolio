@@ -20,11 +20,6 @@ const shotFor = (cover: string | null) => (cover ? shots[`/src/assets/work/${cov
       const stack = Object.entries(p.stack);
       return (
         <li class="cell">
-          <div class="top mono">
-            <span>[{String(offset + i + 1).padStart(2, "0")}]</span>
-            <span class="state">{p.url ? t("index.live") : p.github ? t("index.code") : t("work.private")}</span>
-          </div>
-
           {shot && (
             <Image
               class="thumb"
@@ -37,6 +32,7 @@ const shotFor = (cover: string | null) => (cover ? shots[`/src/assets/work/${cov
           )}
 
           <h3>
+            <span class="idx mono" aria-hidden="true">{String(offset + i + 1).padStart(2, "0")}</span>
             {p.url ? (
               <a href={p.url} target="_blank" rel="noopener">
                 {p.name}
@@ -46,10 +42,14 @@ const shotFor = (cover: string | null) => (cover ? shots[`/src/assets/work/${cov
               p.name
             )}
           </h3>
-          <p class="desc">{p.description}</p>
+          <p class="desc">{p.tagline}</p>
+          {!p.url && !p.github && <p class="state mono">{t("work.private")}</p>}
 
           <details>
-            <summary class="mono">{t("index.details")}</summary>
+            <summary class="mono">
+              <Icon name="ri:arrow-right-s-line" aria-hidden="true" />
+              {t("index.details")}
+            </summary>
             <ul>
               {p.highlights.map((h) => (
                 <li>{h}</li>
@@ -107,17 +107,6 @@ const shotFor = (cover: string | null) => (cover ? shots[`/src/assets/work/${cov
     background: var(--graphite-2);
   }
 
-  .top {
-    display: flex;
-    justify-content: space-between;
-    color: var(--bone-dim);
-  }
-  .top span:first-child {
-    color: var(--sodium);
-  }
-  .state {
-    font-size: 0.625rem;
-  }
 
   .thumb {
     width: 100%;
@@ -163,19 +152,42 @@ const shotFor = (cover: string | null) => (cover ? shots[`/src/assets/work/${cov
     font-size: 0.9375rem;
     line-height: 1.55;
     color: var(--bone);
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 
   details {
     border-top: 1px solid var(--rule);
   }
   summary {
+    list-style: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
     padding: 0.75rem 0;
     color: var(--bone-dim);
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary svg {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.3s var(--ease-out);
+  }
+  details[open] summary svg {
+    transform: rotate(90deg);
+  }
+  h3 .idx {
+    margin-right: 0.5rem;
+    vertical-align: 0.35em;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--sodium);
+  }
+  .state {
+    margin: 0;
+    color: var(--bone-dim);
+    font-size: 0.6875rem;
   }
   summary:hover {
     color: var(--bone);

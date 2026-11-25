@@ -473,7 +473,8 @@
       "url": "https://controlo.co/",
       "cover": "controlo",
       "featured": true,
-      "github": null
+      "github": null,
+      "tagline": "Boletería, control de acceso y punto de venta para eventos y recintos, reconstruido como microservicios Java orientados a eventos en Azure con un back-office en Nuxt."
     },
     {
       "name": "Exploreti",
@@ -502,7 +503,8 @@
       "url": "https://exploreti.com/",
       "cover": "exploreti",
       "featured": true,
-      "github": null
+      "github": null,
+      "tagline": "Marketplace turístico de Colombia: los viajeros reservan tours, parques y atracciones de proveedores locales, con disponibilidad en tiempo real y pagos en línea."
     },
     {
       "name": "NITOR — Plataforma de Ecommerce",
@@ -531,7 +533,8 @@
       "url": "https://nitor.com.co/",
       "github": null,
       "cover": "nitor",
-      "featured": true
+      "featured": true,
+      "tagline": "Ecommerce headless que construí de punta a punta, en producción como tienda de insumos profesionales de belleza en Colombia: backend en Medusa v2 y storefront en Next.js."
     },
     {
       "name": "Viveros Chess",
@@ -559,7 +562,8 @@
       "url": "https://viveros-chess-production.up.railway.app/",
       "github": null,
       "cover": "viveros-chess",
-      "featured": true
+      "featured": true,
+      "tagline": "Plataforma para una escuela de ajedrez: reserva de clases en línea, torneos y área de miembros, con pagos en Stripe y panel de administración."
     },
     {
       "name": "PokéBonk Hub",
@@ -584,7 +588,8 @@
       "url": "https://pokebonkhub.com/",
       "cover": "pokebonk",
       "featured": true,
-      "github": null
+      "github": null,
+      "tagline": "Compañero bilingüe no oficial del fan game PokéBonk: wiki, planificador de builds, guía de jefes y seguimiento de entrenadores, con datos extraídos de cada versión del juego."
     },
     {
       "name": "Landing DIEFER S.A.S",
@@ -606,7 +611,8 @@
       "url": "https://diefersas.com.co/",
       "cover": "diefer",
       "featured": true,
-      "github": null
+      "github": null,
+      "tagline": "Landing estática para una empresa de poda de árboles en Cali cuyo único objetivo es abrir una conversación de WhatsApp con contexto, optimizada para SEO local."
     },
     {
       "name": "Parking Mobile",
@@ -629,7 +635,8 @@
       "url": "https://parkingmobile.co/",
       "cover": "parkingmobile",
       "featured": false,
-      "github": null
+      "github": null,
+      "tagline": "Sitio de marketing que construí para una empresa de software de parqueaderos usada por más de 100 negocios en Colombia. Solo el sitio, no el sistema."
     },
     {
       "name": "PrestaFy",
@@ -656,7 +663,8 @@
       "url": "https://prestafy-six.vercel.app/",
       "github": null,
       "cover": null,
-      "featured": false
+      "featured": false,
+      "tagline": "Gestor de préstamos para prestamistas independientes: perfiles de deudores, cronogramas de pago, saldos y paneles."
     },
     {
       "name": "Escáner de Cuotas Deportivas",
@@ -685,7 +693,8 @@
       "cover": null,
       "featured": false,
       "url": null,
-      "github": null
+      "github": null,
+      "tagline": "Escáner de cuotas en tiempo real para el mercado colombiano de apuestas: +EV, arbitrajes y middles, con un registro público y auditable de cada alerta."
     },
     {
       "name": "Erica Viveros",
@@ -709,34 +718,30 @@
       "url": "https://erica-viveros.pages.dev/",
       "github": "https://github.com/drawl99/erica-viveros",
       "cover": "erica-viveros",
-      "featured": false
+      "featured": false,
+      "tagline": "Sitio en Nuxt para una asesora de seguros y finanzas en Madrid: páginas de seguros de hogar, salud y responsabilidad civil, asesoría de ahorro y agendamiento de citas."
     },
     {
       "name": "Portfolio",
       "isActive": true,
-      "description": "Sitio web de portafolio personal que muestra experiencia profesional, proyectos y habilidades técnicas. Construido con tecnologías web modernas para un rendimiento y experiencia de usuario óptimos.",
+      "description": "Este sitio: un portafolio estático y bilingüe en Astro, diseñado como un índice por capítulos, con carrusel horizontal fijo y scroll suave.",
       "highlights": [
-        "Renderizado del lado del servidor con Astro",
-        "Animaciones interactivas con GSAP",
-        "Efectos de partículas y transiciones suaves",
-        "Soporte multi-idioma (Inglés/Español)",
-        "Diseño responsivo con Tailwind CSS",
-        "Integración con React 19 para componentes dinámicos",
-        "Optimizado para rendimiento y SEO",
-        "Desplegado en Cloudflare Pages"
+        "Build estático en Astro, desplegado en Cloudflare Pages",
+        "Versiones en inglés y español con hreflang",
+        "Carrusel horizontal fijo con contador y barra de progreso",
+        "Scroll suave con Lenis y alternativa para movimiento reducido",
+        "Bricolage Grotesque, Geist y JetBrains Mono servidas desde el sitio"
       ],
       "stack": {
         "Astro": "simple-icons:astro",
-        "React": "simple-icons:react",
         "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "GSAP": "simple-icons:greensock",
         "Cloudflare Pages": "simple-icons:cloudflare"
       },
       "url": "https://portfolio-5rl.pages.dev/",
       "github": "https://github.com/drawl99/portfolio",
       "cover": null,
-      "featured": false
+      "featured": false,
+      "tagline": "Este sitio: un portafolio estático y bilingüe en Astro, diseñado como un índice por capítulos, con carrusel horizontal fijo y scroll suave."
     },
     {
       "name": "RewardsApp",
@@ -761,7 +766,8 @@
       "cover": null,
       "featured": false,
       "url": null,
-      "github": null
+      "github": null,
+      "tagline": "App de recompensas por misiones para jugadores de Valorant, sincronizada con cuentas de Riot. App multiplataforma en React Native construida con orquestación de agentes de IA."
     }
   ]
 }

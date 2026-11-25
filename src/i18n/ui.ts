@@ -49,8 +49,6 @@ export const ui = {
     "index.title": "Index",
     "index.more": "More projects",
     "index.details": "Highlights",
-    "index.live": "Live site",
-    "index.code": "Open source",
 
     "stack.title": "Stack",
     "stack.languages": "Spoken languages",
@@ -103,8 +101,6 @@ export const ui = {
     "index.title": "Índice",
     "index.more": "Más proyectos",
     "index.details": "Destacados",
-    "index.live": "Sitio en vivo",
-    "index.code": "Código abierto",
 
     "stack.title": "Stack",
     "stack.languages": "Idiomas",

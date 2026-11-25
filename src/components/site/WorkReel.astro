@@ -46,11 +46,8 @@ const host = (url: string | null) => (url ? new URL(url).host.replace(/^www\./, 
               </figure>
 
               <div class="copy">
-                <p class="count mono" aria-hidden="true">
-                  <b>{pad(i + 1)}</b> / {pad(n)}
-                </p>
                 <h3>{p.name}</h3>
-                <p class="desc">{p.description}</p>
+                <p class="desc">{p.tagline}</p>
                 <ul class="points">
                   {p.highlights.slice(0, 3).map((h) => (
                     <li>{h}</li>
@@ -171,14 +168,6 @@ const host = (url: string | null) => (url ? new URL(url).host.replace(/^www\./, 
     color: var(--lime);
   }
 
-  .count {
-    margin: 0 0 1rem;
-    color: var(--bone-dim);
-  }
-  .count b {
-    color: var(--lime);
-    font-weight: 500;
-  }
 
   h3 {
     margin: 0;
@@ -197,10 +186,6 @@ const host = (url: string | null) => (url ? new URL(url).host.replace(/^www\./, 
     font-size: 1rem;
     line-height: 1.55;
     color: var(--bone);
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 
   .points {
@@ -255,7 +240,7 @@ const host = (url: string | null) => (url ? new URL(url).host.replace(/^www\./, 
       position: sticky;
       top: var(--stage-top);
       height: var(--stage-h);
-      overflow: hidden;
+      overflow: clip;
       display: grid;
       grid-template-rows: minmax(0, 1fr) auto;
       grid-template-columns: minmax(0, 1fr);
@@ -339,9 +324,14 @@ const host = (url: string | null) => (url ? new URL(url).host.replace(/^www\./, 
       const travel = reel.offsetHeight - stage.offsetHeight;
       const top = stage.getBoundingClientRect().top - rect.top;
       const progress = travel > 0 ? Math.min(Math.max(top / travel, 0), 1) : 0;
-      const distance = track.scrollWidth - stage.clientWidth;
-      track.style.transform = `translate3d(${-progress * distance}px, 0, 0)`;
-      const current = Math.min(slides, Math.round(progress * (slides - 1)) + 1);
+      // Each slide rests in frame for the first and last quarter of its segment, then glides to the next.
+      const segment = progress * (slides - 1);
+      const index = Math.min(Math.floor(segment), slides - 1);
+      const t = Math.min(Math.max((segment - index - 0.25) / 0.5, 0), 1);
+      const position = index + t * t * (3 - 2 * t);
+      const slideWidth = (track.children[0] as HTMLElement).offsetWidth;
+      track.style.transform = `translate3d(${-position * slideWidth}px, 0, 0)`;
+      const current = Math.min(slides, Math.round(position) + 1);
       counter.textContent = String(current).padStart(2, "0");
       fill.style.transform = `scaleX(${progress})`;
       pct.textContent = `${Math.round(progress * 100)}%`;
@@ -367,11 +357,13 @@ const host = (url: string | null) => (url ? new URL(url).host.replace(/^www\./, 
       const index = [...track.children].indexOf(slide);
       const stage = track.parentElement as HTMLElement;
       const travel = reel.offsetHeight - stage.offsetHeight;
-      const y = window.scrollY + reel.getBoundingClientRect().top + (travel * index) / Math.max(slides - 1, 1);
+      const stageTop = parseFloat(getComputedStyle(stage).top) || 0;
+      const y = window.scrollY + reel.getBoundingClientRect().top - stageTop + (travel * index) / Math.max(slides - 1, 1);
       const lenis = (window as unknown as { lenis?: { scrollTo: (y: number, o?: object) => void } }).lenis;
-      track.parentElement!.scrollLeft = 0;
-      if (lenis) lenis.scrollTo(y, { immediate: true });
-      else window.scrollTo(0, y);
+      requestAnimationFrame(() => {
+        if (lenis) lenis.scrollTo(y, { immediate: true, force: true });
+        else window.scrollTo(0, y);
+      });
     });
   }
 </script>

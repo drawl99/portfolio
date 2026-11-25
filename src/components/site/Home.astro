@@ -41,6 +41,12 @@ const featured = projects.filter((p) => p.featured).length;
   :global(.drench) {
     background: var(--orange);
   }
+  :global(.drench :focus-visible) {
+    outline-color: var(--ink);
+  }
+  :global(.drench .giant) {
+    --giant: var(--ink);
+  }
   :global(.drench .band) {
     border-bottom-color: rgba(18, 18, 18, 0.35);
   }

@@ -46,7 +46,7 @@ const words = summary.split(/\s+/);
       ticking = false;
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
-      const progress = Math.min(Math.max((vh * 0.85 - rect.top) / (rect.height + vh * 0.35), 0), 1);
+      const progress = Math.min(Math.max((vh * 0.85 - rect.top) / (rect.height * 0.5 + vh * 0.2), 0), 1);
       const lit = progress * spans.length;
       spans.forEach((s, i) => s.style.setProperty("--lit", String(Math.min(Math.max(lit - i, 0), 1))));
     };

@@ -60,14 +60,14 @@ const github = basics.profiles.find((p) => p.network === "GitHub");
     </figure>
   </div>
 
-  <a class="scroll mono" href="#about">{t("hero.scroll")} <span aria-hidden="true">↓</span></a>
+  <a class="scroll mono" href="#about">{t("hero.scroll")} <Icon name="ri:arrow-down-line" aria-hidden="true" /></a>
 </section>
 
 <style>
   .hero {
     position: relative;
     min-height: 100svh;
-    padding: calc(var(--bar-h) + clamp(2rem, 6vh, 4.5rem)) var(--gutter) clamp(2rem, 5vh, 3.5rem);
+    padding: calc(var(--bar-h) + clamp(1.25rem, 3.5vh, 3rem)) var(--gutter) clamp(1.5rem, 3.5vh, 2.5rem);
     display: grid;
     grid-template-rows: auto auto 1fr;
     gap: clamp(0.75rem, 2vh, 1.5rem);
@@ -118,8 +118,8 @@ const github = basics.profiles.find((p) => p.network === "GitHub");
     font-family: var(--font-display);
     font-weight: 800;
     font-variation-settings: "opsz" 96;
-    font-size: clamp(3.5rem, min(23vw, 30svh), 21rem);
-    line-height: 0.84;
+    font-size: clamp(3.5rem, 21.5vw, 21rem);
+    line-height: 0.8;
     letter-spacing: -0.045em;
     text-transform: uppercase;
   }
@@ -131,6 +131,7 @@ const github = basics.profiles.find((p) => p.network === "GitHub");
     animation-delay: 0.08s;
     color: transparent;
     -webkit-text-stroke: 1.5px var(--bone);
+    letter-spacing: -0.025em;
   }
   @keyframes rise {
     from {
@@ -146,7 +147,7 @@ const github = basics.profiles.find((p) => p.network === "GitHub");
   .meta {
     align-self: end;
     display: grid;
-    grid-template-columns: 1.2fr 1fr auto;
+    grid-template-columns: 1fr auto;
     align-items: end;
     gap: clamp(1.5rem, 4vw, 4rem);
     border-top: 1px solid var(--rule-strong);
@@ -190,9 +191,15 @@ const github = basics.profiles.find((p) => p.network === "GitHub");
   }
 
   .actions {
+    grid-column: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+  .portrait {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: end;
   }
   .actions a {
     display: inline-flex;
@@ -256,9 +263,16 @@ const github = basics.profiles.find((p) => p.network === "GitHub");
   .scroll {
     position: absolute;
     right: var(--gutter);
-    top: calc(var(--bar-h) + clamp(2rem, 6vh, 4.5rem));
+    top: calc(var(--bar-h) + clamp(1.25rem, 3.5vh, 3rem));
     color: var(--bone-dim);
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .scroll svg {
+    width: 0.9rem;
+    height: 0.9rem;
   }
 
   @media (max-width: 900px) {
@@ -268,11 +282,13 @@ const github = basics.profiles.find((p) => p.network === "GitHub");
     }
     .meta {
       margin-top: clamp(1.5rem, 6vh, 3rem);
-      grid-template-columns: 1fr auto;
     }
     .actions {
       grid-column: 1 / -1;
       grid-row: 2;
+    }
+    .portrait {
+      grid-row: 1;
     }
     .scroll {
       display: none;

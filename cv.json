@@ -473,7 +473,8 @@
       "url": "https://controlo.co/",
       "cover": "controlo",
       "featured": true,
-      "github": null
+      "github": null,
+      "tagline": "Ticketing, access control and POS for events and venues, rebuilt as event-driven Java microservices on Azure with a Nuxt back-office."
     },
     {
       "name": "Exploreti",
@@ -502,7 +503,8 @@
       "url": "https://exploreti.com/",
       "cover": "exploreti",
       "featured": true,
-      "github": null
+      "github": null,
+      "tagline": "Tourism marketplace for Colombia: travelers book tours, parks and attractions from local suppliers, with real-time availability and online payments."
     },
     {
       "name": "NITOR — Ecommerce Platform",
@@ -531,7 +533,8 @@
       "url": "https://nitor.com.co/",
       "github": null,
       "cover": "nitor",
-      "featured": true
+      "featured": true,
+      "tagline": "Headless ecommerce I built end to end, live as a professional beauty-supply store in Colombia: Medusa v2 backend, Next.js storefront."
     },
     {
       "name": "Viveros Chess",
@@ -559,7 +562,8 @@
       "url": "https://viveros-chess-production.up.railway.app/",
       "github": null,
       "cover": "viveros-chess",
-      "featured": true
+      "featured": true,
+      "tagline": "Platform for a chess school: online class booking, tournaments and a members area, with Stripe payments and an admin panel."
     },
     {
       "name": "PokéBonk Hub",
@@ -584,7 +588,8 @@
       "url": "https://pokebonkhub.com/",
       "cover": "pokebonk",
       "featured": true,
-      "github": null
+      "github": null,
+      "tagline": "Unofficial bilingual companion for the PokéBonk fan game: wiki, build planner, boss guide and trainer tracker, fed by data extracted from each game build."
     },
     {
       "name": "DIEFER S.A.S Landing",
@@ -606,7 +611,8 @@
       "url": "https://diefersas.com.co/",
       "cover": "diefer",
       "featured": true,
-      "github": null
+      "github": null,
+      "tagline": "Static landing for a tree-care company in Cali whose single goal is opening a WhatsApp conversation with context, tuned for local SEO."
     },
     {
       "name": "Parking Mobile",
@@ -629,7 +635,8 @@
       "url": "https://parkingmobile.co/",
       "cover": "parkingmobile",
       "featured": false,
-      "github": null
+      "github": null,
+      "tagline": "Marketing site I built for a parking-management software company used by 100+ businesses in Colombia. The website only, not the system."
     },
     {
       "name": "PrestaFy",
@@ -656,7 +663,8 @@
       "url": "https://prestafy-six.vercel.app/",
       "github": null,
       "cover": null,
-      "featured": false
+      "featured": false,
+      "tagline": "Personal loan manager for independent lenders: debtor profiles, payment schedules, balances and dashboards."
     },
     {
       "name": "Sports Odds Scanner",
@@ -685,7 +693,8 @@
       "cover": null,
       "featured": false,
       "url": null,
-      "github": null
+      "github": null,
+      "tagline": "Real-time odds scanner for the Colombian betting market: +EV, arbitrage and middles, with a public, auditable record of every alert."
     },
     {
       "name": "Erica Viveros",
@@ -709,34 +718,30 @@
       "url": "https://erica-viveros.pages.dev/",
       "github": "https://github.com/drawl99/erica-viveros",
       "cover": "erica-viveros",
-      "featured": false
+      "featured": false,
+      "tagline": "Nuxt site for an insurance and financial advisor in Madrid: home, health and liability insurance pages, savings advice and appointment booking."
     },
     {
       "name": "Portfolio",
       "isActive": true,
-      "description": "Personal portfolio website showcasing professional experience, projects, and technical skills. Built with modern web technologies for optimal performance and user experience.",
+      "description": "This site: a static, bilingual Astro portfolio designed as a chaptered index, with a pinned horizontal work reel and smooth scroll.",
       "highlights": [
-        "Server-Side Rendering with Astro",
-        "Interactive animations with GSAP",
-        "Particle effects and smooth transitions",
-        "Multi-language support (English/Spanish)",
-        "Responsive design with Tailwind CSS",
-        "React 19 integration for dynamic components",
-        "Optimized for performance and SEO",
-        "Deployed on Cloudflare Pages"
+        "Static Astro build, deployed on Cloudflare Pages",
+        "English and Spanish versions with hreflang",
+        "Pinned horizontal work reel with counter and progress rail",
+        "Lenis smooth scroll with a reduced-motion fallback",
+        "Self-hosted Bricolage Grotesque, Geist and JetBrains Mono"
       ],
       "stack": {
         "Astro": "simple-icons:astro",
-        "React": "simple-icons:react",
         "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "GSAP": "simple-icons:greensock",
         "Cloudflare Pages": "simple-icons:cloudflare"
       },
       "url": "https://portfolio-5rl.pages.dev/",
       "github": "https://github.com/drawl99/portfolio",
       "cover": null,
-      "featured": false
+      "featured": false,
+      "tagline": "This site: a static, bilingual Astro portfolio designed as a chaptered index, with a pinned horizontal work reel and smooth scroll."
     },
     {
       "name": "RewardsApp",
@@ -761,7 +766,8 @@
       "cover": null,
       "featured": false,
       "url": null,
-      "github": null
+      "github": null,
+      "tagline": "Mission-based rewards app for Valorant players, synced with Riot accounts. Cross-platform React Native app built with AI agent orchestration."
     }
   ]
 }

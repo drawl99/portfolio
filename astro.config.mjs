@@ -16,7 +16,7 @@ export default defineConfig({
       // (~8.5MB) into the build; this keeps it to a few KB.
       include: {
         mdi: ["github", "linkedin", "tailwind", "git"],
-        ri: ["arrow-up-line", "java-line", "nodejs-line", "css3-fill", "mail-fill"],
+        ri: ["arrow-up-line", "arrow-down-line", "arrow-right-s-line", "java-line", "nodejs-line", "css3-fill", "mail-fill"],
         "simple-icons": [
           "angular",
           "astro",
