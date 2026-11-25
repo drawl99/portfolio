@@ -529,7 +529,7 @@
         "Turborepo": "simple-icons:turborepo"
       },
       "url": "https://nitor.com.co/",
-      "github": "https://github.com/drawl99/ecommerce",
+      "github": null,
       "cover": "nitor",
       "featured": true
     },
@@ -557,7 +557,7 @@
         "Railway": "simple-icons:railway"
       },
       "url": "https://viveros-chess-production.up.railway.app/",
-      "github": "https://github.com/drawl99/viveros-chess",
+      "github": null,
       "cover": "viveros-chess",
       "featured": true
     },
@@ -654,7 +654,7 @@
         "Pinia": "simple-icons:pinia"
       },
       "url": "https://prestafy-six.vercel.app/",
-      "github": "https://github.com/drawl99/prestafy",
+      "github": null,
       "cover": null,
       "featured": false
     },
