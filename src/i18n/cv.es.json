@@ -688,27 +688,6 @@
       "github": null
     },
     {
-      "name": "Claude Plugins",
-      "isActive": false,
-      "description": "Mis plugins personales de agentes para Claude Code, OpenCode y Pi. El principal, github-goal, maneja un flujo de issue a merge donde las GitHub Issues son la fuente de verdad: toma una issue, decide la ruta, la implementa con subagentes y espera a que el PR se fusione.",
-      "highlights": [
-        "Las mismas skills instalables en Claude Code, OpenCode y Pi",
-        "Flujo guiado por issues con GitHub Issues como fuente de verdad vía gh",
-        "Seguro para sesiones concurrentes con adopción de claims abandonados",
-        "Ejecuciones por milestone y modelos de subagente por etapa",
-        "Skill workflow-decision que recomienda flujo con specs o directo"
-      ],
-      "stack": {
-        "Claude": "simple-icons:claude",
-        "Bash": "simple-icons:gnubash",
-        "GitHub": "mdi:github"
-      },
-      "github": "https://github.com/drawl99/claude-plugins",
-      "cover": null,
-      "featured": false,
-      "url": null
-    },
-    {
       "name": "Erica Viveros",
       "isActive": true,
       "description": "Sitio web profesional para una consultora financiera y agente de seguros en Madrid, España. Incluye catálogo de servicios, agendamiento de citas y diseño moderno enfocado en confianza y claridad.",
@@ -756,24 +735,6 @@
       },
       "url": "https://portfolio-5rl.pages.dev/",
       "github": "https://github.com/drawl99/portfolio",
-      "cover": null,
-      "featured": false
-    },
-    {
-      "name": "RewardsApp Landing",
-      "isActive": true,
-      "description": "Landing page moderna para una aplicación móvil de recompensas diseñada para gamers competitivos, con estética dark theme y diseño mobile-first.",
-      "highlights": [
-        "Diseño responsive con tema oscuro",
-        "Enfoque mobile-first",
-        "Animaciones suaves con soporte para prefers-reduced-motion"
-      ],
-      "stack": {
-        "Astro": "simple-icons:astro",
-        "Tailwind": "mdi:tailwind"
-      },
-      "url": "https://landing-rewards.pages.dev/",
-      "github": "https://github.com/drawl99/landing-rewards",
       "cover": null,
       "featured": false
     },

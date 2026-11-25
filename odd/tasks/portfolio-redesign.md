@@ -36,3 +36,5 @@ Route evidence: single coherent visual system sharing tokens and layout; units a
 - L3: User approved the direction: "Yes, build it".
 - L4: Found `public/anmol.pdf` is a template author's CV, not Andrés's; remove it, and no CV download button until he provides one.
 - L5: T1–T4 built. Evidence: `pnpm build` 0 errors/0 warnings; Impeccable detector `[]`; browser checks at 1440x900 and 375x812 (EN and ES): hero, sticky bands, reel pinned with counter/rail/percent, index, stack, contact; mobile reel stacks vertically, no horizontal overflow. Fixed during verification: reel HUD grid width, UTC year for education dates, mobile band wrap, mobile hero gap. Landing-rewards.pages.dev did not respond, PrestaFy only shows login: typographic covers / no thumbnail.
+- L6: User: "saca una landing de las destacadas y mete el de viveros chess" → chose "Parking Mobile". Viveros Chess featured 4th, Parking Mobile moved to the index.
+- L7: User: "y saca de los proyectos a rewardsapp landing y claude plugins". Removed both from EN/ES data; 12 projects remain (6 featured, 6 in the index).
