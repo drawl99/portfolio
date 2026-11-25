@@ -534,6 +534,34 @@
       "featured": true
     },
     {
+      "name": "Viveros Chess",
+      "isActive": true,
+      "description": "Web platform for a chess ecosystem: a chess school with online class booking, tournaments, and a members area. Full-stack Nuxt 4 app with an authenticated admin panel, Stripe payments, transactional email, and image storage on Cloudflare R2.",
+      "highlights": [
+        "Chess academy with online class booking and scheduling",
+        "Stripe payment integration for enrollments",
+        "Authenticated admin panel with sealed sessions",
+        "Transactional email via Resend (bookings and alerts)",
+        "Image uploads to Cloudflare R2",
+        "PostgreSQL with Drizzle ORM and typed migrations",
+        "Deployed on Railway with CI-driven migrations"
+      ],
+      "stack": {
+        "Nuxt": "simple-icons:nuxt",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Drizzle": "simple-icons:drizzle",
+        "Stripe": "simple-icons:stripe",
+        "Railway": "simple-icons:railway"
+      },
+      "url": "https://viveros-chess-production.up.railway.app/",
+      "github": "https://github.com/drawl99/viveros-chess",
+      "cover": "viveros-chess",
+      "featured": true
+    },
+    {
       "name": "PokéBonk Hub",
       "isActive": true,
       "description": "Free, unofficial bilingual (EN/ES) companion web app for the PokéBonk fan game: a wiki, a build planner, a boss guide and a trainer tracker, all fed by data extracted from the game client and refreshed automatically on every new game build.",
@@ -600,36 +628,8 @@
       },
       "url": "https://parkingmobile.co/",
       "cover": "parkingmobile",
-      "featured": true,
+      "featured": false,
       "github": null
-    },
-    {
-      "name": "Viveros Chess",
-      "isActive": true,
-      "description": "Web platform for a chess ecosystem: a chess school with online class booking, tournaments, and a members area. Full-stack Nuxt 4 app with an authenticated admin panel, Stripe payments, transactional email, and image storage on Cloudflare R2.",
-      "highlights": [
-        "Chess academy with online class booking and scheduling",
-        "Stripe payment integration for enrollments",
-        "Authenticated admin panel with sealed sessions",
-        "Transactional email via Resend (bookings and alerts)",
-        "Image uploads to Cloudflare R2",
-        "PostgreSQL with Drizzle ORM and typed migrations",
-        "Deployed on Railway with CI-driven migrations"
-      ],
-      "stack": {
-        "Nuxt": "simple-icons:nuxt",
-        "Vue": "simple-icons:vuedotjs",
-        "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Drizzle": "simple-icons:drizzle",
-        "Stripe": "simple-icons:stripe",
-        "Railway": "simple-icons:railway"
-      },
-      "url": "https://viveros-chess-production.up.railway.app/",
-      "github": "https://github.com/drawl99/viveros-chess",
-      "cover": "viveros-chess",
-      "featured": false
     },
     {
       "name": "PrestaFy",

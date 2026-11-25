@@ -534,6 +534,34 @@
       "featured": true
     },
     {
+      "name": "Viveros Chess",
+      "isActive": true,
+      "description": "Plataforma web para un ecosistema de ajedrez: una escuela de ajedrez con reserva de clases en línea, torneos y área de miembros. App full-stack en Nuxt 4 con panel de administración autenticado, pagos con Stripe, correos transaccionales y almacenamiento de imágenes en Cloudflare R2.",
+      "highlights": [
+        "Academia de ajedrez con reserva y agendamiento de clases en línea",
+        "Integración de pagos con Stripe para inscripciones",
+        "Panel de administración autenticado con sesiones selladas",
+        "Correos transaccionales con Resend (reservas y alertas)",
+        "Carga de imágenes a Cloudflare R2",
+        "PostgreSQL con Drizzle ORM y migraciones tipadas",
+        "Desplegado en Railway con migraciones automatizadas en CI"
+      ],
+      "stack": {
+        "Nuxt": "simple-icons:nuxt",
+        "Vue": "simple-icons:vuedotjs",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Drizzle": "simple-icons:drizzle",
+        "Stripe": "simple-icons:stripe",
+        "Railway": "simple-icons:railway"
+      },
+      "url": "https://viveros-chess-production.up.railway.app/",
+      "github": "https://github.com/drawl99/viveros-chess",
+      "cover": "viveros-chess",
+      "featured": true
+    },
+    {
       "name": "PokéBonk Hub",
       "isActive": true,
       "description": "Web app complementaria, gratuita y no oficial, bilingüe (EN/ES) para el fan game PokéBonk: wiki, planificador de builds, guía de jefes y seguimiento de entrenadores, alimentada con datos extraídos del cliente del juego y actualizada automáticamente con cada nueva versión.",
@@ -600,36 +628,8 @@
       },
       "url": "https://parkingmobile.co/",
       "cover": "parkingmobile",
-      "featured": true,
+      "featured": false,
       "github": null
-    },
-    {
-      "name": "Viveros Chess",
-      "isActive": true,
-      "description": "Plataforma web para un ecosistema de ajedrez: una escuela de ajedrez con reserva de clases en línea, torneos y área de miembros. App full-stack en Nuxt 4 con panel de administración autenticado, pagos con Stripe, correos transaccionales y almacenamiento de imágenes en Cloudflare R2.",
-      "highlights": [
-        "Academia de ajedrez con reserva y agendamiento de clases en línea",
-        "Integración de pagos con Stripe para inscripciones",
-        "Panel de administración autenticado con sesiones selladas",
-        "Correos transaccionales con Resend (reservas y alertas)",
-        "Carga de imágenes a Cloudflare R2",
-        "PostgreSQL con Drizzle ORM y migraciones tipadas",
-        "Desplegado en Railway con migraciones automatizadas en CI"
-      ],
-      "stack": {
-        "Nuxt": "simple-icons:nuxt",
-        "Vue": "simple-icons:vuedotjs",
-        "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Drizzle": "simple-icons:drizzle",
-        "Stripe": "simple-icons:stripe",
-        "Railway": "simple-icons:railway"
-      },
-      "url": "https://viveros-chess-production.up.railway.app/",
-      "github": "https://github.com/drawl99/viveros-chess",
-      "cover": "viveros-chess",
-      "featured": false
     },
     {
       "name": "PrestaFy",
