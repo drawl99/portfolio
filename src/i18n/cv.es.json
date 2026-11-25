@@ -33,6 +33,13 @@
         "url": "https://www.linkedin.com/in/ing-andresgiraldo/"
       },
       {
+        "network": "Instagram",
+        "icon": "mdi:instagram",
+        "color": "#E4405F",
+        "username": "andresgiraldollanos",
+        "url": "https://www.instagram.com/andresgiraldollanos/"
+      },
+      {
         "network": "Email",
         "icon": "ri:mail-fill",
         "color": "#D44638",
@@ -124,6 +131,33 @@
       ]
     },
     {
+      "name": "Python",
+      "icon": "simple-icons:python",
+      "level": "Intermedio",
+      "keywords": [
+        "Backend",
+        "Datos"
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "icon": "simple-icons:fastapi",
+      "level": "Intermedio",
+      "keywords": [
+        "Backend",
+        "API REST"
+      ]
+    },
+    {
+      "name": "Rust",
+      "icon": "simple-icons:rust",
+      "level": "Intermedio",
+      "keywords": [
+        "Baja latencia",
+        "Sistemas"
+      ]
+    },
+    {
       "name": "MySQL",
       "icon": "simple-icons:mysql",
       "level": "Avanzado",
@@ -143,6 +177,16 @@
         "Bases de Datos",
         "SQL",
         "Base de Datos Relacional"
+      ]
+    },
+    {
+      "name": "Redis",
+      "icon": "simple-icons:redis",
+      "level": "Intermedio",
+      "keywords": [
+        "Caché",
+        "Streams",
+        "Rate limiting"
       ]
     },
     {
@@ -239,6 +283,15 @@
       ]
     },
     {
+      "name": "Docker",
+      "icon": "simple-icons:docker",
+      "level": "Intermedio",
+      "keywords": [
+        "Contenedores",
+        "DevOps"
+      ]
+    },
+    {
       "name": "CI/CD",
       "icon": "simple-icons:azurepipelines",
       "level": "Intermedio",
@@ -246,6 +299,14 @@
         "DevOps",
         "Automatización",
         "Despliegue"
+      ]
+    },
+    {
+      "name": "GitHub Actions",
+      "icon": "simple-icons:githubactions",
+      "level": "Intermedio",
+      "keywords": [
+        "CI/CD"
       ]
     },
     {
@@ -270,6 +331,14 @@
       ]
     },
     {
+      "name": "Linear",
+      "icon": "simple-icons:linear",
+      "level": "Intermedio",
+      "keywords": [
+        "Gestión de issues"
+      ]
+    },
+    {
       "name": "Astro",
       "icon": "simple-icons:astro",
       "level": "Intermedio",
@@ -288,6 +357,16 @@
         "Frontend",
         "JavaScript",
         "Librería UI"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "icon": "simple-icons:nextdotjs",
+      "level": "Intermedio",
+      "keywords": [
+        "Frontend",
+        "React",
+        "SSR"
       ]
     },
     {
@@ -341,6 +420,22 @@
       ]
     },
     {
+      "name": "Vitest",
+      "icon": "simple-icons:vitest",
+      "level": "Intermedio",
+      "keywords": [
+        "Pruebas"
+      ]
+    },
+    {
+      "name": "Playwright",
+      "icon": "simple-icons:playwright",
+      "level": "Intermedio",
+      "keywords": [
+        "Pruebas E2E"
+      ]
+    },
+    {
       "name": "Drizzle ORM",
       "icon": "simple-icons:drizzle",
       "level": "Avanzado",
@@ -371,6 +466,14 @@
         "Comercio Headless",
         "Backend",
         "Node.js"
+      ]
+    },
+    {
+      "name": "Meilisearch",
+      "icon": "simple-icons:meilisearch",
+      "level": "Intermedio",
+      "keywords": [
+        "Búsqueda"
       ]
     },
     {
@@ -405,6 +508,16 @@
       ]
     },
     {
+      "name": "Claude Code",
+      "icon": "simple-icons:claude",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo asistido por IA",
+        "Plugins",
+        "Skills"
+      ]
+    },
+    {
       "name": "OpenCode",
       "icon": "simple-icons:openai",
       "level": "Intermedio",
@@ -412,26 +525,6 @@
         "Desarrollo con IA",
         "Flujos de Agentes",
         "Generación de Código"
-      ]
-    },
-    {
-      "name": "Skills.sh",
-      "icon": "simple-icons:gnubash",
-      "level": "Intermedio",
-      "keywords": [
-        "Desarrollo de Skills",
-        "Automatización con IA",
-        "Herramientas CLI"
-      ]
-    },
-    {
-      "name": "Agents.md",
-      "icon": "simple-icons:markdown",
-      "level": "Intermedio",
-      "keywords": [
-        "Documentación de Agentes",
-        "Colaboración con IA",
-        "Ingeniería de Prompts"
       ]
     }
   ],
