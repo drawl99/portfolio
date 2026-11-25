@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T00:00:00Z",
+  "title": "Design System: Andrés Giraldo Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "oklch(18.2% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "graphite-2": {
+        "role": "neutral",
+        "displayName": "Graphite Lift",
+        "canonical": "oklch(22.2% 0.002 106.6)",
+        "tonalRamp": [
+          "oklch(15% 0.002 106.6)",
+          "oklch(26% 0.002 106.6)",
+          "oklch(38% 0.002 106.6)",
+          "oklch(49% 0.002 106.6)",
+          "oklch(61% 0.002 106.6)",
+          "oklch(72% 0.002 106.6)",
+          "oklch(84% 0.002 106.6)",
+          "oklch(95% 0.002 106.6)"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "oklch(93.2% 0.013 86.8)",
+        "tonalRamp": [
+          "oklch(15% 0.013 86.8)",
+          "oklch(26% 0.013 86.8)",
+          "oklch(38% 0.013 86.8)",
+          "oklch(49% 0.013 86.8)",
+          "oklch(61% 0.013 86.8)",
+          "oklch(72% 0.013 86.8)",
+          "oklch(84% 0.013 86.8)",
+          "oklch(95% 0.013 86.8)"
+        ]
+      },
+      "bone-dim": {
+        "role": "neutral",
+        "displayName": "Dim Bone",
+        "canonical": "oklch(72% 0.015 84.6)",
+        "tonalRamp": [
+          "oklch(15% 0.015 84.6)",
+          "oklch(26% 0.015 84.6)",
+          "oklch(38% 0.015 84.6)",
+          "oklch(49% 0.015 84.6)",
+          "oklch(61% 0.015 84.6)",
+          "oklch(72% 0.015 84.6)",
+          "oklch(84% 0.015 84.6)",
+          "oklch(95% 0.015 84.6)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(18.2% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "rgba(236, 232, 223, 0.12)"
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Rule",
+        "canonical": "rgba(236, 232, 223, 0.28)"
+      },
+      "grid-line": {
+        "role": "neutral",
+        "displayName": "Grid Line",
+        "canonical": "rgba(236, 232, 223, 0.045)"
+      },
+      "orange": {
+        "role": "primary",
+        "displayName": "Signal Orange",
+        "canonical": "oklch(68.3% 0.21 38)",
+        "tonalRamp": [
+          "oklch(15% 0.21 38)",
+          "oklch(26% 0.21 38)",
+          "oklch(38% 0.21 38)",
+          "oklch(49% 0.21 38)",
+          "oklch(61% 0.21 38)",
+          "oklch(72% 0.21 38)",
+          "oklch(84% 0.21 38)",
+          "oklch(95% 0.21 38)"
+        ]
+      },
+      "cobalt": {
+        "role": "secondary",
+        "displayName": "Cobalt",
+        "canonical": "oklch(51.2% 0.246 267.9)",
+        "tonalRamp": [
+          "oklch(15% 0.246 267.9)",
+          "oklch(26% 0.246 267.9)",
+          "oklch(38% 0.246 267.9)",
+          "oklch(49% 0.246 267.9)",
+          "oklch(61% 0.246 267.9)",
+          "oklch(72% 0.246 267.9)",
+          "oklch(84% 0.246 267.9)",
+          "oklch(95% 0.246 267.9)"
+        ]
+      },
+      "cobalt-text": {
+        "role": "secondary",
+        "displayName": "Periwinkle Text",
+        "canonical": "oklch(73.6% 0.136 273.8)",
+        "tonalRamp": [
+          "oklch(15% 0.136 273.8)",
+          "oklch(26% 0.136 273.8)",
+          "oklch(38% 0.136 273.8)",
+          "oklch(49% 0.136 273.8)",
+          "oklch(61% 0.136 273.8)",
+          "oklch(72% 0.136 273.8)",
+          "oklch(84% 0.136 273.8)",
+          "oklch(95% 0.136 273.8)"
+        ]
+      },
+      "lime": {
+        "role": "tertiary",
+        "displayName": "Lime",
+        "canonical": "oklch(90.3% 0.208 122.9)",
+        "tonalRamp": [
+          "oklch(15% 0.208 122.9)",
+          "oklch(26% 0.208 122.9)",
+          "oklch(38% 0.208 122.9)",
+          "oklch(49% 0.208 122.9)",
+          "oklch(61% 0.208 122.9)",
+          "oklch(72% 0.208 122.9)",
+          "oklch(84% 0.208 122.9)",
+          "oklch(95% 0.208 122.9)"
+        ]
+      },
+      "sodium": {
+        "role": "tertiary",
+        "displayName": "Sodium Yellow",
+        "canonical": "oklch(87.4% 0.169 91)",
+        "tonalRamp": [
+          "oklch(15% 0.169 91)",
+          "oklch(26% 0.169 91)",
+          "oklch(38% 0.169 91)",
+          "oklch(49% 0.169 91)",
+          "oklch(61% 0.169 91)",
+          "oklch(72% 0.169 91)",
+          "oklch(84% 0.169 91)",
+          "oklch(95% 0.169 91)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero name only; second line drawn as a bone outline."
+      },
+      "chapter-giant": {
+        "displayName": "Chapter Giant",
+        "purpose": "Uppercase echo of each chapter title in the chapter tone."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Project names in the work reel."
+      },
+      "chapter-title": {
+        "displayName": "Chapter Title",
+        "purpose": "Sticky chapter band heading with mono index."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Experience roles and project-index names."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "About paragraph, Stack word list, Contact lead."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text, 52 to 72ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Mono uppercase indices, dates, nav, actions, captions."
+      },
+      "chip": {
+        "displayName": "Chip",
+        "purpose": "Mono tags inside chips."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Single easing for every transition and entrance."
+      },
+      {
+        "name": "state-fast",
+        "value": "0.25s",
+        "purpose": "Nav and word-list color changes."
+      },
+      {
+        "name": "state",
+        "value": "0.3s to 0.35s",
+        "purpose": "Button fills, cell hover, arrow nudge, disclosure icons."
+      },
+      {
+        "name": "image-reveal",
+        "value": "0.4s to 0.5s",
+        "purpose": "Grayscale-to-color on portrait and thumbnails; About statement lighting."
+      },
+      {
+        "name": "rise",
+        "value": "1.1s clip-path inset reveal with 0.25em lift",
+        "purpose": "Hero name lines entering, 0.08s stagger."
+      },
+      {
+        "name": "type",
+        "value": "0.9s steps(6)",
+        "purpose": "One-time terminal prompt typing; caret blinks at 1s steps(1)."
+      },
+      {
+        "name": "smooth-scroll",
+        "value": "Lenis, duration 1.15, easeOutQuart",
+        "purpose": "Inertial page scroll; disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation and transition durations 0.01ms",
+        "purpose": "Global fallback; reel and statement effects also drop to static flow."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-compact",
+        "value": "960px"
+      },
+      {
+        "name": "reel-vertical",
+        "value": "900px"
+      },
+      {
+        "name": "timeline-stack",
+        "value": "760px"
+      },
+      {
+        "name": "narrow",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Orange action (email) in the hero; hover swaps to bone.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Email me <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M7 17L17 7M8 7h9v9\"/></svg></a>",
+      "css": ":host{--graphite:#121212;--graphite-2:#1b1b1a;--bone:#ece8df;--bone-dim:#a9a49a;--ink:#121212;--rule:rgba(236,232,223,.12);--rule-strong:rgba(236,232,223,.28);--orange:#ff5b1f;--cobalt:#2f4bf0;--cobalt-text:#8fa2ff;--lime:#c6f432;--sodium:#ffd02e;--font-display:'Bricolage Grotesque Variable','Geist Variable',system-ui,sans-serif;--font-body:'Geist Variable',system-ui,sans-serif;--font-mono:'JetBrains Mono Variable',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-btn{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:0 1rem;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:1px solid var(--bone);border-radius:0;transition:background .3s var(--ease-out),color .3s var(--ease-out);} .ds-btn-primary{background:var(--orange);border-color:var(--orange);color:var(--ink);} .ds-btn-primary:hover{background:var(--bone);border-color:var(--bone);} .ds-btn:focus-visible{outline:2px solid var(--orange);outline-offset:3px;}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Bone-outlined action (LinkedIn); hover fills bone.",
+      "html": "<a class=\"ds-btn ds-btn-secondary\" href=\"#\">LinkedIn <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M7 17L17 7M8 7h9v9\"/></svg></a>",
+      "css": ":host{--graphite:#121212;--graphite-2:#1b1b1a;--bone:#ece8df;--bone-dim:#a9a49a;--ink:#121212;--rule:rgba(236,232,223,.12);--rule-strong:rgba(236,232,223,.28);--orange:#ff5b1f;--cobalt:#2f4bf0;--cobalt-text:#8fa2ff;--lime:#c6f432;--sodium:#ffd02e;--font-display:'Bricolage Grotesque Variable','Geist Variable',system-ui,sans-serif;--font-body:'Geist Variable',system-ui,sans-serif;--font-mono:'JetBrains Mono Variable',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-btn{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:0 1rem;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:1px solid var(--bone);border-radius:0;background:var(--graphite);color:var(--bone);transition:background .3s var(--ease-out),color .3s var(--ease-out);} .ds-btn-secondary:hover{background:var(--bone);color:var(--ink);} .ds-btn:focus-visible{outline:2px solid var(--orange);outline-offset:3px;}"
+    },
+    {
+      "name": "Copy Button",
+      "kind": "button",
+      "refersTo": "button-copy",
+      "description": "Ink button with orange label on the orange contact drench.",
+      "html": "<div class=\"ds-drench\"><button class=\"ds-btn-copy\">Copy email</button></div>",
+      "css": ":host{--graphite:#121212;--graphite-2:#1b1b1a;--bone:#ece8df;--bone-dim:#a9a49a;--ink:#121212;--rule:rgba(236,232,223,.12);--rule-strong:rgba(236,232,223,.28);--orange:#ff5b1f;--cobalt:#2f4bf0;--cobalt-text:#8fa2ff;--lime:#c6f432;--sodium:#ffd02e;--font-display:'Bricolage Grotesque Variable','Geist Variable',system-ui,sans-serif;--font-body:'Geist Variable',system-ui,sans-serif;--font-mono:'JetBrains Mono Variable',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-drench{background:var(--orange);padding:1.5rem;} .ds-btn-copy{background:var(--ink);color:var(--orange);border:0;border-radius:0;min-height:2.75rem;padding:0 1.1rem;cursor:pointer;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;} .ds-btn-copy:hover{color:var(--bone);} .ds-btn-copy:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "custom",
+      "description": "Mono underlined link with an arrow that nudges up-right on hover.",
+      "html": "<a class=\"ds-arrow\" href=\"#\">Visit site <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M7 17L17 7M8 7h9v9\"/></svg></a>",
+      "css": ":host{--graphite:#121212;--graphite-2:#1b1b1a;--bone:#ece8df;--bone-dim:#a9a49a;--ink:#121212;--rule:rgba(236,232,223,.12);--rule-strong:rgba(236,232,223,.28);--orange:#ff5b1f;--cobalt:#2f4bf0;--cobalt-text:#8fa2ff;--lime:#c6f432;--sodium:#ffd02e;--font-display:'Bricolage Grotesque Variable','Geist Variable',system-ui,sans-serif;--font-body:'Geist Variable',system-ui,sans-serif;--font-mono:'JetBrains Mono Variable',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-arrow{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;color:var(--bone);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:.2rem;} .ds-arrow svg{width:.9rem;height:.9rem;transition:transform .35s var(--ease-out);} .ds-arrow:hover{color:var(--lime);} .ds-arrow:hover svg{transform:translate(2px,-2px);} .ds-arrow:focus-visible{outline:2px solid var(--orange);outline-offset:3px;}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Square mono tech tag with a currentColor hairline border.",
+      "html": "<div class=\"ds-chips\"><span class=\"ds-chip\">Java</span><span class=\"ds-chip\">Spring Boot</span><span class=\"ds-chip\">Nuxt</span></div>",
+      "css": ":host{--graphite:#121212;--graphite-2:#1b1b1a;--bone:#ece8df;--bone-dim:#a9a49a;--ink:#121212;--rule:rgba(236,232,223,.12);--rule-strong:rgba(236,232,223,.28);--orange:#ff5b1f;--cobalt:#2f4bf0;--cobalt-text:#8fa2ff;--lime:#c6f432;--sodium:#ffd02e;--font-display:'Bricolage Grotesque Variable','Geist Variable',system-ui,sans-serif;--font-body:'Geist Variable',system-ui,sans-serif;--font-mono:'JetBrains Mono Variable',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-chips{display:flex;flex-wrap:wrap;gap:.375rem;color:var(--bone-dim);} .ds-chip{display:inline-flex;align-items:center;gap:.375rem;border:1px solid currentColor;border-radius:0;padding:.25rem .5rem;font-family:var(--font-mono);font-size:.6875rem;letter-spacing:.03em;text-transform:uppercase;line-height:1;white-space:nowrap;}"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "refersTo": "top-bar",
+      "description": "Fixed bar: monogram, numbered mono nav with orange active index, square EN/ES switch.",
+      "html": "<header class=\"ds-bar\"><a class=\"ds-mono-gram\" href=\"#\">AG<span>.</span></a><nav><ol><li><a href=\"#\"><span class=\"ds-idx\">01</span> About</a></li><li><a href=\"#\" aria-current=\"true\"><span class=\"ds-idx\">02</span> Experience</a></li><li><a href=\"#\"><span class=\"ds-idx\">03</span> Work</a></li></ol></nav><div class=\"ds-langs\"><a href=\"#\" aria-current=\"true\">EN</a><a href=\"#\">ES</a></div></header>",
+      "css": ":host{--graphite:#121212;--graphite-2:#1b1b1a;--bone:#ece8df;--bone-dim:#a9a49a;--ink:#121212;--rule:rgba(236,232,223,.12);--rule-strong:rgba(236,232,223,.28);--orange:#ff5b1f;--cobalt:#2f4bf0;--cobalt-text:#8fa2ff;--lime:#c6f432;--sodium:#ffd02e;--font-display:'Bricolage Grotesque Variable','Geist Variable',system-ui,sans-serif;--font-body:'Geist Variable',system-ui,sans-serif;--font-mono:'JetBrains Mono Variable',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-bar{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1.5rem;height:3.5rem;padding:0 1.5rem;background:color-mix(in srgb,var(--graphite) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);color:var(--bone);} .ds-mono-gram{font-family:var(--font-display);font-weight:800;font-size:1.125rem;letter-spacing:-.03em;text-decoration:none;color:var(--bone);} .ds-mono-gram span{color:var(--orange);} .ds-bar ol{display:flex;justify-content:center;gap:2rem;list-style:none;margin:0;padding:0;} .ds-bar nav a{display:inline-flex;gap:.35rem;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;color:var(--bone-dim);padding:.4rem 0;transition:color .25s var(--ease-out);} .ds-bar nav a:hover,.ds-bar nav a[aria-current=true]{color:var(--bone);} .ds-bar nav a[aria-current=true] .ds-idx{color:var(--orange);} .ds-langs{display:flex;border:1px solid var(--rule-strong);} .ds-langs a{font-family:var(--font-mono);font-size:.6875rem;letter-spacing:.06em;text-decoration:none;padding:.35rem .6rem;color:var(--bone-dim);} .ds-langs a[aria-current=true]{background:var(--bone);color:var(--ink);} .ds-bar a:focus-visible{outline:2px solid var(--orange);outline-offset:3px;}"
+    },
+    {
+      "name": "Chapter Band",
+      "kind": "custom",
+      "refersTo": "chapter-band",
+      "description": "Sticky chapter header in the chapter tone, then the giant uppercase echo of the title.",
+      "html": "<section class=\"ds-chapter\" data-tone=\"orange\"><header class=\"ds-band\"><h2><span class=\"ds-idx\">[01]</span>About</h2><span class=\"ds-num\">01 / 06</span></header><p class=\"ds-giant\" aria-hidden=\"true\">About</p></section><section class=\"ds-chapter\" data-tone=\"cobalt\"><header class=\"ds-band\"><h2><span class=\"ds-idx\">[02]</span>Experience</h2><span class=\"ds-num\">02 / 06</span></header><p class=\"ds-giant\" aria-hidden=\"true\">Experience</p></section>",
+      "css": ":host{--graphite:#121212;--graphite-2:#1b1b1a;--bone:#ece8df;--bone-dim:#a9a49a;--ink:#121212;--rule:rgba(236,232,223,.12);--rule-strong:rgba(236,232,223,.28);--orange:#ff5b1f;--cobalt:#2f4bf0;--cobalt-text:#8fa2ff;--lime:#c6f432;--sodium:#ffd02e;--font-display:'Bricolage Grotesque Variable','Geist Variable',system-ui,sans-serif;--font-body:'Geist Variable',system-ui,sans-serif;--font-mono:'JetBrains Mono Variable',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-chapter{background:var(--graphite);} [data-tone=orange]{--tone:var(--orange);--giant:var(--orange);} [data-tone=cobalt]{--tone:var(--cobalt);--giant:var(--cobalt-text);} .ds-band{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:4.25rem;padding:0 1.5rem;background:var(--tone);color:var(--ink);border-bottom:1px solid var(--ink);} [data-tone=cobalt] .ds-band{color:var(--bone);border-bottom-color:var(--graphite);} .ds-band h2{margin:0;display:flex;align-items:baseline;gap:.75rem;font-family:var(--font-display);font-weight:700;font-variation-settings:'opsz' 48;font-size:2.25rem;letter-spacing:-.035em;line-height:1;} .ds-idx{font-family:var(--font-mono);font-size:.8125rem;font-weight:600;letter-spacing:.04em;transform:translateY(-.4em);} .ds-num{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;} .ds-giant{margin:0;padding:2.5rem 1.5rem 2rem;font-family:var(--font-display);font-weight:800;font-variation-settings:'opsz' 96;font-size:5rem;line-height:.85;letter-spacing:-.05em;text-transform:uppercase;color:var(--giant);}"
+    },
+    {
+      "name": "Project Cell",
+      "kind": "card",
+      "description": "Ruled index cell: sodium index, title, description, chips; hover lifts to graphite-2.",
+      "html": "<ul class=\"ds-grid\"><li class=\"ds-cell\"><h3><span class=\"ds-idx\">01</span><a href=\"#\">Prestafy</a></h3><p>Loan management for independent lenders.</p><p class=\"ds-state\">Private repository</p></li><li class=\"ds-cell\"><h3><span class=\"ds-idx\">02</span><a href=\"#\">Sports Odds Scanner</a></h3><p>Real-time odds scanner across bookmakers.</p><p class=\"ds-state\">In development</p></li></ul>",
+      "css": ":host{--graphite:#121212;--graphite-2:#1b1b1a;--bone:#ece8df;--bone-dim:#a9a49a;--ink:#121212;--rule:rgba(236,232,223,.12);--rule-strong:rgba(236,232,223,.28);--orange:#ff5b1f;--cobalt:#2f4bf0;--cobalt-text:#8fa2ff;--lime:#c6f432;--sodium:#ffd02e;--font-display:'Bricolage Grotesque Variable','Geist Variable',system-ui,sans-serif;--font-body:'Geist Variable',system-ui,sans-serif;--font-mono:'JetBrains Mono Variable',ui-monospace,monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr));border-top:1px solid var(--rule-strong);border-left:1px solid var(--rule-strong);background:var(--graphite);color:var(--bone);} .ds-cell{display:flex;flex-direction:column;gap:1rem;padding:1.5rem;border-right:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);transition:background .35s var(--ease-out);} .ds-cell:hover{background:var(--graphite-2);} .ds-cell h3{margin:0;font-family:var(--font-display);font-weight:700;font-variation-settings:'opsz' 48;font-size:1.5rem;letter-spacing:-.03em;line-height:1.05;} .ds-cell h3 a{color:inherit;text-decoration:none;} .ds-cell h3 a:hover{color:var(--sodium);} .ds-idx{margin-right:.5rem;vertical-align:.35em;font-family:var(--font-mono);font-size:.75rem;font-weight:500;color:var(--sodium);} .ds-cell p{margin:0;font-family:var(--font-body);font-size:.9375rem;line-height:1.55;} .ds-state{color:var(--bone-dim);font-family:var(--font-mono);font-size:.6875rem!important;text-transform:uppercase;letter-spacing:.04em;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Engineering Index",
+    "overview": "The site is a printed technical document set on a dark drafting table: a graphite ground ruled with faint 12-column hairlines, bone-colored type, and six numbered chapters, each announced by a solid band of signal color that sticks under the top bar as you read through it. Hierarchy comes from scale and numbering, not from containers: monumental Bricolage Grotesque for names and chapter titles, quiet Geist for reading, and JetBrains Mono for every index, date, count and tag, always bracketed or uppercase.\n\nDensity is deliberate and alternating. Each chapter opens loud (a color band, then the chapter title echoed at giant size in the chapter's own color) and settles into calm, ruled reading columns. Motion behaves like film transport: smooth inertial scroll, a pinned horizontal reel for the featured work, text that rises out of a clip. Every motion has a still fallback; reduced motion and narrow screens get the same content as a plain vertical flow.\n\nThe material is flat and square. Structure is drawn with 1px rules, never with shadow, glow or rounded cards. Color is reserved for chapter identity and for the single active signal in any region.",
+    "keyCharacteristics": [
+      "Graphite ground with 12-column hairlines; bone text; square corners everywhere.",
+      "One solid band color per chapter (orange, cobalt, lime, sodium, bone), carried into that chapter's giant title and accents.",
+      "Three-voice type: monumental grotesque, reading sans, bracketed mono indices.",
+      "Structure from 1px rules and numbering, not boxes or elevation.",
+      "Pinned, filmic scroll on wide screens with motion allowed; vertical flow otherwise."
+    ],
+    "rules": [
+      {
+        "name": "The One Band Rule",
+        "body": "Each chapter owns exactly one tone. Its band, its giant title and its accent details use that tone and no other chapter color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-On-Signal Rule",
+        "body": "Type on orange, lime, sodium and bone bands is ink; cobalt is the single exception and carries bone. Focus outlines inside bands switch to ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numbered Document Rule",
+        "body": "Every chapter, nav item, entry and project carries a mono index (`[01]`, `01 / 06`, `01`, decimal-leading-zero list counters). Numbers are structure here, not decoration.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Optical Sizes Rule",
+        "body": "Bricolage runs at opsz 96 for 800-weight poster sizes and opsz 48 for headings and statements; nothing else.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ruled, Not Raised Rule",
+        "body": "Separate things with a 1px rule (`rule` or `rule-strong`) or a tone shift, never a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give every new chapter one tone from the five and carry it through band, giant title and accents (The One Band Rule).",
+      "**Do** set ink type on light bands and bone type on cobalt; use `cobalt-text` for cobalt-colored text on graphite.",
+      "**Do** number things in mono: `[0N]` indices, `0N / 06` counters, zero-padded list counters, tabular dates.",
+      "**Do** draw structure with 1px rules and keep every corner square.",
+      "**Do** give every scroll or entrance effect a still, vertical fallback under `prefers-reduced-motion` and below 900px.",
+      "**Do** keep screenshots real and top-anchored in the frame; use a typographic cover when no live site exists."
+    ],
+    "donts": [
+      "**Don't** add drop shadows, glows or rounded cards; depth is tone and stacking only.",
+      "**Don't** set raw cobalt text on graphite; it fails contrast.",
+      "**Don't** mix two chapter tones inside one chapter.",
+      "**Don't** introduce a centered max-width container or a sidebar-plus-bento card grid; content runs edge to gutter.",
+      "**Don't** set body paragraphs or descriptions in Bricolage or in mono; Geist reads, Bricolage announces, mono indexes."
+    ]
+  }
+}

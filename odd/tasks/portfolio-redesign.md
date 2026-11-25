@@ -22,8 +22,8 @@ Branch: `feat/redesign`. Delivery: work-unit commits on the branch, push/PR is t
 | T2 | S1, S6 | inline | done | 9f80ffb |
 | T3 | S1, S2, S6, S7 | inline | done | 9f80ffb |
 | T4 | S4 | inline | done | 9f80ffb |
-| T5 | all | inline + finish review subagent | in progress | |
-| T6 | all | documenter subagent | pending | |
+| T5 | all | inline + finish review subagent | done | 552adb6 |
+| T6 | all | documenter subagent | done | (this commit) |
 
 T1 screenshots · T2 layout, fonts, tokens, nav, hero · T3 chapters (about, experience, work showcase, index, stack, contact) with Lenis and pinned scroll · T4 remove neovim pages, theme switch, keyboard manager, leftover template CV PDF · T5 verify desktop/mobile + detector + finish review · T6 DESIGN.md.
 
@@ -41,3 +41,4 @@ Route evidence: single coherent visual system sharing tokens and layout; units a
 - L8: User: "los repos que sean privados no le pongas link de gh". Checked with gh api: ecommerce, viveros-chess, prestafy are private → github link removed; erica-viveros and portfolio stay public.
 - L9: Finish review verdict "fix" (8 items) applied in 552adb6 and re-verified with captures in .impeccable/review (hero full width, giant titles, reel rest + focus mapping, mobile nav, contrast, reveal, taglines).
 - L10: User: "cambia el favico y agrega mi instagram @andresgiraldollanos, tambien revisa si en la seccion del stack hay que actualizar algo". New AG favicon rendered in Bricolage on orange; Instagram added to profiles (contact + JSON-LD); stack gains Python, FastAPI, Rust, Redis, Docker, GitHub Actions, Linear, Next.js, Vitest, Playwright, Meilisearch, Claude Code and drops Skills.sh and Agents.md.
+- L11: DESIGN.md and .impeccable/design.json written by the documenter from the shipped build. Follow-ups applied: availability dot pulses by opacity (no glow), ink rule tokenized as --ink-rule. Detector now only reports advisory font sizes off the documented ramp (documentation gap, not a defect).

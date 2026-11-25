@@ -178,15 +178,11 @@ const github = basics.profiles.find((p) => p.network === "GitHub");
     height: 0.5rem;
     background: var(--lime);
     border-radius: 50%;
-    box-shadow: 0 0 0 0 rgba(198, 244, 50, 0.6);
     animation: pulse 2.2s var(--ease-out) infinite;
   }
   @keyframes pulse {
-    70% {
-      box-shadow: 0 0 0 0.55rem rgba(198, 244, 50, 0);
-    }
-    100% {
-      box-shadow: 0 0 0 0 rgba(198, 244, 50, 0);
+    50% {
+      opacity: 0.3;
     }
   }
 
